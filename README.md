@@ -1,5 +1,5 @@
 <h1 align="center"> Arctic Horizon 2 Recauchutado </h1>
-<h4>Version del famoso skin Horizon 2 de JurialMunkey Adaptado para el addon Palantir</h4>
+<h4 align="center">Versión del famoso skin Horizon 2 de JurialMunkey Adaptado para el addon Palantir</h4>
 
 ![Arctic Horizon 2 Recauchutado de Joseska y Jon.](media/fanart2.jpg)
 

@@ -1,7 +1,7 @@
 <h1 align="center"> Arctic Horizon 2 Recauchutado </h1>
 <h4>Version del famoso skin Horizon 2 de JurialMunkey Adaptado para el addon Palantir</h4>
 
-![Repositorio Joseska.](media/fanart2.jpg)
+![Arctic Horizon 2 Recauchutado de Joseska y Jon.](media/fanart2.jpg)
 
 ### Actualización 0.2.4
 - [x] Nuevo pack de iconos "Modernos" (una nueva visión recauchutada).

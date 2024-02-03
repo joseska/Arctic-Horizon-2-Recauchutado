@@ -183,15 +183,7 @@
         <value>$INFO[{listitemposition}.Icon]</value>
     </variable>
 	
-	<!-- <variable name="Image_Landscape_2" containers="50">
-		<value condition="!String.IsEmpty({listitemposition}.Art(banner))">$INFO[{listitemposition}.Art(banner)]</value>
-		<value condition="Container.Content(images)">$INFO[{listitemposition}.Icon]</value>
-        <value condition="!String.IsEmpty({listitemposition}.Icon">$INFO[{listitemposition}.Icon]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(thumb)">$INFO[ListItem.Art(thumb)]</value>
-		<value>$INFO[{listitemposition}.Icon]</value>
-		<!-- Container.Art(type) -->
-
-    <!-- </variable> -->
+	
 	
 	
 

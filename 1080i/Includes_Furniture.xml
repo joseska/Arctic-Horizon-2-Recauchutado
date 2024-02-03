@@ -179,6 +179,13 @@
         <include>Furniture_Bottom_Right</include>
     </include>
 
+    <!-- Joseska - Furniture Bottom para Fullscreen Widget - Solo footer derecho  -->
+    <include name="Furniture_Bottom_2">
+        <!-- <include>Furniture_Bottom_Left</include> -->
+        <include>Furniture_Bottom_Right</include>
+    </include>
+    <!-- FIN Joseska  -->
+
     <include name="Furniture_Gutters">
         <control type="group">
             <top>view_gutter</top>

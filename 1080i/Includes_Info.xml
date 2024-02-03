@@ -1808,7 +1808,8 @@
                 <centertop>50%</centertop>
                 <!-- INI Jon - Mostrar las clasificaciones por edad de MPAA-->
                 <!-- <visible>!String.IsEmpty(ListItem.MPAA)</visible> -->
-                <visible>!String.IsEmpty(Container(99950).ListItem.MPAA) | !String.IsEmpty(ListItem.MPAA) | Skin.String(MPAA_Country,España)</visible>
+                <!-- <visible>!String.IsEmpty(Container(99950).ListItem.MPAA) | !String.IsEmpty(ListItem.MPAA) | Skin.String(MPAA_Country,España)</visible> -->
+                <visible>[Skin.String(MPAA_Country,España) + !String.IsEmpty(Container(99950).ListItem.Title)] | !String.IsEmpty(ListItem.MPAA) | [!String.IsEmpty(Container(99950).ListItem.MPAA) + !Skin.String(MPAA_Country,España)]</visible>
                 <!-- FIN Jon -->
             </include>
         </control>

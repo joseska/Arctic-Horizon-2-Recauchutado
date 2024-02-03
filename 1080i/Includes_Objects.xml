@@ -1420,51 +1420,6 @@
         </definition>
     </include>
 
-    <!-- Joseska - Menu Superior Iconos + Texto -->
-    <include name="_Object_MenuBar_Item_2">
-        <param name="selected" default="false" />
-        <param name="haslabel" default="true" />
-        <param name="visible" default="true" />
-        <definition>
-            <include content="Object_Control">
-                <param name="control" value="group" />
-                <visible>$PARAM[visible]</visible>
-                <centertop>50%</centertop>
-                <height>256</height>
-                <left>-40</left>
-                <right>-40</right>
-                <control type="image">
-                    <include condition="$PARAM[selected]">$PARAM[fo_texture]</include>
-                    <texture border="80" colordiffuse="$PARAM[color_bg]">$PARAM[nf_texture]</texture>
-                </control>
-            </include>
-            <include content="Object_Control" condition="$PARAM[haslabel]">
-                <param name="control" value="group" />
-                <visible>$PARAM[visible]</visible>
-                <control type="image">
-                    <centertop>50%</centertop>
-                    <height>60</height>
-                    <width>80</width>
-                    <aspectratio>keep</aspectratio>
-                    <bordersize>4</bordersize>
-                    <texture colordiffuse="$PARAM[color_fg]">$INFO[ListItem.Icon]</texture>
-                </control>
-                <control type="label">
-                    <centertop>50%</centertop>
-                    <height>60</height>
-                    <aligny>center</aligny>
-                    <left>80</left>
-                    <right>80</right>
-                    <align>center</align>
-                    <font>$PARAM[font]</font>
-                    <textcolor>$PARAM[color_fg]</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-            </include>
-        </definition>
-    </include>
-
-
     <include name="Object_MenuBar_List">
         <param name="control" default="list" />
         <param name="focus_w" default="360" />
@@ -1475,6 +1430,7 @@
         <param name="altfocus" default="false" />
         <param name="solidfocus">true</param>
         <param name="iconic">[Skin.HasSetting(Home.IconicMenu)]</param>
+        <param name="icontext">[Skin.HasSetting(Home.icontextMenu)]</param>
         <definition>
             <control type="$PARAM[control]" id="$PARAM[id]">
                 <nested />
@@ -1483,7 +1439,7 @@
                 <height>160</height>
                 <orientation>horizontal</orientation>
                 <scrolltime tween="quadratic">400</scrolltime>
-                <!-- Joseska - Parece ser el itemlayout de Clásico -->
+                <!-- Joseska - Parece ser el itemlayout de Menú Clásico -->
                 <itemlayout height="160" width="100">
                     <control type="group">
                         <left>40</left>
@@ -1498,8 +1454,8 @@
                         </control>
                     </control>
                 </itemlayout>
-                
-                <!-- Joseska - Parece ser el itemlayout de Iconos -->
+
+                <!-- Joseska - Parece ser el itemlayout del Menú Iconos -->
                 <focusedlayout height="160" width="100" condition="$PARAM[iconic]">
                     <control type="group">
                         <left>40</left>

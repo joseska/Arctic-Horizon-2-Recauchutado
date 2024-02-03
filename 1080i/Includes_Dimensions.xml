@@ -44,6 +44,11 @@
         <bottom>view_pad</bottom>
     </include>
 
+    <include name="Dimension_Bottombar2">
+        <include>Dimension_Furniture</include>
+        <bottom>view_pad</bottom>
+    </include>
+
     <include name="Dimension_Padding">
         <left>$PARAM[pad]</left>
         <right>$PARAM[pad]</right>

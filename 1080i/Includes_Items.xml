@@ -2458,36 +2458,57 @@
         </item>
     </include>
 
+    <!-- Joseska - Cambios para añadir el menu Iconos + Textos  -->
     <include name="Items_DialogPreset_MenuStyles">
         <include content="Dialog_Settings_Button" description="Classic">
             <param name="id" value="9001" />
             <param name="control">radiobutton</param>
             <label>$LOCALIZE[31051]</label>
             <onclick>Skin.Reset(Home.IconicMenu)</onclick>
+            <onclick>Skin.Reset(Home.icontextMenu)</onclick> <!-- Añadir -->
             <onclick>Skin.Reset(Home.VerticalMenu)</onclick>
             <onclick>Skin.Reset(Home.TextMenu)</onclick>
             <onclick>Close</onclick>
             <onclick>ReloadSkin()</onclick>
             <onclick>AlarmClock(refocus,SetFocus(1005),00:00,silent)</onclick>
-            <selected>!Skin.HasSetting(Home.IconicMenu) + !Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected>
+            <!-- <selected>!Skin.HasSetting(Home.IconicMenu) + !Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected> -->
+            <selected>!Skin.HasSetting(Home.IconicMenu) + !Skin.HasSetting(Home.icontextMenu) + !Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected>
         </include>
         <include content="Dialog_Settings_Button" description="Iconic">
             <param name="id" value="9002" />
             <param name="control">radiobutton</param>
             <label>$LOCALIZE[536]</label>
             <onclick>Skin.SetBool(Home.IconicMenu)</onclick>
+            <onclick>Skin.Reset(Home.icontextMenu)</onclick> <!-- Añadir -->
             <onclick>Skin.Reset(Home.VerticalMenu)</onclick>
             <onclick>Skin.Reset(Home.TextMenu)</onclick>
             <onclick>Close</onclick>
             <onclick>ReloadSkin()</onclick>
             <onclick>AlarmClock(refocus,SetFocus(1005),00:00,silent)</onclick>
-            <selected>Skin.HasSetting(Home.IconicMenu) + !Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected>
+            <!-- <selected>Skin.HasSetting(Home.IconicMenu) + !Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected> -->
+            <selected>Skin.HasSetting(Home.IconicMenu) + !Skin.HasSetting(Home.icontextMenu) + !Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected>
         </include>
-        <include content="Dialog_Settings_Button" description="Text">
+        <!-- Añadir RadioButton Iconos + Textos -->
+        <include content="Dialog_Settings_Button" description="Icon+Text">
             <param name="id" value="9003" />
+            <param name="control">radiobutton</param>
+            <label>$LOCALIZE[31509]</label>
+            <onclick>Skin.SetBool(Home.icontextMenu)</onclick>
+            <onclick>Skin.Reset(Home.IconicMenu)</onclick>
+            <onclick>Skin.Reset(Home.VerticalMenu)</onclick>
+            <onclick>Skin.Reset(Home.TextMenu)</onclick>
+            <onclick>Close</onclick>
+            <onclick>ReloadSkin()</onclick>
+            <onclick>AlarmClock(refocus,SetFocus(1005),00:00,silent)</onclick>
+            <selected>Skin.HasSetting(Home.icontextMenu) + !Skin.HasSetting(Home.IconicMenu) + !Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected>
+        </include>
+        <!-- FIN Joseska  -->
+        <include content="Dialog_Settings_Button" description="Text">
+            <param name="id" value="9004" /> <!-- modificar -->
             <param name="control">radiobutton</param>
             <label>$LOCALIZE[31013]</label>
             <onclick>Skin.Reset(Home.IconicMenu)</onclick>
+            <onclick>Skin.Reset(Home.icontextMenu)</onclick> <!-- Añadir -->
             <onclick>Skin.Reset(Home.VerticalMenu)</onclick>
             <onclick>Skin.SetBool(Home.TextMenu)</onclick>
             <onclick>Close</onclick>
@@ -2496,10 +2517,11 @@
             <selected>Skin.HasSetting(Home.TextMenu) + !Skin.HasSetting(Home.VerticalMenu)</selected>
         </include>
         <include content="Dialog_Settings_Button" description="Vertical">
-            <param name="id" value="9004" />
+            <param name="id" value="9005" /> <!-- modificar -->
             <param name="control">radiobutton</param>
             <label>$LOCALIZE[31163]</label>
             <onclick>Skin.Reset(Home.IconicMenu)</onclick>
+            <onclick>Skin.Reset(Home.icontextMenu)</onclick> <!-- Añadir -->
             <onclick>Skin.SetBool(Home.VerticalMenu)</onclick>
             <onclick>Skin.Reset(Home.TextMenu)</onclick>
             <onclick>Close</onclick>
@@ -2508,6 +2530,7 @@
             <selected>Skin.HasSetting(Home.VerticalMenu)</selected>
         </include>
     </include>
+    <!-- FIN Joseska  -->
 
 
     <include name="Items_DialogPreset_Colors">

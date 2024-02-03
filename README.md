@@ -1,7 +1,14 @@
 <h1 align="center"> Arctic Horizon 2 Recauchutado </h1>
 <h4 align="center">Versión del famoso skin Horizon 2 de JurialMunkey Adaptado para el addon Palantir</h4>
 
-![Arctic Horizon 2 Recauchutado de Joseska y Jon.](media/fanart2.jpg)
+<p align="center">
+![Arctic Horizon 2 Recauchutado.](media/fanart2.jpg)
+</p>
+
+### Actualización 0.2.5
+- [x] Corregido BUG a la hora de mostrar el icono de clasificación MPAA cuando no existe esa información.
+- [x] Mostrar iconos de estudio en el footer de los Widgets a pantalla completa (Decoraciones  - Iconos de estudio.)
+- [x] Mostrar iconos de clasificación por edades en el footer de los Widgets a pantalla completa. (decoraciones - Clasificación (MPAA) - España)
 
 ### Actualización 0.2.4
 - [x] Nuevo pack de iconos "Modernos" (una nueva visión recauchutada).

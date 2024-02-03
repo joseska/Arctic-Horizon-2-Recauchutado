@@ -555,6 +555,7 @@
 			<property name="labelID">35232</property>
 			<property name="defaultID">35232</property>
 			<property name="translatedPath">Fullscreen</property>
+			<property name="widgetInfo">Full</property>
 			<onclick>Fullscreen</onclick>
 			<property name="path">Fullscreen</property>
 			<property name="list">Fullscreen</property>
@@ -875,6 +876,7 @@
 			<property name="labelID">35232</property>
 			<property name="defaultID">35232</property>
 			<property name="translatedPath">Fullscreen</property>
+			<property name="widgetInfo">Full</property>
 			<onclick>Fullscreen</onclick>
 			<property name="path">Fullscreen</property>
 			<property name="list">Fullscreen</property>
@@ -894,6 +896,7 @@
 			<property name="labelID">35232</property>
 			<property name="defaultID">35232</property>
 			<property name="translatedPath">Fullscreen</property>
+			<property name="widgetInfo">Full</property>
 			<onclick>Fullscreen</onclick>
 			<property name="path">Fullscreen</property>
 			<property name="list">Fullscreen</property>
@@ -1014,6 +1017,14 @@
 								<onfocus>SetProperty(FullscreenWidgetRefocus,1501,Home)</onfocus>
 								</include>
 							</control>
+						<control type="group">
+							<top>222</top>
+							<include content="Object_Control">
+								<param name="control">group</param>
+								<include>Furniture_Bottom_2</include>
+								<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Visible</animation>
+								</include>
+							</control>
 						</include>
 					<control type="group" id="1600">
 						<height>widget_tbump_h</height>
@@ -1100,8 +1111,8 @@
 						<param name="usewidgetlabel" value="False" />
 						<param name="include" value="List_Poster_Row" />
 						<param name="visible" value="[[False] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3) + [![False] | [!Integer.IsEqual(Container(1600).NumItems,0) + Container(1600).ListItem.IsFolder]]]" />
-						<param name="infowidget" value="False" />
-						<param name="infowidget_full" value="False" />
+						<param name="infowidget" value="True" />
+						<param name="infowidget_full" value="True" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(1601).NumItems,0) | [False + Container(1601).IsUpdating]" />
 						<param name="detailed">false</param>
 						<param name="oversized">False</param>
@@ -1139,10 +1150,10 @@
 							<param name="include">skinshortcuts-group-plugin-video-palantir3</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,1601,Home)</onfocus>
-						<onfocus condition="False + ![False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,$LOCALIZE[35232],Home)</onfocus>
-						<onfocus condition="False + [False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,[CAPITALIZE]$INFO[Container(1601).ListItem.Property(widget)][/CAPITALIZE],Home)</onfocus>
-						<onfocus condition="False">SetProperty(Slide.WidgetContainer,1601,Home)</onfocus>
-						<onfocus>SetProperty(Slide.WidgetInfoStyle,,Home)</onfocus>
+						<onfocus condition="True + ![False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,$LOCALIZE[35232],Home)</onfocus>
+						<onfocus condition="True + [False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,[CAPITALIZE]$INFO[Container(1601).ListItem.Property(widget)][/CAPITALIZE],Home)</onfocus>
+						<onfocus condition="True">SetProperty(Slide.WidgetContainer,1601,Home)</onfocus>
+						<onfocus>SetProperty(Slide.WidgetInfoStyle,Full,Home)</onfocus>
 						<onfocus>SetProperty(Slide.WidgetAspect,,Home)</onfocus>
 						<onunfocus>ClearProperty(Slide.WidgetAspect,Home)</onunfocus>
 						<onunfocus>ClearProperty(Slide.WidgetInfoStyle,Home)</onunfocus>
@@ -1339,6 +1350,14 @@
 								<onclick>SetFocus(2503)</onclick>
 								<onfocus>SetProperty(TMDbHelper.WidgetContainer,301,Home)</onfocus>
 								<onfocus>SetProperty(FullscreenWidgetRefocus,2501,Home)</onfocus>
+								</include>
+							</control>
+						<control type="group">
+							<top>222</top>
+							<include content="Object_Control">
+								<param name="control">group</param>
+								<include>Furniture_Bottom_2</include>
+								<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Visible</animation>
 								</include>
 							</control>
 						</include>
@@ -1802,6 +1821,14 @@
 								<onfocus>SetProperty(FullscreenWidgetRefocus,3501,Home)</onfocus>
 								</include>
 							</control>
+						<control type="group">
+							<top>222</top>
+							<include content="Object_Control">
+								<param name="control">group</param>
+								<include>Furniture_Bottom_2</include>
+								<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Visible</animation>
+								</include>
+							</control>
 						</include>
 					<control type="group" id="3600">
 						<height>widget_tbump_h</height>
@@ -2127,6 +2154,14 @@
 								<onclick>SetFocus(4503)</onclick>
 								<onfocus>SetProperty(TMDbHelper.WidgetContainer,301,Home)</onfocus>
 								<onfocus>SetProperty(FullscreenWidgetRefocus,4501,Home)</onfocus>
+								</include>
+							</control>
+						<control type="group">
+							<top>222</top>
+							<include content="Object_Control">
+								<param name="control">group</param>
+								<include>Furniture_Bottom_2</include>
+								<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Visible</animation>
 								</include>
 							</control>
 						</include>
@@ -2456,6 +2491,14 @@
 								<onfocus>SetProperty(FullscreenWidgetRefocus,5501,Home)</onfocus>
 								</include>
 							</control>
+						<control type="group">
+							<top>222</top>
+							<include content="Object_Control">
+								<param name="control">group</param>
+								<include>Furniture_Bottom_2</include>
+								<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Visible</animation>
+								</include>
+							</control>
 						</include>
 					<control type="group" id="5600">
 						<height>widget_tbump_h</height>
@@ -2781,6 +2824,14 @@
 								<onclick>SetFocus(6503)</onclick>
 								<onfocus>SetProperty(TMDbHelper.WidgetContainer,301,Home)</onfocus>
 								<onfocus>SetProperty(FullscreenWidgetRefocus,6501,Home)</onfocus>
+								</include>
+							</control>
+						<control type="group">
+							<top>222</top>
+							<include content="Object_Control">
+								<param name="control">group</param>
+								<include>Furniture_Bottom_2</include>
+								<animation effect="fade" start="0" end="100" time="400" delay="200" reversible="false">Visible</animation>
 								</include>
 							</control>
 						</include>

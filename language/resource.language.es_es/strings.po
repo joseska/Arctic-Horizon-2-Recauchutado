@@ -1995,4 +1995,9 @@ msgctxt "#31508"
 msgid "MPAA icon style"
 msgstr "Estilo de iconos MPAA"
 
+#: /1080i/Includes_Items.xml
+msgctxt "#31509"
+msgid "Icons + Text (OFF)"
+msgstr "Iconos + Textos (OFF)"
+
 ### FIN Joseska Jon ###

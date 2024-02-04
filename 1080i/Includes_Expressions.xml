@@ -110,4 +110,17 @@
     <!-- <expression name="Exp_View_Special">[True]</expression> -->
     <expression name="Exp_View_Special">!String.IsEqual(Container.Property(param.info),user_discover)</expression>
 
+    <!-- INI Jon - Expresiones Infoline Title1--> 
+        <!--    Title Acortado-->
+    <expression name="infolineFlags111">Skin.HasSetting(Infoline.EnableGenre) + Skin.HasSetting(Infoline.EnableDirector) + Skin.HasSetting(Infoline.EnableEndTime)</expression>
+    <expression name="infolineFlags110">Skin.HasSetting(Infoline.EnableGenre) + Skin.HasSetting(Infoline.EnableDirector) + !Skin.HasSetting(Infoline.EnableEndTime)</expression>
+    <expression name="infolineFlags101">Skin.HasSetting(Infoline.EnableGenre) + !Skin.HasSetting(Infoline.EnableDirector) + Skin.HasSetting(Infoline.EnableEndTime)</expression>
+    <expression name="infolineFlags011">!Skin.HasSetting(Infoline.EnableGenre) + Skin.HasSetting(Infoline.EnableDirector) + Skin.HasSetting(Infoline.EnableEndTime)</expression>
+        <!--    Title Largo-->
+    <expression name="infolineFlags000">!Skin.HasSetting(Infoline.EnableGenre) + !Skin.HasSetting(Infoline.EnableDirector) + !Skin.HasSetting(Infoline.EnableEndTime)</expression>
+    <expression name="infolineFlags001">!Skin.HasSetting(Infoline.EnableGenre) + !Skin.HasSetting(Infoline.EnableDirector) + Skin.HasSetting(Infoline.EnableEndTime)</expression>
+    <expression name="infolineFlags010">!Skin.HasSetting(Infoline.EnableGenre) + Skin.HasSetting(Infoline.EnableDirector) + !Skin.HasSetting(Infoline.EnableEndTime)</expression>
+    <expression name="infolineFlags100">Skin.HasSetting(Infoline.EnableGenre) + !Skin.HasSetting(Infoline.EnableDirector) + !Skin.HasSetting(Infoline.EnableEndTime)</expression>
+    <!-- FIN Jon - Expresiones Infoline Title1--> 
+
 </includes>

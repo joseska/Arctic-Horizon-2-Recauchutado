@@ -199,6 +199,7 @@
     <include name="Info_Line_Label">
         <param name="font" default="font_mini_bold" />
         <param name="controltype" default="button" />
+        <param name="scroll" default="false" />
         <definition>
             <control type="image">
                 <include>Texture_Circle_Highlight_V</include>
@@ -209,7 +210,12 @@
                 <visible>$PARAM[visible]</visible>
             </control>
             <control type="$PARAM[controltype]">
-                <width>auto</width>
+                <!-- INI Jon - Posibilitado el scroll en InfoLine y maxwidth-->
+                <!-- <width>auto</width> -->
+                <width max="$PARAM[maxwidth]">auto</width>
+                <scrollspeed>$PARAM[scrollspeed]</scrollspeed>
+                <scroll>$PARAM[scroll]</scroll>
+                <!-- FIN Jon - Posibilitado el scroll en InfoLine y maxwidth-->
                 <aligny>center</aligny>
                 <label>$PARAM[label]</label>
                 <textcolor>$PARAM[textcolor]</textcolor>
@@ -329,12 +335,29 @@
                     <height>24</height>
                 </include>
 				<!-- FIN Joseska -->
-				
-				<include content="Info_Line_Label" condition="!$PARAM[player] + Skin.HasSetting(Infoline.EnableTitle1)">
+
+                <!-- FIN Jon - Expresiones Infoline Title1 -->
+				<include content="Info_Line_Label" condition="!$PARAM[player] + Skin.HasSetting(Infoline.EnableTitle1) + [$EXP[infolineFlags111] | $EXP[infolineFlags110] | $EXP[infolineFlags101] | $EXP[infolineFlags011]]">
 					<param name="controltype" value="$PARAM[controltype]" />
 					<param name="label">$INFO[Container(99950).ListItem.Title]</param>
 					<param name="visible">!String.IsEmpty(Container(99950).ListItem.Title)</param>
 					<param name="textcolor" value="$PARAM[colordiffuse]_90" />
+                    <!-- INI Jon - Autoscroll en título en InfoLine -->
+                    <param name="maxwidth" value="300" />
+                    <param name="scroll" value="true" />
+                    <param name="scrollspeed" value="89" />
+                    <!-- FIN Jon - Autoscroll en título en InfoLine -->
+                </include>
+                <include content="Info_Line_Label" condition="!$PARAM[player] + Skin.HasSetting(Infoline.EnableTitle1) + [$EXP[infolineFlags000] | $EXP[infolineFlags001] | $EXP[infolineFlags010] | $EXP[infolineFlags100]]">
+					<param name="controltype" value="$PARAM[controltype]" />
+					<param name="label">$INFO[Container(99950).ListItem.Title]</param>
+					<param name="visible">!String.IsEmpty(Container(99950).ListItem.Title)</param>
+					<param name="textcolor" value="$PARAM[colordiffuse]_90" />
+                    <!-- INI Jon - Autoscroll en título en InfoLine -->
+                    <param name="maxwidth" value="500" />
+                    <param name="scroll" value="true" />
+                    <param name="scrollspeed" value="89" />
+                    <!-- FIN Jon - Autoscroll en título en InfoLine -->
                 </include>
 				
                 <control type="grouplist">

@@ -213,8 +213,8 @@
                 <!-- INI Jon - Posibilitado el scroll en InfoLine y maxwidth-->
                 <!-- <width>auto</width> -->
                 <width max="$PARAM[maxwidth]">auto</width>
-                <scrollspeed>$PARAM[scrollspeed]</scrollspeed>
                 <scroll>$PARAM[scroll]</scroll>
+                <scrollspeed>$PARAM[scrollspeed]</scrollspeed>
                 <!-- FIN Jon - Posibilitado el scroll en InfoLine y maxwidth-->
                 <aligny>center</aligny>
                 <label>$PARAM[label]</label>
@@ -341,10 +341,10 @@
 					<param name="label">$INFO[Container(99950).ListItem.Title]</param>
 					<param name="visible">!String.IsEmpty(Container(99950).ListItem.Title)</param>
 					<param name="textcolor" value="$PARAM[colordiffuse]_90" />
-                    <!-- INI Jon - Autoscroll en título en InfoLine -->
-                    <param name="maxwidth" value="300" />
+                    <!-- INI Jon - Autoscroll en título en InfoLine - Un poco ralentizado (35), porque en 3 vueltas se para. -->
+                    <param name="maxwidth" value="300" />   
                     <param name="scroll" value="true" />
-                    <param name="scrollspeed" value="89" />
+                    <param name="scrollspeed" value="35" />
                     <!-- FIN Jon - Autoscroll en título en InfoLine -->
                 </include>
                 <include content="Info_Line_Label" condition="!$PARAM[player] + Skin.HasSetting(Infoline.EnableTitle1) + [$EXP[infolineFlags000] | $EXP[infolineFlags001] | $EXP[infolineFlags010] | $EXP[infolineFlags100]]">
@@ -352,10 +352,10 @@
 					<param name="label">$INFO[Container(99950).ListItem.Title]</param>
 					<param name="visible">!String.IsEmpty(Container(99950).ListItem.Title)</param>
 					<param name="textcolor" value="$PARAM[colordiffuse]_90" />
-                    <!-- INI Jon - Autoscroll en título en InfoLine -->
+                    <!-- INI Jon - Autoscroll en título en InfoLine - Un poco ralentizado (35), porque en 3 vueltas se para. -->
                     <param name="maxwidth" value="500" />
                     <param name="scroll" value="true" />
-                    <param name="scrollspeed" value="89" />
+                    <param name="scrollspeed" value="35" />
                     <!-- FIN Jon - Autoscroll en título en InfoLine -->
                 </include>
 				

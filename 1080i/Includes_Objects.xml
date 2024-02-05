@@ -666,7 +666,7 @@
     <include name="Object_StartUp_Logo">
         <control type="grouplist">
             <height>128</height>
-            <centertop>400</centertop>
+            <centertop>330</centertop>
             <orientation>vertical</orientation>
             <align>center</align>
             <control type="image">
@@ -686,7 +686,7 @@
         </control>
         <control type="label">
             <height>80</height>
-            <centertop>49%</centertop>
+            <centertop>42%</centertop>
             <aligny>center</aligny>
             <align>center</align>
             <font>font_info_black</font>
@@ -695,10 +695,10 @@
         </control>
 		<control type="label">
             <height>47</height>
-            <centertop>56%</centertop>
+            <centertop>50%</centertop>
             <aligny>center</aligny>
             <align>center</align>
-            <font>font_midi</font>
+            <font>font_info_black2</font>
             <textcolor>$VAR[ColorHighlight]</textcolor>
             <label>[COLOR=main_logo]Recauchutado[/COLOR]</label>
         </control>

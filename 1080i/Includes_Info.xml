@@ -336,7 +336,6 @@
                 </include>
 				<!-- FIN Joseska -->
 
-                <!-- FIN Jon - Expresiones Infoline Title1 -->
 				<include content="Info_Line_Label" condition="!$PARAM[player] + Skin.HasSetting(Infoline.EnableTitle1) + [$EXP[infolineFlags111] | $EXP[infolineFlags110] | $EXP[infolineFlags101] | $EXP[infolineFlags011]]">
 					<param name="controltype" value="$PARAM[controltype]" />
 					<param name="label">$INFO[Container(99950).ListItem.Title]</param>

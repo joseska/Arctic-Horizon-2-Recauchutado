@@ -3,6 +3,10 @@
 
 ![Arctic Horizon 2 Recauchutado.](media/fanart2.jpg)
 
+> [!IMPORTANT]
+> [Enlace al Tutorial de instalación y configuración.](https://telegra.ph/AH2-Tutorial-02-02)
+
+
 ### Actualización 0.2.5
 - [x] Corregido BUG a la hora de mostrar el icono de clasificación MPAA cuando no existe esa información.
 - [x] Mostrar iconos de estudio en el footer de los Widgets a pantalla completa (Decoraciones  - Iconos de estudio.)

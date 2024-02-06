@@ -18,7 +18,7 @@
                         <onright>5</onright>
                         <ondown>3</ondown>
                         <pagecontrol>61</pagecontrol>
-                        <itemlayout height="grid_x08">
+                        <itemlayout height="grid_x07">
                             <control type="label">
                                 <textoffsetx>grid_x04</textoffsetx>
                                 <label>$INFO[ListItem.Label]</label>
@@ -66,6 +66,9 @@
                             </item>
                             <item id="8">
                                 <label>$LOCALIZE[31350]</label>
+                            </item>
+                            <item id="9">
+                                <label>Soporte</label>
                             </item>
                         </content>
                     </control>
@@ -931,6 +934,53 @@
                                 <left>grid_x04</left>
                                 <right>grid_x04</right>
                             </control>
+
+                            <!-- Recauchutado TEAM -->
+                            <include content="Dialog_Settings_Label" description="Recauchutado TEAM">
+                                <param name="id" value="9000" />
+                                <label>Soporte Horizon 2 Recauchutado</label>
+                                <visible>Container(3).HasFocus(9)</visible>
+                            </include>
+                            <control type="textbox" id="9001">
+                                <font>font_mini_plot</font>
+                                <textcolor>dialog_fg_70</textcolor>
+                                <top>20</top>
+                                <height>100</height>
+                                <label>Enlace al Tutorial de instalación y configuración.[CR]https://telegra.ph/AH2-Tutorial-02-02</label>
+                                <visible>Container(3).HasFocus(9)</visible>
+                                <left>grid_x04</left>
+                                <right>grid_x04</right>
+                            </control>
+                            <control type="image">
+                                <texture background="true" diffuse="$PARAM[diffuse]">otros/TutorialAH2Recauchutado.png</texture>
+                                <aspectratio scalediffuse="true">keep</aspectratio>
+                                <visible>Container(3).HasFocus(9)</visible>
+                                <left>grid_x04</left>
+                                <right>grid_x04</right>
+                                <top>-5</top>
+                                <width>180</width>
+                                <height>180</height>
+                            </control>
+                            <!-- <control type="textbox" id="9001">
+                                <font>font_mini_plot</font>
+                                <textcolor>dialog_fg_70</textcolor>
+                                <top>20</top>
+                                <height>300</height>
+                                <label>Enlace al repositorio y al changelog.[CR]https://joseska.github.io/repositorio.joseska/</label>
+                                <visible>Container(3).HasFocus(9)</visible>
+                                <left>grid_x04</left>
+                                <right>grid_x04</right>
+                            </control>
+                            <control type="image">
+                                <texture background="true">otros/TutorialAH2Recauchutado.png</texture>
+                                <aspectratio scalediffuse="true">keep</aspectratio>
+                                <visible>Container(3).HasFocus(9)</visible>
+                                <left>250</left>
+                                <top>10</top>
+                                <width>250</width>
+                                <height>250</height>
+                            </control> -->
+
                         </control>
                     </include>
 

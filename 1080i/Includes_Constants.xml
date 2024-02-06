@@ -13,7 +13,9 @@
     <constant name="grid_x03">30</constant>
     <constant name="grid_x04">40</constant>
     <constant name="grid_x06">60</constant>
+    <constant name="grid_x07">70</constant>
     <constant name="grid_x08">80</constant>
+    <constant name="grid_x09">90</constant>
     <constant name="grid_x12">120</constant>
     <constant name="grid_x14">140</constant>
     <constant name="grid_x16">160</constant>

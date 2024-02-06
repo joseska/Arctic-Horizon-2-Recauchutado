@@ -411,7 +411,10 @@
 
                     <include content="Info_Line_StarRating" condition="$PARAM[starrating]">
                         <param name="textcolor">$PARAM[colordiffuse]_90</param>
-                        <param name="rating">$PARAM[container]ListItem.Rating</param>
+                        <!-- Joseska - Starrating con container 99950 -->
+                        <!-- <param name="rating">$PARAM[container]ListItem.Rating</param> -->
+                        <param name="rating">Container(99950).ListItem.Rating</param>
+                        <!-- FIN Joseska  -->
                     </include>
 
                     <!-- Player Info -->
@@ -1933,7 +1936,10 @@
                             <param name="container">$PARAM[container]</param>
                             <param name="colordiffuse" value="$PARAM[colordiffuse]" />
                             <param name="userrating" value="$PARAM[container]ListItem.UserRating" />
-                            <param name="starrating" value="$PARAM[container]ListItem.Rating" />
+                            <!-- Joseska - Cambio para la valoración de Kodi en el infoline en los Widgets de Palantir -->
+                            <!-- <param name="starrating" value="$PARAM[container]ListItem.Rating" /> -->
+                            <!-- FIN Joseska  -->
+                            <param name="starrating" value="Container(99950).ListItem.Rating" />
                             <param name="star">![$PARAM[shortline]] + !$EXP[Exp_PVRWindows]</param>
                             <param name="dbtype">$PARAM[container]ListItem.DBType</param>
                             <param name="oscars">[![$PARAM[shortline]] | String.IsEqual($PARAM[container]ListItem.DBType,movie)]</param>

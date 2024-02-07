@@ -1,11 +1,20 @@
 <h1 align="center"> Arctic Horizon 2 Recauchutado </h1>
 <h4 align="center">Versión del famoso skin Horizon 2 de JurialMunkey Adaptado para el addon Palantir</h4>
 
-![Arctic Horizon 2 Recauchutado.](media/fanart2.jpg)
+[![Arctic Horizon 2 Recauchutado](media/fanart3.jpg)](https://www.youtube.com/watch?v=VNVY8ydzBfA)
 
 > [!IMPORTANT]
 > [Enlace al Tutorial de instalación y configuración.](https://telegra.ph/AH2-Tutorial-02-02)
 
+
+### Actualización 0.2.7
+- [x] Rediseño de pantalla de carga de la skin, corrigiendo el bug por el que se tapaba los elementos relativos a Perfiles de Kodi.
+- [x] Nueva opción en los ajustes del skin con enlace al tutorial (Skin - Configurar skin - Soporte)
+- [x] Título en infoline con autoscroll para evitar que se corte la línea si es demasiado larga al añadir muchos elementos, como género, director y tiempo de finalilzación del contenido.
+- [x] Corregido valoración de Kodi en infoline que no se mostraba.
+- [x] Iconos ordenados por categorias para una busqueda mas simple.
+- [x] Modificación de algunos de los iconos MPAA del estilo "Modernos". Algunos son ahora más legibles y con mayor contraste.
+- [x] Cambio de Icono por defecto si no se encuentra la clasificación por edad (dos guiones blancos sin fondo). Independiente del estilo elegido.
 
 ### Actualización 0.2.5
 - [x] Corregido BUG a la hora de mostrar el icono de clasificación MPAA cuando no existe esa información.

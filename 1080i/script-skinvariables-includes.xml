@@ -232,6 +232,9 @@
         <value condition="Integer.IsEqual(ListItem.Progress,100)">$NUMBER[100]</value>
     </variable>
     <variable name="Label_Title_C50">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(50).ListItem.Title)">$INFO[Container(50).ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(Container(50).ListItem.TvShowTitle)">$INFO[Container(50).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(50).ListItem.AlbumArtist) + [String.IsEqual(Container(50).ListItem.DBType,song) | String.IsEqual(Container(50).ListItem.DBType,album)]">$INFO[Container(50).ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(Container(50).ListItem.Artist) + [String.IsEqual(Container(50).ListItem.DBType,song) | String.IsEqual(Container(50).ListItem.DBType,album)]">$INFO[Container(50).ListItem.Artist]</value>
@@ -239,6 +242,9 @@
         <value condition="!String.IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Label]</value>
     </variable>
     <variable name="Label_Title_C591">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(591).ListItem.Title)">$INFO[Container(591).ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(Container(591).ListItem.TvShowTitle)">$INFO[Container(591).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(591).ListItem.AlbumArtist) + [String.IsEqual(Container(591).ListItem.DBType,song) | String.IsEqual(Container(591).ListItem.DBType,album)]">$INFO[Container(591).ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(Container(591).ListItem.Artist) + [String.IsEqual(Container(591).ListItem.DBType,song) | String.IsEqual(Container(591).ListItem.DBType,album)]">$INFO[Container(591).ListItem.Artist]</value>
@@ -246,6 +252,9 @@
         <value condition="!String.IsEmpty(Container(591).ListItem.Label)">$INFO[Container(591).ListItem.Label]</value>
     </variable>
     <variable name="Label_Title_C503">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(503).ListItem.Title)">$INFO[Container(503).ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(Container(503).ListItem.TvShowTitle)">$INFO[Container(503).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(503).ListItem.AlbumArtist) + [String.IsEqual(Container(503).ListItem.DBType,song) | String.IsEqual(Container(503).ListItem.DBType,album)]">$INFO[Container(503).ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(Container(503).ListItem.Artist) + [String.IsEqual(Container(503).ListItem.DBType,song) | String.IsEqual(Container(503).ListItem.DBType,album)]">$INFO[Container(503).ListItem.Artist]</value>
@@ -253,6 +262,9 @@
         <value condition="!String.IsEmpty(Container(503).ListItem.Label)">$INFO[Container(503).ListItem.Label]</value>
     </variable>
     <variable name="Label_Title_C513">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(513).ListItem.Title)">$INFO[Container(513).ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(Container(513).ListItem.TvShowTitle)">$INFO[Container(513).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(513).ListItem.AlbumArtist) + [String.IsEqual(Container(513).ListItem.DBType,song) | String.IsEqual(Container(513).ListItem.DBType,album)]">$INFO[Container(513).ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(Container(513).ListItem.Artist) + [String.IsEqual(Container(513).ListItem.DBType,song) | String.IsEqual(Container(513).ListItem.DBType,album)]">$INFO[Container(513).ListItem.Artist]</value>
@@ -260,6 +272,9 @@
         <value condition="!String.IsEmpty(Container(513).ListItem.Label)">$INFO[Container(513).ListItem.Label]</value>
     </variable>
     <variable name="Label_Title_C523">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(523).ListItem.Title)">$INFO[Container(523).ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(Container(523).ListItem.TvShowTitle)">$INFO[Container(523).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(523).ListItem.AlbumArtist) + [String.IsEqual(Container(523).ListItem.DBType,song) | String.IsEqual(Container(523).ListItem.DBType,album)]">$INFO[Container(523).ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(Container(523).ListItem.Artist) + [String.IsEqual(Container(523).ListItem.DBType,song) | String.IsEqual(Container(523).ListItem.DBType,album)]">$INFO[Container(523).ListItem.Artist]</value>
@@ -267,20 +282,31 @@
         <value condition="!String.IsEmpty(Container(523).ListItem.Label)">$INFO[Container(523).ListItem.Label]</value>
     </variable>
     <variable name="Label_Title_C573">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(573).ListItem.Title)">$INFO[Container(573).ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(Container(573).ListItem.TvShowTitle)">$INFO[Container(573).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(573).ListItem.AlbumArtist) + [String.IsEqual(Container(573).ListItem.DBType,song) | String.IsEqual(Container(573).ListItem.DBType,album)]">$INFO[Container(573).ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(Container(573).ListItem.Artist) + [String.IsEqual(Container(573).ListItem.DBType,song) | String.IsEqual(Container(573).ListItem.DBType,album)]">$INFO[Container(573).ListItem.Artist]</value>
         <value condition="!String.IsEmpty(Container(573).ListItem.Title)">$INFO[Container(573).ListItem.Title]</value>
         <value condition="!String.IsEmpty(Container(573).ListItem.Label)">$INFO[Container(573).ListItem.Label]</value>
     </variable>
+    <!-- Título para Fullscreen Widget-->
     <variable name="Label_Title_C301">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(301).ListItem.Title)">$INFO[Container(301).ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.AlbumArtist) + [String.IsEqual(Container(301).ListItem.DBType,song) | String.IsEqual(Container(301).ListItem.DBType,album)]">$INFO[Container(301).ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Artist) + [String.IsEqual(Container(301).ListItem.DBType,song) | String.IsEqual(Container(301).ListItem.DBType,album)]">$INFO[Container(301).ListItem.Artist]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Title)">$INFO[Container(301).ListItem.Title]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Label)">$INFO[Container(301).ListItem.Label]</value>
     </variable>
+    <!-- Título no asociado a una vista concreta. Es el que sale en widgets de Palantir (estilo Póster)-->
     <variable name="Label_Title">
+        <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+        <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle]</value>
         <value condition="!String.IsEmpty(ListItem.AlbumArtist) + [String.IsEqual(ListItem.DBType,song) | String.IsEqual(ListItem.DBType,album)]">$INFO[ListItem.AlbumArtist]</value>
         <value condition="!String.IsEmpty(ListItem.Artist) + [String.IsEqual(ListItem.DBType,song) | String.IsEqual(ListItem.DBType,album)]">$INFO[ListItem.Artist]</value>

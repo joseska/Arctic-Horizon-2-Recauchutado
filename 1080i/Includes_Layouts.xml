@@ -1073,6 +1073,7 @@
         </definition>
     </include>
 
+    <!-- Layout "Apps"-->
     <include name="Layout_Apps">
         <param name="selected">false</param>
         <param name="fg_layer">true</param>
@@ -1117,6 +1118,7 @@
         </definition>
     </include>
 
+    <!-- Layout "Big Landscape"-->
     <include name="Layout_BigLandscape">
         <param name="selected">false</param>
         <param name="fg_layer">true</param>
@@ -1211,6 +1213,7 @@
         </definition>
     </include>
 
+    <!-- Layout "Big Banner"-->
     <include name="Layout_BigBanner">
         <param name="selected">false</param>
         <param name="fg_layer">true</param>
@@ -1257,6 +1260,7 @@
         </definition>
     </include>
 
+    <!-- Layout "Feature Banner"-->
     <include name="Layout_FeatureBanner">
         <param name="selected">false</param>
         <param name="icon">$INFO[ListItem.Art(fanart)]</param>
@@ -1321,6 +1325,7 @@
         </definition>
     </include>
 
+    <!-- Layout "Poster"-->
     <include name="Layout_Poster">
         <param name="detailed">false</param>
         <param name="selected">false</param>
@@ -1415,6 +1420,7 @@
         </definition>
     </include>
 
+    <!-- Layout "Episode Labels"-->
     <include name="Layout_EpisodeLabels">
         <control type="group">
             <left>$PARAM[left]</left>
@@ -1458,6 +1464,7 @@
         </control>
     </include>
 
+    <!-- Layout "Episode"-->
     <include name="Layout_Episode">
         <param name="selected">false</param>
         <param name="detailed">false</param>
@@ -1859,6 +1866,7 @@
         </definition>
     </include>
 
+    <!-- Layout Button -->
     <include name="Layout_Button">
         <param name="selected">false</param>
         <param name="detailed">false</param>
@@ -1959,6 +1967,7 @@
         </definition>
     </include>
 
+    <!-- Layout Icon Button -->
     <include name="Layout_IconButton">
         <param name="selected">false</param>
         <param name="detailed">false</param>
@@ -2013,6 +2022,7 @@
         </definition>
     </include>
 
+    <!-- Layout Square -->
     <include name="Layout_Square">
         <param name="diffuse">diffuse/square_w260_h260.png</param>
         <param name="selected">false</param>
@@ -2071,6 +2081,7 @@
         </definition>
     </include>
 
+    <!-- Layout Banner -->
     <include name="Layout_Banner">
         <param name="artwork_h">160</param>
         <param name="selected">false</param>
@@ -2128,6 +2139,7 @@
         </definition>
     </include>
 
+    <!-- Layout Landscape -->
     <include name="Layout_Landscape">
         <param name="artwork_h">230.625</param>
         <param name="selected">false</param>
@@ -2219,6 +2231,7 @@
         </definition>
     </include>
 
+    <!-- Layout Icon Switcher -->
     <include name="Layout_IconSwitcher">
         <param name="colordiffuse">dialog_fg_30</param>
         <param name="selected">false</param>

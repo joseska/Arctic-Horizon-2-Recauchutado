@@ -13,7 +13,7 @@
     <expression name="Exp_View_507_Include">False</expression>
     <expression name="Exp_View_508">[False]</expression>
     <expression name="Exp_View_508_Include">False</expression>
-    <expression name="Exp_View_51">[[Container.Content(images) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [Container.Content(videos) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [String.IsEqual(Container.Property(param.info),episode_groups) + Container.Content(tvshows) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [Container.Content(episodes) + [[String.IsEmpty(Container.PluginName) | String.IsEqual(Container.PluginName,plugin.video.palantir3)] | [!String.IsEmpty(Container.PluginName)]]] | [Container.Content(movies) + [String.IsEqual(Container.PluginName,plugin.video.palantir3)]]]</expression>
+    <expression name="Exp_View_51">[[Container.Content(images) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [Container.Content(videos) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [String.IsEqual(Container.Property(param.info),episode_groups) + Container.Content(tvshows) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [Container.Content(episodes) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName) + !String.IsEqual(Container.PluginName,plugin.video.palantir3) + !String.IsEqual(Container.PluginName,plugin.video.themoviedb.helper)]]] | [!String.IsEqual(Container.Property(param.info),episode_groups) + Container.Content(tvshows) + [String.IsEqual(Container.PluginName,plugin.video.fen)]]]</expression>
     <expression name="Exp_View_51_Include">True</expression>
     <expression name="Exp_View_510">[False]</expression>
     <expression name="Exp_View_510_Include">False</expression>
@@ -23,7 +23,7 @@
     <expression name="Exp_View_512_Include">True</expression>
     <expression name="Exp_View_517">[False]</expression>
     <expression name="Exp_View_517_Include">False</expression>
-    <expression name="Exp_View_52">[[Container.Content(movies) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName) + !String.IsEqual(Container.PluginName,plugin.video.palantir3)]]] | [Container.Content(sets) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [!String.IsEqual(Container.Property(param.info),episode_groups) + Container.Content(tvshows) + [[String.IsEmpty(Container.PluginName) | String.IsEqual(Container.PluginName,plugin.video.palantir3)] | [!String.IsEmpty(Container.PluginName)]]] | [Container.Content(actors) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]]]</expression>
+    <expression name="Exp_View_52">[[Container.Content(movies) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [Container.Content(sets) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]] | [!String.IsEqual(Container.Property(param.info),episode_groups) + Container.Content(tvshows) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName) + !String.IsEqual(Container.PluginName,plugin.video.fen)]]] | [Container.Content(actors) + [[String.IsEmpty(Container.PluginName)] | [!String.IsEmpty(Container.PluginName)]]]]</expression>
     <expression name="Exp_View_52_Include">True</expression>
     <expression name="Exp_View_520">[False]</expression>
     <expression name="Exp_View_520_Include">False</expression>
@@ -51,16 +51,16 @@
     <expression name="Exp_View_56_Include">False</expression>
     <expression name="Exp_View_560">[False]</expression>
     <expression name="Exp_View_560_Include">False</expression>
-    <expression name="Exp_View_57">[[!String.IsEqual(Container.Property(param.info),episode_group_seasons) + Container.Content(seasons) + [String.IsEqual(Container.PluginName,plugin.video.palantir3)]]]</expression>
+    <expression name="Exp_View_57">[[Container.Content(episodes) + [String.IsEqual(Container.PluginName,plugin.video.palantir3)]]]</expression>
     <expression name="Exp_View_57_Include">True</expression>
     <expression name="Exp_View_570">[False]</expression>
     <expression name="Exp_View_570_Include">False</expression>
-    <expression name="Exp_View_572">[[!String.IsEqual(Container.Property(param.info),episode_group_seasons) + Container.Content(seasons) + [String.IsEqual(Container.PluginName,plugin.video.themoviedb.helper)]]]</expression>
+    <expression name="Exp_View_572">[[!String.IsEqual(Container.Property(param.info),episode_group_seasons) + Container.Content(seasons) + [String.IsEqual(Container.PluginName,plugin.video.palantir3) | String.IsEqual(Container.PluginName,plugin.video.themoviedb.helper)]]]</expression>
     <expression name="Exp_View_572_Include">True</expression>
     <expression name="Exp_View_58">[False]</expression>
     <expression name="Exp_View_58_Include">False</expression>
     <expression name="Exp_View_580">[False]</expression>
     <expression name="Exp_View_580_Include">False</expression>
-    <expression name="Exp_View_581">[False]</expression>
-    <expression name="Exp_View_581_Include">False</expression>
+    <expression name="Exp_View_581">[[Container.Content(episodes) + [String.IsEqual(Container.PluginName,plugin.video.themoviedb.helper)]]]</expression>
+    <expression name="Exp_View_581_Include">True</expression>
 </includes>

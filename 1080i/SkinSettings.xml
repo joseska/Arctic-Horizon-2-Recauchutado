@@ -573,6 +573,18 @@
                                 <label>$LOCALIZE[31186]</label>
                                 <visible>Container(3).HasFocus(5)</visible>
                             </include>
+
+
+                            <include content="Dialog_Settings_Button" description="Vista Series alternativa">
+                                <param name="id">5013</param>
+                                <param name="control" value="radiobutton" />
+                                <label>$LOCALIZE[31510]</label>
+                                <visible>Container(3).HasFocus(5)</visible>
+                                <onclick>Skin.ToggleSetting(Infoline.DisableAlternateViewSeries1)</onclick>
+                                <selected>Skin.HasSetting(Infoline.DisableAlternateViewSeries1)</selected>
+                            </include>
+
+
                             <include content="Dialog_Settings_Button" description="Autoscroll">
                                 <param name="id">5001</param>
                                 <param name="control" value="button" />

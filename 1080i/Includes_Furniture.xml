@@ -186,6 +186,20 @@
     </include>
     <!-- FIN Joseska  -->
 
+    <!-- Joseska - Furniture Bottom para Pantalla de Información. La parte izquierda no se muestra con los capítulos/Temporadas -   -->
+    <include name="Furniture_Bottom_3">
+        <control type="group">
+            <include>Furniture_Bottom_Left</include>
+            <visible>!Control.HasFocus(9801) + !Control.HasFocus(9802)</visible>
+        </control>
+        <control type="group">
+            <include>Furniture_Bottom_Right</include>
+        </control>
+        
+        
+    </include>
+    <!-- FIN Joseska  -->
+
     <include name="Furniture_Gutters">
         <control type="group">
             <top>view_gutter</top>

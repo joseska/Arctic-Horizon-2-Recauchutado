@@ -128,8 +128,41 @@
         <value>-</value>
     </variable>
 
-    <variable name="Path_Library_Collections">
+    <variable name="Path_CollectionNode_Content">
+        <value condition="!String.IsEmpty(Container(9801).ListItem.FolderPath)">$INFO[Container(9801).ListItem.FolderPath]</value>
+        <value condition="!String.IsEmpty(Container(9801).ListItem.Property(folderpath))">$INFO[Container(9801).ListItem.Property(folderpath)]</value>
+        <value>-</value>
+    </variable>
+
+    <!-- Joseska - Variable Modificada Para Lista Temporadas en Includes_DialogInfo.xml  -->
+    <variable name="Path_Info_Collections2">
+        <value condition="ListItem.IsFolder + String.IsEqual(ListItem.DBType,tvshow) + String.IsEqual(ListItem.Label,ListItem.TvShowTitle)">$INFO[ListItem.FolderPath]</value>
         <value condition="ListItem.IsFolder + String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.DBID)">$INFO[ListItem.DBID,videodb://tvshows/titles/,/]</value>
+        <value condition="ListItem.IsFolder + String.IsEqual(ListItem.DBType,tvshow) + String.IsEqual(ListItem.Label,ListItem.TvShowTitle)">$INFO[ListItem.FolderPath]</value>
+        <value condition="ListItem.IsFolder + [String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(ListItem.TVShowDBID)">$INFO[ListItem.TVShowDBID,videodb://tvshows/titles/,/]</value>
+        <value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)] + !String.IsEmpty(Container(99950).ListItem.Property(tmdb_id))">plugin://plugin.video.themoviedb.helper/?info=seasons&amp;tmdb_type=tv&amp;tmdb_id=$INFO[Container(99950).ListItem.Property(tmdb_id)]$VAR[Path_Param_Widget]</value>
+        <value>-</value>
+    </variable>
+
+    <!-- Joseska - Variable Modificada Para Lista Episodios en Includes_DialogInfo.xml  -->
+    <variable name="Path_CollectionNode_Content2">
+        <value condition="!Container(9803).ListItem.IsFolder + ListItem.IsFolder + String.IsEqual(ListItem.DBType,tvshow) + String.IsEqual(ListItem.Label,ListItem.TvShowTitle)">$INFO[ListItem.FolderPath]</value>
+        <value condition="!String.IsEmpty(Container(9803).ListItem.FolderPath)">$INFO[Container(9801).ListItem.FolderPath]</value>
+        <value condition="!String.IsEmpty(Container(9803).ListItem.Property(folderpath))">$INFO[Container(9801).ListItem.Property(folderpath)]</value>
+        <value>-</value>
+    </variable>
+
+    <!-- Joseska - Variable para el plot (descripción del capítulo o de la Temporada) en la lista de capitulos/Temporadas en la Pantalla de Información (DialoVideoInfo.xml)  -->
+    <variable name="plot_ska1">
+        <value condition="!Container(9802).IsUpdating + Control.HasFocus(9802) + !String.IsEmpty(Container(9802).Listitem.Plot)">$INFO[Container(9802).Listitem.Plot]</value>
+        <value condition="!Container(9801).IsUpdating + Control.HasFocus(9801) + !String.IsEmpty(Container(9801).Listitem.Plot)">$INFO[Container(9801).Listitem.Plot]</value>
+        <value>$VAR[Label_ListPlot]</value>
+    </variable>
+
+    <variable name="Path_Library_Collections">
+        <!-- Joseska - Carga Episodios cuando solo hay una temporada. Includes_DialogInfo.xml  -->
+        <value condition="ListItem.IsFolder + String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.DBID)">$INFO[ListItem.DBID,videodb://tvshows/titles/,/]</value>
+        <!-- FIN Joseska  -->
         <value condition="ListItem.IsFolder + String.IsEqual(ListItem.DBType,tvshow) + String.IsEqual(ListItem.Label,ListItem.TvShowTitle)">$INFO[ListItem.FolderPath]</value>
         <value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.SetID)">$INFO[ListItem.SetID,videodb://movies/sets/,/]</value>
         <value condition="ListItem.IsCollection + !String.IsEmpty(ListItem.DBID)">$INFO[ListItem.DBID,videodb://movies/sets/,/]</value>
@@ -304,11 +337,8 @@
         <value condition="String.IsEqual(Container(99950).ListItem.Property(base_dbtype),movie)">movie</value>
     </variable>
 
-    <variable name="Path_CollectionNode_Content">
-        <value condition="!String.IsEmpty(Container(9801).ListItem.FolderPath)">$INFO[Container(9801).ListItem.FolderPath]</value>
-        <value condition="!String.IsEmpty(Container(9801).ListItem.Property(folderpath))">$INFO[Container(9801).ListItem.Property(folderpath)]</value>
-        <value>-</value>
-    </variable>
+
+
 
     <variable name="Path_CollectionNode_Target">
         <value condition="Window.IsVisible(MyMusicNav.xml)">music</value>

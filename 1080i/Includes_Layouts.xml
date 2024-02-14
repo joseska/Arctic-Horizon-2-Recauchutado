@@ -726,7 +726,7 @@
                             <include condition="$PARAM[selected]">Color_SelectedText</include>
                             <textcolor>main_fg_70</textcolor>
                             <selectedcolor>main_fg_70</selectedcolor>
-                            <label>$INFO[ListItem.Rating]</label>
+                            <label>$INFO[Container(99950).ListItem.Rating]</label>
                             <font>font_main</font>
                             <align>right</align>
                             <bottom>3</bottom>

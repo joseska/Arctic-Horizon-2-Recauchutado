@@ -82,7 +82,11 @@
             <onleft condition="!Integer.IsEqual(Container(7003).NumItems,0)">SetFocus(7003)</onleft>
             <onleft condition="!Skin.HasSetting(DialogInfo.FocusButtons) + Integer.IsEqual(Container(7003).NumItems,0)">5000</onleft>
             <onright condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onright>
-            <onright condition="Skin.HasSetting(DialogInfo.FocusButtons)">SetFocus(9801)</onright>
+            <!-- Joseska - Cambiar para SOLO Series.  -->
+            <!-- <onright condition="Skin.HasSetting(DialogInfo.FocusButtons)">SetFocus(9802)</onright> -->
+            <onright condition="Skin.HasSetting(DialogInfo.FocusButtons) + [String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)]">SetFocus(9802)</onright>
+            <onright condition="Skin.HasSetting(DialogInfo.FocusButtons) + ![String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)]">SetFocus(9801)</onright>
+            <!-- FIN Joseska  -->
             <onback condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onback>
             <onback condition="Skin.HasSetting(DialogInfo.FocusButtons)">Dialog.Close(movieinformation)</onback>
             <onup condition="Skin.HasSetting(DialogInfo.FocusButtons) + String.IsEmpty(Window(Home).Property(ResetScroll))">SetProperty(ResetScroll," ",home)</onup>
@@ -107,7 +111,13 @@
             <onclick condition="!$EXP[Exp_IsPersonInfo]">SetFocus(5000)</onclick>
             <onclick condition="$EXP[Exp_IsPersonInfo]">runscript(plugin.video.themoviedb.helper,wikipedia=$VAR[Path_Wikipedia_Title],tmdb_type=person)</onclick>
             <onleft>4000</onleft>
-            <onright>SetFocus(9801)</onright>
+            <!-- Joseska - Cambiar para SOLO Series.  -->
+            <!-- <onright>SetFocus(9802)</onright> -->
+            <onright condition="[String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)]">SetFocus(9802)</onright>
+            <onright condition="![String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)]">SetFocus(9801)</onright>
+            <!-- FIN Joseska  -->
+
+            <visible>String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)</visible>
         </include>
     </include>
 
@@ -151,6 +161,7 @@
         </control>
     </include>
 
+
     <!-- Bottom Row Codecs -->
     <include name="DialogInfo_Codecs">
         <control type="group">
@@ -158,7 +169,18 @@
             <visible>!Window.IsActive(script-tmdbhelper-recommendations.xml)</visible>
             <animation effect="fade" start="0" end="100" delay="400" time="400">Visible</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="400">Hidden</animation>
-            <include>Furniture_Bottom</include>
+            <!-- Joseska - linea Original  -->
+            <!-- <control type="group">
+                <visible>!Control.HasFocus(9801) | !Control.HasFocus(9802)</visible>
+                <include>Furniture_Bottom</include>
+            </control> -->
+            <!-- Joseska - Cambiar Furniture_Bottom para pagina de Información.  -->
+            <control type="group">
+                <!-- Joseska - Deshabilitar visible. Ahora Esta dentro de Furniture_Bottom_x y choca con este -->
+                <!-- <visible>Control.HasFocus(9801) | Control.HasFocus(9802)</visible> -->
+                <include>Furniture_Bottom_3</include>
+            </control>
+            
             <include content="DialogInfo_MouseNavArrow">
                 <visible>$PARAM[arrow_visible]</visible>
             </include>
@@ -293,6 +315,107 @@
         </control>
     </include>
 
+
+
+    <!-- Joseska DialogInfo_CollectionsNode2 -->
+    <include name="DialogInfo_CollectionsNode2">
+        <control type="group">
+            <visible>Control.HasFocus(9801) | Control.HasFocus(9802) | Control.HasFocus(9803)</visible>
+            <include>Animation_FadeIn_Delay</include>
+            <!-- Joseska - Interior del include "View_Combined_Row" que esta en el archivo "Includes_Views_Combined.xml" -->
+
+            <!-- Lista Temporadas FAKE. Para controlar la lista 9801  -->
+            <include content="List_Button_Row">
+                <param name="id" value="9803" />
+                <content target="videos">$VAR[Path_Info_Collections2]</content>
+                <height>divider_bottom</height>
+                <left>-3920</left>
+                <top>-3920</top>
+            </include>
+
+            <!-- Lista Capítulos. $PARAM[include] == "List_BigLandscape_Row". - $PARAM[id]3 == 9802. - $PARAM[id]2 == 9801-->
+            <include content="List_BigLandscape_Row">
+                <param name="id" value="9802" />
+                <!-- <visible>!Container.IsUpdating(9801)</visible> -->
+                <height>divider_bottom</height>
+                <bottom>40</bottom>
+                <ondown>9801</ondown>
+                <preloaditems>2</preloaditems>
+                <focusposition>0</focusposition>
+                <onclick condition="Container(9802).ListItem.IsFolder">Container.Update($INFO[Container(9802).ListItem.FolderPath])</onclick>
+                <onclick condition="Container(9802).ListItem.IsFolder">SetFocus(50)</onclick>
+                <onclick condition="!Container(9802).ListItem.IsFolder">PlayMedia($ESCINFO[Container(9802).ListItem.FileNameAndPath],playlist_type_hint=1)</onclick>
+                <onback condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onback>
+                <onback condition="Skin.HasSetting(DialogInfo.FocusButtons)">4000</onback>
+
+                <content target="videos">$VAR[Path_CollectionNode_Content2]</content>
+
+                <!-- <onback>SetFocus(9801)</onback> -->
+                <animation effect="fade" start="100" end="10" time="200" delay="400" condition="Container(9802).IsUpdating">Conditional</animation>
+            </include>
+
+
+
+
+            <!-- Texto Descripción del Capítulo  -->
+            <control type="textbox">
+                <left>80</left>
+                <top>440</top>
+                <width>880</width>
+                <height>info_plot_h</height>
+                <font>font_main_plot</font>
+                <include condition="$PARAM[selected]">Color_SelectedText</include>
+                <!-- <label>$INFO[Container(9802).Listitem.Plot]</label> -->
+                <label>$VAR[plot_ska1]</label>
+                <textcolor>main_fg_70</textcolor>
+                <font>font_mini_plot</font>
+                <align>left</align>
+                <include content="Defs_AutoScroll_TextBox">
+                    <param name="condition">$PARAM[selected]</param>
+                </include>
+            </control>
+
+
+            <!-- Cargando Episodios o Temporadas. -->
+            <control type="group">
+                <height>divider_bottom</height>
+                <bottom>120</bottom>
+                <visible>Container(9802).IsUpdating | [Container(9801).IsUpdating + Container(9803).ListItem.IsFolder]</visible>
+                <animation effect="fade" reversible="false" start="0" end="100" time="200" delay="600">Visible</animation>
+                <include content="Object_BusySpinner">
+                    <param name="colordiffuse" value="main_fg" />
+                    <param name="label" value="$LOCALIZE[31023]" />
+                </include>
+            </control>
+
+            <!-- Lista Temporadas  -->
+            <include content="List_Button_Row">
+                <param name="id" value="9801" />
+                <visible>Container(9803).ListItem.IsFolder</visible>
+                <content target="videos">$VAR[Path_Info_Collections2]</content>
+                <height>divider_bottom</height>
+                <right>360</right>
+                <bottom>-320</bottom>
+                <movement>4</movement>
+                <preloaditems>2</preloaditems>
+                <focusposition>0</focusposition>
+                <onup condition="!Container(9802).IsUpdating">9802</onup>
+                <onback condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onback>
+                <onback condition="Skin.HasSetting(DialogInfo.FocusButtons)">4000</onback>
+            </include>
+            <!-- Imagen (>). hay botón temporadas escondidos a la derecha -->
+            <control type="image">
+                <texture colordiffuse="main_fg_80">special://skin/extras/icons/angle-right.png</texture>
+                <width>40</width>
+                <height>40</height>
+                <right>320</right>
+                <centerbottom>120</centerbottom>
+                <visible>Container(9801).HasNext</visible>
+            </control>
+        </control>
+    </include>
+
+
     <!-- OnRight ScrollNode -->
     <include name="DialogInfo_CollectionsNode">
         <control type="group">
@@ -315,8 +438,8 @@
                 <bottom>-20</bottom>
                 <left>-80</left>
                 <width>680</width>
-                <preloaditems>0</preloaditems>
-                <focusposition>1</focusposition>
+                <preloaditems>2</preloaditems>
+                <focusposition>0</focusposition>
                 <movement>2</movement>
                 <include content="Animation_Reposition">
                     <param name="id">9801</param>
@@ -428,8 +551,9 @@
                 <top>220</top>
                 <bottom>-40</bottom>
                 <visible>!Container.IsUpdating(9801) + [Container(9801).ListItem.IsFolder | !String.IsEmpty(Container(9801).ListItem.Property(folderpath))]</visible>
-                <animation effect="fade" start="100" end="20" delay="600" time="200" condition="Container(9802).IsUpdating">Conditional</animation>
-                <focusposition>1</focusposition>
+                <!-- Joseska - Deshabilitado porque la primera vez de carga da problemas  -->
+                <!-- <animation effect="fade" start="100" end="20" delay="600" time="200" condition="Container(9802).IsUpdating">Conditional</animation> -->
+                <focusposition>0</focusposition>
                 <movement>1</movement>
                 <onclick>Dialog.Close(12003)</onclick>
                 <onclick>PlayMedia($ESCINFO[Container(9802).ListItem.FileNameAndPath],playlist_type_hint=1)</onclick>
@@ -438,11 +562,12 @@
                     <param name="slide_y">-grid_x16</param>
                 </include>
             </include>
-            <control type="group">
+            <!-- Joseska - Deshabilitado porque la primera vez de carga da problemas  -->
+            <!-- <control type="group">
                 <left>540</left>
                 <right>-600</right>
                 <top>200</top>
-                <visible>!Container(9801).IsUpdating</visible>
+                <visible>Container(9802).IsUpdating</visible>
                 <visible>Container(9802).IsUpdating</visible>
                 <animation type="Visible" reversible="false">
                     <effect type="fade" start="0" end="100" time="400" delay="600"/>
@@ -450,7 +575,7 @@
                 <include content="Object_BusySpinner">
                     <param name="colordiffuse">main_fg</param>
                 </include>
-            </control>
+            </control> -->
         </control>
     </include>
 

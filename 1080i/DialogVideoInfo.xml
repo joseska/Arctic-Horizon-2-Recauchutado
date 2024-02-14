@@ -21,6 +21,13 @@
         <include>Defs_TMDbHelper_Loader</include>
 
         <include content="DialogInfo_MainGroup">
+            <!-- Joseska - onright Página Información. ids 9801 y 9802 SOLO en tvshow. El resto en linea 74.  -->
+            <control type="group">
+                <visible>String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)</visible>
+                <include>DialogInfo_CollectionsNode2</include>
+            </control>
+            <!-- FIN Joseska  -->
+
             <include content="DialogInfo_ButtonGroup">
                 <param name="include">Items_DialogVideoInfo_MenuBar</param>
             </include>
@@ -43,10 +50,28 @@
                         <control type="group">
                             <visible>!Control.HasFocus(61)</visible>
 
-                            <!-- Video Info -->
+                            <!-- Joseska - Video Info NO 9801/9802-->
                             <include content="Info_Panel" condition="!$EXP[Exp_IsPersonInfo]">
-                                <param name="plotheight" value="info_plot_large_h" />
+                                <param name="plotwidth" value=880 />
+                                <!-- <param name="plotheight" value="info_plot_large_h" /> -->
                                 <param name="details">![Control.HasFocus(9801) | Control.HasFocus(9802)]</param>
+                            </include>
+
+                            <!-- Joseska - Video Info Películas 9801/9802-->
+                            <include content="Info_Panel" condition="!$EXP[Exp_IsPersonInfo]">
+                                <param name="plotwidth" value=880 />
+                                <param name="plotlabel" value="" />
+                                <param name="ratings" value="false" />
+                                <!-- <param name="plotheight" value="info_plot_large_h" /> -->
+                                <param name="details">![String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)] + [Control.HasFocus(9801) | Control.HasFocus(9802)]</param>
+                            </include>
+
+                            <!-- Joseska - Video Info Series 9801/9802-->
+                            <include content="Info_Panel" condition="!$EXP[Exp_IsPersonInfo]">
+                                <param name="plotwidth" value=880 />
+                                <param name="plotlabel" value="" />
+                                <!-- <param name="plotheight" value="info_plot_large_h" /> -->
+                                <param name="details">[String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)] + [Control.HasFocus(9801) | Control.HasFocus(9802)]</param>
                             </include>
 
                             <!-- Person Info -->
@@ -62,8 +87,14 @@
                                 <visible>![Control.HasFocus(9801) | Control.HasFocus(9802)]</visible>
                             </include>
 
+                            <!-- Joseska - onright Página Información. ids 9801 y 9802 en el resto  -->
                             <!-- Episode List -->
-                            <include>DialogInfo_CollectionsNode</include>
+                            <!-- <include>DialogInfo_CollectionsNode</include> -->
+                            <control type="group">
+                                <visible>![String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)]</visible>
+                                <include>DialogInfo_CollectionsNode</include>
+                            </control>
+                            <!-- FIN Joseska  -->
                         </control>
                     </control>
                     <include>DialogInfo_VideoTrailer</include>

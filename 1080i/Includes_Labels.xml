@@ -556,4 +556,14 @@
         <value>$LOCALIZE[31507]</value>
     </variable>
 	<!-- FIN Jon  -->
+    <variable name="IMDBNumber_Extras">
+        <value condition="!String.IsEmpty(ListItem.IMDBNumber)">$INFO[ListItem.IMDBNumber]</value>
+        <value condition="!String.IsEmpty(ListItem.IMDbNumber)">$INFO[ListItem.IMDbNumber]</value>
+    </variable>
+    <variable name="tipo_Extras">
+        <value condition="String.IsEqual(ListItem.DBTYPE,movie)">movie</value>
+        <value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">tv</value>
+        <value condition="String.IsEqual(ListItem.DBTYPE,season)">season</value>
+        <value condition="String.IsEqual(ListItem.DBTYPE,episode)">episode</value>
+    </variable>
 </includes>

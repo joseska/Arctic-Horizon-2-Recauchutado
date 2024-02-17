@@ -2005,4 +2005,9 @@ msgctxt "#31510"
 msgid "Show info button"
 msgstr "Desactivar Vista Alternativa Series"
 
+#: /1080i/Include_Items.xml
+msgctxt "#31511"
+msgid "Youtube"
+msgstr "Youtube"
+
 ### FIN Joseska Jon ###

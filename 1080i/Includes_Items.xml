@@ -205,18 +205,16 @@
             <!-- <param name="label" value="$VAR[Label_VideoInfo_PlayButton]" /> -->
 			<param name="label" value="Ver" />
             <param name="icon" value="$VAR[Image_VideoInfo_PlayButton]" />
-
-
-            <!-- <include condition="Window.IsVisible(1190)">Items_DialogVideoInfo_MenuBar_PlayButton_Action_1190</include> -->
+            <include condition="Window.IsVisible(1190)">Items_DialogVideoInfo_MenuBar_PlayButton_Action_1190</include>
             <include condition="!Window.IsVisible(1190)">Items_DialogVideoInfo_MenuBar_PlayButton_Action_1191</include>
-
-
             <include content="OSD_Button_HintLabel">
                 <param name="label">Ver</param>
 				<!-- <param name="label">$VAR[Label_VideoInfo_PlayButton]</param> -->
             </include>
         </include>
 		<!-- FIN joseska -->
+
+        <!-- Botón Trailer  -->
         <include content="OSD_Button" condition="!$EXP[Exp_IsPersonInfo]">
             <param name="vertical">true</param>
             <param name="id" value="5002" />
@@ -234,6 +232,23 @@
                 <param name="label">$LOCALIZE[20410]</param>
             </include>
         </include>
+
+        <!-- Botón Videos de Youtube  -->
+        <include content="OSD_Button">
+            <param name="vertical">true</param>
+            <param name="id" value="5011" />
+            <param name="groupid" value="5111" />
+            <param name="sliceid" value="5211" />
+            <param name="label" value="$LOCALIZE[31511]" />
+            <param name="icon" value="special://skin/extras/icons/youtube.png" />
+            <onclick>SetFocus(9804)</onclick>
+            <include content="OSD_Button_HintLabel">
+                <param name="label">$LOCALIZE[31511]</param>
+            </include>
+        </include>
+
+
+        <!-- Botón Detalles  -->
         <include content="OSD_Button">
             <param name="vertical">true</param>
             <param name="id" value="5010" />
@@ -246,7 +261,7 @@
                 <param name="label">$LOCALIZE[33029]</param>
             </include>
         </include>
-		
+        
 		<!-- Joseska - Botón de busqueda en la pantalla de Información Fullscreen -->
         <include content="OSD_Button">
             <param name="vertical">true</param>

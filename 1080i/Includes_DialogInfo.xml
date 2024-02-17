@@ -21,6 +21,8 @@
             <animation effect="slide" end="0" start="100" time="400" tween="cubic" easing="out" reversible="false" condition="![ControlGroup(4000).HasFocus() | [Control.HasFocus(7002) + Skin.HasSetting(DialogInfo.FocusButtons)]]">Conditional</animation>
             <animation effect="slide" start="0" end="-540" time="400" tween="cubic" easing="out" reversible="false" condition="[Control.HasFocus(9801) | Control.HasFocus(9802)]">Conditional</animation>
             <animation effect="slide" end="0" start="-540" time="400" tween="cubic" easing="out" reversible="false" condition="![Control.HasFocus(9801) | Control.HasFocus(9802)]">Conditional</animation>
+            <animation effect="slide" start="0" end="-540" time="400" tween="cubic" easing="out" reversible="false" condition="Control.HasFocus(9804)">Conditional</animation>
+            <animation effect="slide" end="0" start="-540" time="400" tween="cubic" easing="out" reversible="false" condition="!Control.HasFocus(9804)">Conditional</animation>
             <nested />
         </control>
     </include>
@@ -111,7 +113,7 @@
             <onclick condition="!$EXP[Exp_IsPersonInfo]">SetFocus(5000)</onclick>
             <onclick condition="$EXP[Exp_IsPersonInfo]">runscript(plugin.video.themoviedb.helper,wikipedia=$VAR[Path_Wikipedia_Title],tmdb_type=person)</onclick>
             <onleft>4000</onleft>
-            <!-- Joseska - Cambiar para SOLO Series.  -->
+            <!-- Joseska - Cambiar Dependiendo si es Peliculas/Series.  -->
             <!-- <onright>SetFocus(9802)</onright> -->
             <onright condition="[String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)]">SetFocus(9802)</onright>
             <onright condition="![String.ISEqual(ListItem.DBType,tvshow) | String.ISEqual(ListItem.DBType,season) | String.ISEqual(ListItem.DBType,episode)]">SetFocus(9801)</onright>
@@ -315,6 +317,59 @@
         </control>
     </include>
 
+
+
+    <!-- Joseska DialogInfo_youtube2 -->
+    <include name="DialogInfo_youtube2">
+        <control type="group">
+            <visible>Control.HasFocus(9804)</visible>
+            <include>Animation_FadeIn_Delay</include>
+
+            <!-- Lista Capítulos. $PARAM[include] == "List_BigLandscape_Row". - $PARAM[id]3 == 9802. - $PARAM[id]2 == 9801-->
+            <include content="List_BigLandscape_Row">
+                <param name="id" value="9804" />
+                <param name="orientation">vertical</param>
+                <!-- <visible>!Container.IsUpdating(9801)</visible> -->
+                <height>divider_bottom</height>
+                <bottom>40</bottom>
+                <preloaditems>2</preloaditems>
+                <focusposition>0</focusposition>
+                <onback>7004</onback>
+                <content target="videos">$VAR[Path_Youtube2]</content>
+                <onclick>PlayMedia($ESCINFO[Container(9804).ListItem.FileNameAndPath],False,1,playlist_type_hint=1)</onclick>
+                <onclick>SetProperty(HasTrailer,$INFO[Container(9804).ListItem.FileNameAndPath],Home)</onclick>
+                <onclick>SetFocus(7001)</onclick>
+                <animation effect="fade" start="100" end="10" time="200" delay="400" condition="Container(9804).IsUpdating">Conditional</animation>
+            </include>
+            <!-- Cargando Trailers. -->
+            <control type="group">
+                <height>divider_bottom</height>
+                <bottom>120</bottom>
+                <visible>Container(9804).IsUpdating</visible>
+                <animation effect="fade" reversible="false" start="0" end="100" time="200" delay="600">Visible</animation>
+                <include content="Object_BusySpinner">
+                    <param name="colordiffuse" value="main_fg" />
+                    <param name="label" value="$LOCALIZE[31023]" />
+                </include>
+            </control>
+            <!-- Texto Descripción del Trailer -->
+            <!-- <control type="textbox">
+                <left>80</left>
+                <top>440</top>
+                <width>880</width>
+                <height>info_plot_h</height>
+                <font>font_main_plot</font>
+                <include condition="$PARAM[selected]">Color_SelectedText</include>
+                <label>$VAR[plot_Videos_Youtube]</label>
+                <textcolor>main_fg_70</textcolor>
+                <font>font_mini_plot</font>
+                <align>left</align>
+                <include content="Defs_AutoScroll_TextBox">
+                    <param name="condition">$PARAM[selected]</param>
+                </include>
+            </control> -->
+        </control>
+    </include>
 
 
     <!-- Joseska DialogInfo_CollectionsNode2 -->
@@ -663,12 +718,29 @@
             </control>
             <control type="videowindow" />
             <include>DialogInfo_VideoTrailerControl</include>
+            <control type="image">
+                <texture colordiffuse="main_fg_80">special://skin/extras/icons/angle-down.png</texture>
+                <width>40</width>
+                <height>40</height>
+                <centerbottom>-11</centerbottom>
+                <centerleft>50%</centerleft> 
+            </control>
+            <control type="label" id="11">
+                <label>Pulsa abajo para cerrar el video</label>
+                <font>font_tiny</font>
+                <textcolor>main_fg_70</textcolor>
+                <selectedcolor>main_fg_70</selectedcolor>
+                <width>auto</width>
+                <centerbottom>17</centerbottom>
+                <centerleft>38%</centerleft> 
+            </control>
         </include>
     </include>
 
     <!-- Trailer Control Button -->
     <include name="DialogInfo_VideoTrailerControl">
-        <param name="onback">5000</param>
+        <!-- <param name="onback">5000</param> -->
+        <param name="onback">9804</param>
         <definition>
             <control type="group">
                 <bottom>0</bottom>
@@ -696,11 +768,11 @@
                 <texturenofocus />
                 <texturefocus />
 
-                <oninfo>$PARAM[onback]</oninfo>
+                <oninfo>SetFocus($PARAM[onback])</oninfo>
                 <oninfo>ClearProperty(HasTrailer,Home)</oninfo>
                 <oninfo condition="Player.HasVideo">Stop</oninfo>
 
-                <onback>$PARAM[onback]</onback>
+                <onback>SetFocus($PARAM[onback])</onback>
                 <onback>ClearProperty(HasTrailer,Home)</onback>
                 <onback condition="Player.HasVideo">Stop</onback>
 

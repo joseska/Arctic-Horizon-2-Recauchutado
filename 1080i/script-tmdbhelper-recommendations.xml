@@ -29,6 +29,25 @@
                     <param name="busy_isupdating">!String.IsEmpty(Window.Property(List_5000_IsUpdating))</param>
                     <include content="Widget_Recs_Basic"><param name="id">5000</param></include>
                 </include>
+                <include content="Widget_Poster" condition="!Skin.HasSetting(Info.DisableYoutube)">
+                    <param name="groupid">5120</param>
+                    <param name="id">5020</param>
+                    <param name="label">$LOCALIZE[10025]</param>
+                    <param name="include">List_Landscape_Row</param>
+                    <param name="icon">$INFO[ListItem.Icon]</param>
+                    <param name="altvisible">String.IsEmpty(Window.Property(List_Main_Visible))</param>
+                    <!-- Joseska - Linea Original comentada  -->
+                    <!-- <param name="visible">!String.IsEmpty(Window.Property(Youtube))</param>
+                    <content target="videos">$INFO[Window.Property(Youtube)]</content> -->
+                    <!-- Joseska - Cambio a youtube2 para buscar videos con las palabras "trailer Español" al final.  -->
+                    <param name="visible">!String.IsEmpty(Window.Property(Youtube2))</param>
+                    <content target="videos">$INFO[Window.Property(Youtube2)]</content>
+                    <!-- FIN Joseska  -->
+                    <onclick>PlayMedia($ESCINFO[Container(5020).ListItem.FileNameAndPath],False,1,playlist_type_hint=1)</onclick>
+                    <onclick>SetProperty(HasTrailer,$INFO[Container(5020).ListItem.FileNameAndPath],Home)</onclick>
+                    <onclick>SetFocus(7001)</onclick>
+                    <include content="Widget_Recs_Basic"><param name="id">5020</param></include>
+                </include>
                 <include content="Widget_Poster" condition="!Skin.HasSetting(Info.DisableSeasons)">
                     <param name="groupid">5101</param>
                     <param name="id">5001</param>
@@ -140,22 +159,6 @@
                     <param name="infowidget">Skin.HasSetting(Recommendations.ExpandPlot)</param>
                     <include content="Widget_Recs_Expand"><param name="id">5011</param></include>
                 </include>
-
-                <include content="Widget_Poster" condition="!Skin.HasSetting(Info.DisableYoutube)">
-                    <param name="groupid">5120</param>
-                    <param name="id">5020</param>
-                    <param name="label">$LOCALIZE[10025]</param>
-                    <param name="include">List_Landscape_Row</param>
-                    <param name="icon">$INFO[ListItem.Icon]</param>
-                    <param name="altvisible">String.IsEmpty(Window.Property(List_Main_Visible))</param>
-                    <param name="visible">!String.IsEmpty(Window.Property(Youtube))</param>
-                    <content target="videos">$INFO[Window.Property(Youtube)]</content>
-                    <onclick>PlayMedia($ESCINFO[Container(5020).ListItem.FileNameAndPath],False,1,playlist_type_hint=1)</onclick>
-                    <onclick>SetProperty(HasTrailer,$INFO[Container(5020).ListItem.FileNameAndPath],Home)</onclick>
-                    <onclick>SetFocus(7001)</onclick>
-                    <include content="Widget_Recs_Basic"><param name="id">5020</param></include>
-                </include>
-
                 <include content="Widget_Submenu" condition="!Skin.HasSetting(Info.DisableKeywords)">
                     <param name="groupid">5130</param>
                     <param name="id">5030</param>

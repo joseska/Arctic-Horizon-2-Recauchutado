@@ -159,6 +159,12 @@
         <value>$VAR[Label_ListPlot]</value>
     </variable>
 
+    <!-- Joseska - Variable para el plot de los videos de Youtube (DialoVideoInfo.xml)  -->
+    <variable name="plot_Videos_Youtube">
+        <value condition="!Container(9804).IsUpdating + Control.HasFocus(9804) + !String.IsEmpty(Container(9804).Listitem.Plot)">$INFO[Container(9804).Listitem.title]</value>
+        <value> - </value>
+    </variable>
+
     <variable name="Path_Library_Collections">
         <!-- Joseska - Carga Episodios cuando solo hay una temporada. Includes_DialogInfo.xml  -->
         <value condition="ListItem.IsFolder + String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.DBID)">$INFO[ListItem.DBID,videodb://tvshows/titles/,/]</value>
@@ -306,6 +312,27 @@
         <value>$VAR[Path_Youtube_Query,plugin://plugin.video.youtube/search/?q=,&amp;search_type=notvalid]</value>
     </variable>
 
+    <!-- Joseska - Variable Nombre Pelicula/Serie + Trailer Español -->
+    <variable name="Path_Youtube_Query2">
+        <value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.Title)">$INFO[Container(99950).ListItem.Title,, Tráiler Español]</value>
+        <value condition="String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Title)">$INFO[Container(99950).ListItem.Title,, Tráiler Español]</value>
+        <value condition="String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.TVShowTitle)">$INFO[Container(99950).ListItem.TVShowTitle,, Tráiler Español]</value>
+        <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Title)">$INFO[Container(99950).ListItem.TVShowTitle,, Tráiler Español]</value>
+    </variable>
+
+    <variable name="Path_Youtube">
+        <value>$VAR[Path_Youtube_Query,plugin://plugin.video.youtube/search/?q=,&amp;search_type=notvalid]</value>
+    </variable>
+
+    <!-- Joseska - Variable Path completo a la busqueda en youtube addon con la variable anterior -->
+    <variable name="Path_Youtube2">
+        <value>$VAR[Path_Youtube_Query2,plugin://plugin.video.youtube/search/?q=,&amp;search_type=notvalid]</value>
+    </variable>
+
+    <variable name="youtube_spain">
+        <value>plugin://plugin.video.youtube/search/?hide_folders=true&q=($INFO[Container(99950).ListItem.Title,, Trailer Español])</value>
+    </variable>
+    <!-- FIN Joseska  -->
 
 
 	<!-- Joseska -->

@@ -81,8 +81,13 @@
             <animation effect="fade" reversible="false" start="100" end="0" time="200" delay="0">Hidden</animation>
             <animation effect="fade" reversible="false" start="0" end="100" time="400" delay="600">WindowOpen</animation>
             <animation effect="fade" reversible="false" start="100" end="0" time="100" delay="0">WindowClose</animation>
-            <onleft condition="!Integer.IsEqual(Container(7003).NumItems,0)">SetFocus(7003)</onleft>
+            <!-- Joseska - Comentar Lineas originales  -->
+            <!-- <onleft condition="!Integer.IsEqual(Container(7003).NumItems,0)">SetFocus(7003)</onleft>
+            <onleft condition="!Skin.HasSetting(DialogInfo.FocusButtons) + Integer.IsEqual(Container(7003).NumItems,0)">5000</onleft> -->
+            <!-- Joseska - asignar el <onleft> a abrir el cuadro de dialogo de opciones  -->
+            <onleft>SetFocus(9000)</onleft>
             <onleft condition="!Skin.HasSetting(DialogInfo.FocusButtons) + Integer.IsEqual(Container(7003).NumItems,0)">5000</onleft>
+            <!-- FIN joseska  -->
             <onright condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onright>
             <!-- Joseska - Cambiar para SOLO Series.  -->
             <!-- <onright condition="Skin.HasSetting(DialogInfo.FocusButtons)">SetFocus(9802)</onright> -->

@@ -338,8 +338,8 @@
             <include content="OSD_Button_HintLabel">
                 <param name="label">$LOCALIZE[31002]</param>
             </include>
-        </include>
-    </include> -->
+        </include>  -->
+    </include> 
 
     <include name="Items_DialogMusicInfo_MenuBar">
         <include content="OSD_Button">

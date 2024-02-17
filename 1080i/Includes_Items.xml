@@ -325,7 +325,8 @@
         </include>
 		<!-- FIN Joseska -->
 		
-        <include content="OSD_Button">
+        <!-- Joseska - Deshabilitar Botón Cuadro dialogo Opciones. Ahora se hace con el <onleft>  -->
+        <!-- <include content="OSD_Button">
             <param name="vertical">true</param>
             <param name="id" value="5006" />
             <param name="groupid" value="5106" />
@@ -338,7 +339,7 @@
                 <param name="label">$LOCALIZE[31002]</param>
             </include>
         </include>
-    </include>
+    </include> -->
 
     <include name="Items_DialogMusicInfo_MenuBar">
         <include content="OSD_Button">

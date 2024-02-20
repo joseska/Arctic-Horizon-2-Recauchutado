@@ -19,6 +19,8 @@
         <control type="group">
             <animation effect="slide" start="0" end="100" time="400" tween="cubic" easing="out" reversible="false" condition="[ControlGroup(4000).HasFocus() | [Control.HasFocus(7002) + Skin.HasSetting(DialogInfo.FocusButtons)]]">Conditional</animation>
             <animation effect="slide" end="0" start="100" time="400" tween="cubic" easing="out" reversible="false" condition="![ControlGroup(4000).HasFocus() | [Control.HasFocus(7002) + Skin.HasSetting(DialogInfo.FocusButtons)]]">Conditional</animation>
+            <animation effect="slide" start="0" end="100" time="400" tween="cubic" easing="out" reversible="false" condition="[ControlGroup(4400).HasFocus() | [Control.HasFocus(7002) + Skin.HasSetting(DialogInfo.FocusButtons)]]">Conditional</animation>
+            <animation effect="slide" end="0" start="100" time="400" tween="cubic" easing="out" reversible="false" condition="![ControlGroup(4400).HasFocus() | [Control.HasFocus(7002) + Skin.HasSetting(DialogInfo.FocusButtons)]]">Conditional</animation>
             <animation effect="slide" start="0" end="-540" time="400" tween="cubic" easing="out" reversible="false" condition="[Control.HasFocus(9801) | Control.HasFocus(9802)]">Conditional</animation>
             <animation effect="slide" end="0" start="-540" time="400" tween="cubic" easing="out" reversible="false" condition="![Control.HasFocus(9801) | Control.HasFocus(9802)]">Conditional</animation>
             <animation effect="slide" start="0" end="-540" time="400" tween="cubic" easing="out" reversible="false" condition="Control.HasFocus(9804)">Conditional</animation>
@@ -81,11 +83,8 @@
             <animation effect="fade" reversible="false" start="100" end="0" time="200" delay="0">Hidden</animation>
             <animation effect="fade" reversible="false" start="0" end="100" time="400" delay="600">WindowOpen</animation>
             <animation effect="fade" reversible="false" start="100" end="0" time="100" delay="0">WindowClose</animation>
-            <!-- Joseska - Comentar Lineas originales  -->
-            <!-- <onleft condition="!Integer.IsEqual(Container(7003).NumItems,0)">SetFocus(7003)</onleft>
-            <onleft condition="!Skin.HasSetting(DialogInfo.FocusButtons) + Integer.IsEqual(Container(7003).NumItems,0)">5000</onleft> -->
-            <!-- Joseska - asignar el <onleft> a abrir el cuadro de dialogo de opciones  -->
-            <onleft>SetFocus(9000)</onleft>
+            <onleft condition="!Integer.IsEqual(Container(7003).NumItems,0)">SetFocus(7003)</onleft>
+            <onleft condition="!Skin.HasSetting(DialogInfo.FocusButtons) + Integer.IsEqual(Container(7003).NumItems,0)">5000</onleft>
             <onleft condition="!Skin.HasSetting(DialogInfo.FocusButtons) + Integer.IsEqual(Container(7003).NumItems,0)">5000</onleft>
             <!-- FIN joseska  -->
             <onright condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onright>
@@ -100,6 +99,36 @@
             <onup condition="Skin.HasSetting(DialogInfo.FocusButtons) + !String.IsEmpty(Window(Home).Property(ResetScroll))">ClearProperty(ResetScroll,home)</onup>
             <onup condition="Skin.HasSetting(DialogInfo.FocusButtons)">61</onup>
             <ondown condition="Skin.HasSetting(DialogInfo.FocusButtons)">7002</ondown>
+            <include>$PARAM[include]</include>
+        </control>
+    </include>
+
+    <!-- Button Group for DialogInfo -->
+    <include name="DialogInfo_ButtonGroup_Trailer2">
+        <control type="grouplist" id="4400">
+            <top>view_top</top>
+            <itemgap>30</itemgap>
+            <orientation>vertical</orientation>
+            <width>60</width>
+            <left>view_pad</left>
+            <!-- <left>160</left> -->
+            <visible allowhiddenfocus="true">ControlGroup(4400).HasFocus()</visible>
+
+            <animation effect="fade" reversible="false" start="0" end="100" time="400" delay="200">Visible</animation>
+            <animation effect="fade" reversible="false" start="100" end="0" time="200" delay="0">Hidden</animation>
+            <animation effect="fade" reversible="false" start="0" end="100" time="400" delay="600">WindowOpen</animation>
+            <animation effect="fade" reversible="false" start="100" end="0" time="100" delay="0">WindowClose</animation>
+            <!-- Joseska - Comentar Lineas originales  -->
+            <!-- <onleft condition="!Integer.IsEqual(Container(7003).NumItems,0)">SetFocus(7003)</onleft>
+            <onleft condition="!Skin.HasSetting(DialogInfo.FocusButtons) + Integer.IsEqual(Container(7003).NumItems,0)">5000</onleft> -->
+            <!-- Joseska - asignar el <onleft> a abrir el cuadro de dialogo de opciones  -->
+            <onleft>SetFocus(4000)</onleft>
+            <onright>SetFocus(4000)</onright>
+            <onup>SetFocus(4000)</onup>
+            <ondown>SetFocus(4000)</ondown>
+
+            <onback condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onback>
+            <onback condition="Skin.HasSetting(DialogInfo.FocusButtons)">Dialog.Close(movieinformation)</onback>
             <include>$PARAM[include]</include>
         </control>
     </include>
@@ -134,7 +163,7 @@
             <left>0</left>
             <height>80</height>
             <width>80</width>
-            <visible>!ControlGroup(4000).HasFocus()</visible>
+            <visible>[!ControlGroup(4000).HasFocus() + !ControlGroup(4400).HasFocus()]</visible>
             <include>Animation_FadeIn_Delay</include>
             <control type="image">
                 <right>0</right>
@@ -341,6 +370,7 @@
                 <focusposition>0</focusposition>
                 <onback>7004</onback>
                 <content target="videos">$VAR[Path_Youtube2]</content>
+                <!-- <content target="videos">$VAR[Path_duffyou]</content> -->
                 <onclick>PlayMedia($ESCINFO[Container(9804).ListItem.FileNameAndPath],False,1,playlist_type_hint=1)</onclick>
                 <onclick>SetProperty(HasTrailer,$INFO[Container(9804).ListItem.FileNameAndPath],Home)</onclick>
                 <onclick>SetFocus(7001)</onclick>
@@ -744,8 +774,9 @@
 
     <!-- Trailer Control Button -->
     <include name="DialogInfo_VideoTrailerControl">
-        <!-- <param name="onback">5000</param> -->
-        <param name="onback">9804</param>
+        <param name="onback">5000</param>
+        <!-- <param name="onback">9804</param> -->
+
         <definition>
             <control type="group">
                 <bottom>0</bottom>
@@ -789,11 +820,16 @@
                 <onunfocus>ClearProperty(HasTrailer,Home)</onunfocus>
                 <onunfocus condition="Player.HasVideo">Stop</onunfocus>
 
-                <onleft condition="!Player.HasVideo">SetFocus($PARAM[onback])</onleft>
+
+                <onleft condition="!Skin.HasSetting(trailerTMDB)">SetFocus(9804)</onleft>
+                <onleft condition="Skin.HasSetting(trailerTMDB)">SetFocus($PARAM[onback])</onleft>
+                <!-- <onleft condition="!Player.HasVideo">SetFocus($PARAM[onback])</onleft> -->
                 <onleft condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onleft>
                 <onleft condition="Player.HasVideo">StepBack</onleft>
 
-                <onright condition="!Player.HasVideo">SetFocus($PARAM[onback])</onright>
+                <onright condition="!Skin.HasSetting(trailerTMDB)">SetFocus(9804)</onright>
+                <onright condition="Skin.HasSetting(trailerTMDB)">SetFocus($PARAM[onback])</onright>
+                <!-- <onright condition="!Player.HasVideo">SetFocus($PARAM[onback])</onright> -->
                 <onright condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onright>
                 <onright condition="Player.HasVideo">StepForward</onright>
 
@@ -801,7 +837,9 @@
                 <onup>ClearProperty(HasTrailer,Home)</onup>
                 <onup condition="Player.HasVideo">Stop</onup>
 
-                <ondown>SetFocus($PARAM[onback])</ondown>
+                <ondown condition="!Skin.HasSetting(trailerTMDB)">SetFocus(9804)</ondown>
+                <ondown condition="Skin.HasSetting(trailerTMDB)">SetFocus($PARAM[onback])</ondown>
+                <!-- <ondown>SetFocus($PARAM[onback])</ondown> -->
                 <ondown>ClearProperty(HasTrailer,Home)</ondown>
                 <ondown condition="Player.HasVideo">Stop</ondown>
             </control>

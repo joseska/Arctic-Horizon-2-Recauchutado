@@ -33,6 +33,10 @@
             <include content="DialogInfo_ButtonGroup">
                 <param name="include">Items_DialogVideoInfo_MenuBar</param>
             </include>
+            <!-- Joseska - botones extension de Trailers  -->
+            <include content="DialogInfo_ButtonGroup_Trailer2">
+                <param name="include">Items_DialogVideoInfo_Trailers2</param>
+            </include>
             <include>DialogInfo_ButtonHidden</include>
             <include content="DialogInfo_SlideGroup">
                 <include content="DialogInfo_LeftGroup">

@@ -328,28 +328,24 @@
     <variable name="Path_Youtube2">
         <value>$VAR[Path_Youtube_Query2,plugin://plugin.video.youtube/search/?q=,&amp;search_type=notvalid]</value>
     </variable>
-
-    <variable name="youtube_spain">
-        <value>plugin://plugin.video.youtube/search/?hide_folders=true&q=($INFO[Container(99950).ListItem.Title,, Trailer Español])</value>
-    </variable>
     <!-- FIN Joseska  -->
 
 
-	<!-- Joseska -->
+	<!-- Joseska  Modificado para pillar bien el nombre en la wikipedia -->
     <variable name="Path_Wikipedia_Title">
         <value condition="!String.IsEmpty(Container(99950).ListItem.TVShowTitle)">$INFO[Container(99950).ListItem.TVShowTitle]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Title)">$INFO[Container(99950).ListItem.Title]</value>
 		<value>$INFO[Container(99950).ListItem.Title]</value>
 		<!-- <value>$INFO[ListItem.Label]</value> -->
     </variable>
-	
+	<!-- FIN Joseska -->
     <variable name="Path_Wikipedia_Type">
         <value condition="String.IsEqual(Container(99950).ListItem.Property(base_dbtype),tvshow)">tv</value>
         <value condition="String.IsEqual(Container(99950).ListItem.Property(base_dbtype),season)">tv</value>
         <value condition="String.IsEqual(Container(99950).ListItem.Property(base_dbtype),episode)">tv</value>
         <value condition="String.IsEqual(Container(99950).ListItem.Property(base_dbtype),movie)">movie</value>
     </variable>
-	<!-- FIN Joseska -->
+	
 	
     <variable name="Path_ContextParams_Query">
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(base_tvshowtitle))">$INFO[Container(99950).ListItem.Property(base_tvshowtitle)]</value>

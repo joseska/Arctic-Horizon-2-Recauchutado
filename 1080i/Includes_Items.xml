@@ -182,13 +182,9 @@
         <onclick condition="Skin.HasSetting(Infoline.DisableAlternateViewSeries1) + $EXP[Exp_InfoDialog_IsFolder] + !Window.IsVisible(MyVideoNav.xml) + String.IsEmpty(ListItem.DBID)">RunScript(plugin.video.themoviedb.helper,recommendations=onaction,window_id=1191,after=True,builtin='ActivateWindow(videos,$INFO[ListItem.FolderPath],return)')</onclick>
         <!-- Comportamiento Alternativo del Boton en Series. lo mismo que <onright>  -->
         <onclick condition="!Skin.HasSetting(Infoline.DisableAlternateViewSeries1) + $EXP[Exp_InfoDialog_IsFolder] + !Window.IsVisible(MyVideoNav.xml) + String.IsEmpty(ListItem.DBID)">SetFocus(9802)</onclick>
-
-
-
-
         <!-- FIN Joseska  -->
-        <!-- <onclick condition="$EXP[Exp_InfoDialog_IsFolder] + !Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(ListItem.DBID) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(plugin.video.themoviedb.helper,recommendations=onaction,window_id=1191,after=True,builtin='ActivateWindow(videos,$INFO[ListItem.DBID,videodb://tvshows/titles/,/],return)')</onclick>
-        <onclick condition="$EXP[Exp_InfoDialog_IsFolder] + Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(ListItem.DBID) + ListItem.IsCollection">RunScript(plugin.video.themoviedb.helper,recommendations=onaction,window_id=1191,after=True,builtin='ActivateWindow(videos,$INFO[ListItem.DBID,videodb://movies/sets/,/],return)')</onclick> -->
+        <onclick condition="$EXP[Exp_InfoDialog_IsFolder] + !Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(ListItem.DBID) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(plugin.video.themoviedb.helper,recommendations=onaction,window_id=1191,after=True,builtin='ActivateWindow(videos,$INFO[ListItem.DBID,videodb://tvshows/titles/,/],return)')</onclick>
+        <onclick condition="$EXP[Exp_InfoDialog_IsFolder] + Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(ListItem.DBID) + ListItem.IsCollection">RunScript(plugin.video.themoviedb.helper,recommendations=onaction,window_id=1191,after=True,builtin='ActivateWindow(videos,$INFO[ListItem.DBID,videodb://movies/sets/,/],return)')</onclick>
 
     </include>
 
@@ -215,7 +211,7 @@
 		<!-- FIN joseska -->
 
         <!-- Botón Trailer  -->
-        <include content="OSD_Button" condition="!$EXP[Exp_IsPersonInfo]">
+        <!-- <include content="OSD_Button" condition="!$EXP[Exp_IsPersonInfo]">
             <param name="vertical">true</param>
             <param name="id" value="5002" />
             <param name="groupid" value="5102" />
@@ -231,10 +227,10 @@
             <include content="OSD_Button_HintLabel">
                 <param name="label">$LOCALIZE[20410]</param>
             </include>
-        </include>
+        </include> -->
 
         <!-- Botón Videos de Youtube  -->
-        <include content="OSD_Button">
+        <!-- <include content="OSD_Button">
             <param name="vertical">true</param>
             <param name="id" value="5011" />
             <param name="groupid" value="5111" />
@@ -244,6 +240,20 @@
             <onclick>SetFocus(9804)</onclick>
             <include content="OSD_Button_HintLabel">
                 <param name="label">$LOCALIZE[31511]</param>
+            </include>
+        </include> -->
+
+        <!-- Joseska Lleva a los dos botones de Trailers (TMDB y Youtube)  -->
+        <include content="OSD_Button">
+            <param name="vertical">true</param>
+            <param name="id" value="5011" />
+            <param name="groupid" value="5111" />
+            <param name="sliceid" value="5211" />
+            <param name="label" value="$LOCALIZE[20410]" />
+            <param name="icon" value="special://skin/extras/icons/videoplay.png" />
+            <onclick>SetFocus(4400)</onclick>
+            <include content="OSD_Button_HintLabel">
+                <param name="label">$LOCALIZE[20410]</param>
             </include>
         </include>
 
@@ -325,8 +335,7 @@
         </include>
 		<!-- FIN Joseska -->
 		
-        <!-- Joseska - Deshabilitar Botón Cuadro dialogo Opciones. Ahora se hace con el <onleft>  -->
-        <!-- <include content="OSD_Button">
+        <include content="OSD_Button">trailerTMDB
             <param name="vertical">true</param>
             <param name="id" value="5006" />
             <param name="groupid" value="5106" />
@@ -338,8 +347,46 @@
             <include content="OSD_Button_HintLabel">
                 <param name="label">$LOCALIZE[31002]</param>
             </include>
-        </include>  -->
+        </include> 
     </include> 
+
+    <!-- Joseska - Botones de Trailers en Ventana de Información  -->
+    <include name="Items_DialogVideoInfo_Trailers2">
+        <!-- Botón Trailers TMDB  -->
+        <include content="OSD_Button" condition="!$EXP[Exp_IsPersonInfo]">
+            <param name="vertical">true</param>
+            <param name="id" value="5015" />
+            <param name="groupid" value="5115" />
+            <param name="sliceid" value="5215" />
+            <param name="label" value="$LOCALIZE[31512]" />
+            <param name="icon" value="special://skin/media/flags/monochrome/ratings/tmdb.png" />
+            <param name="visible" value="!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Container(99950).ListItem.Trailer)" />
+            <onclick>Skin.SetBool(trailerTMDB)</onclick>
+            <onclick condition="String.IsEmpty(ListItem.Trailer)">PlayMedia($ESCINFO[Container(99950).ListItem.Trailer],False,1)</onclick>
+            <onclick condition="!String.IsEmpty(ListItem.Trailer)">PlayMedia($ESCINFO[ListItem.Trailer],False,1)</onclick>
+            <onclick condition="String.IsEmpty(ListItem.Trailer)">SetProperty(HasTrailer,$INFO[Container(99950).ListItem.Trailer],Home)</onclick>
+            <onclick condition="!String.IsEmpty(ListItem.Trailer)">SetProperty(HasTrailer,$INFO[ListItem.Trailer],Home)</onclick>
+            <onclick>SetFocus(7001)</onclick>
+            <include content="OSD_Button_HintLabel">
+                <param name="label">$LOCALIZE[31512]</param>
+            </include>
+        </include>
+        <!-- Botón Trailers Youtube  -->
+        <include content="OSD_Button">
+            <param name="vertical">true</param>
+            <param name="id" value="5016" />
+            <param name="groupid" value="5116" />
+            <param name="sliceid" value="5216" />
+            <param name="label" value="$LOCALIZE[31511]" />
+            <param name="icon" value="special://skin/extras/icons/youtube.png" />
+            <onclick>Skin.Reset(trailerTMDB)</onclick>
+            <onclick>SetFocus(9804)</onclick>
+            <include content="OSD_Button_HintLabel">
+                <param name="label">$LOCALIZE[31511]</param>
+            </include>
+        </include>
+    </include>
+    <!-- FIN Joseska  -->
 
     <include name="Items_DialogMusicInfo_MenuBar">
         <include content="OSD_Button">

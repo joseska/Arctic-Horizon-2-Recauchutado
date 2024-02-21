@@ -1,4 +1,4 @@
-<addon id="skin.arctic.horizon.2.recauchutado" name="Arctic Horizon 2 Recauchutado" provider-name="Jon y Joseska" version="0.2.7">
+<addon id="skin.arctic.horizon.2.recauchutado" name="Arctic Horizon 2 Recauchutado" provider-name="Jon y Joseska" version="0.2.7.1">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />

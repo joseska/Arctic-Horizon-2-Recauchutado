@@ -361,7 +361,7 @@
             <param name="label" value="$LOCALIZE[31512]" />
             <param name="icon" value="special://skin/media/flags/monochrome/ratings/tmdb.png" />
             <param name="visible" value="!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Container(99950).ListItem.Trailer)" />
-            <onclick>Skin.SetBool(trailerTMDB)</onclick>
+            <onclick>SetProperty(trailerTMDB,tmdb,Home)</onclick>
             <onclick condition="String.IsEmpty(ListItem.Trailer)">PlayMedia($ESCINFO[Container(99950).ListItem.Trailer],False,1)</onclick>
             <onclick condition="!String.IsEmpty(ListItem.Trailer)">PlayMedia($ESCINFO[ListItem.Trailer],False,1)</onclick>
             <onclick condition="String.IsEmpty(ListItem.Trailer)">SetProperty(HasTrailer,$INFO[Container(99950).ListItem.Trailer],Home)</onclick>
@@ -379,7 +379,7 @@
             <param name="sliceid" value="5216" />
             <param name="label" value="$LOCALIZE[31511]" />
             <param name="icon" value="special://skin/extras/icons/youtube.png" />
-            <onclick>Skin.Reset(trailerTMDB)</onclick>
+            <onclick>SetProperty(trailerTMDB,youtube,Home)</onclick>
             <onclick>SetFocus(9804)</onclick>
             <include content="OSD_Button_HintLabel">
                 <param name="label">$LOCALIZE[31511]</param>
@@ -387,6 +387,7 @@
         </include>
     </include>
     <!-- FIN Joseska  -->
+
 
     <include name="Items_DialogMusicInfo_MenuBar">
         <include content="OSD_Button">

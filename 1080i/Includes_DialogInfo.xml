@@ -352,11 +352,10 @@
     </include>
 
 
-
     <!-- Joseska DialogInfo_youtube2 -->
     <include name="DialogInfo_youtube2">
         <control type="group">
-            <visible>Control.HasFocus(9804)</visible>
+            <!-- <visible>Control.HasFocus(9804)</visible> -->
             <include>Animation_FadeIn_Delay</include>
 
             <!-- Lista Capítulos. $PARAM[include] == "List_BigLandscape_Row". - $PARAM[id]3 == 9802. - $PARAM[id]2 == 9801-->
@@ -403,6 +402,9 @@
                     <param name="condition">$PARAM[selected]</param>
                 </include>
             </control> -->
+            
+            <animation effect="slide" end="0,-1500" time="2" delay="0" condition="!Control.HasFocus(9804)">Conditional</animation>
+            <animation effect="slide" end="0,0" time="2" delay="0" condition="Control.HasFocus(9804)">Conditional</animation>
         </control>
     </include>
 
@@ -761,7 +763,8 @@
                 <centerleft>50%</centerleft> 
             </control>
             <control type="label" id="11">
-                <label>Pulsa abajo para cerrar el video</label>
+                <!-- <label>Pulsa abajo para cerrar el video</label> -->
+                <label>$INFO[Window(Home).Property(trailerTMDB)]</label>
                 <font>font_tiny</font>
                 <textcolor>main_fg_70</textcolor>
                 <selectedcolor>main_fg_70</selectedcolor>
@@ -804,44 +807,52 @@
                 <texturenofocus />
                 <texturefocus />
 
-                <oninfo>SetFocus($PARAM[onback])</oninfo>
+                <oninfo condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</oninfo>
+                <oninfo condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</oninfo>
+                <!-- <oninfo>SetFocus($PARAM[onback])</oninfo> -->
                 <oninfo>ClearProperty(HasTrailer,Home)</oninfo>
                 <oninfo condition="Player.HasVideo">Stop</oninfo>
 
-                <onback>SetFocus($PARAM[onback])</onback>
+                <onback condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onback>
+                <onback condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onback>
+                <!-- <onback>SetFocus($PARAM[onback])</onback> -->
                 <onback>ClearProperty(HasTrailer,Home)</onback>
                 <onback condition="Player.HasVideo">Stop</onback>
 
-                <onclick condition="!Player.HasVideo">SetFocus($PARAM[onback])</onclick>
+                <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onleft>
+                <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onleft>
+                <!-- <onclick condition="!Player.HasVideo">SetFocus($PARAM[onback])</onclick> -->
                 <onclick condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onclick>
                 <onclick condition="Player.HasVideo">PlayerControl(Play)</onclick>
 
-                <onunfocus>SetFocus($PARAM[onback])</onunfocus>
+                <onunfocus condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onunfocus>
+                <onunfocus condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onunfocus>
+                <!-- <onunfocus>SetFocus($PARAM[onback])</onunfocus> -->
                 <onunfocus>ClearProperty(HasTrailer,Home)</onunfocus>
                 <onunfocus condition="Player.HasVideo">Stop</onunfocus>
 
-
-                <onleft condition="!Skin.HasSetting(trailerTMDB)">SetFocus(9804)</onleft>
-                <onleft condition="Skin.HasSetting(trailerTMDB)">SetFocus($PARAM[onback])</onleft>
-                <!-- <onleft condition="!Player.HasVideo">SetFocus($PARAM[onback])</onleft> -->
+                <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onleft>
+                <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onleft>
                 <onleft condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onleft>
                 <onleft condition="Player.HasVideo">StepBack</onleft>
 
-                <onright condition="!Skin.HasSetting(trailerTMDB)">SetFocus(9804)</onright>
-                <onright condition="Skin.HasSetting(trailerTMDB)">SetFocus($PARAM[onback])</onright>
-                <!-- <onright condition="!Player.HasVideo">SetFocus($PARAM[onback])</onright> -->
+                <onright condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onright>
+                <onright condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onright>
                 <onright condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onright>
                 <onright condition="Player.HasVideo">StepForward</onright>
 
-                <onup>SetFocus($PARAM[onback])</onup>
+                <onup condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onup>
+                <onup condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onup>
+                <!-- <onup>SetFocus($PARAM[onback])</onup> -->
                 <onup>ClearProperty(HasTrailer,Home)</onup>
                 <onup condition="Player.HasVideo">Stop</onup>
 
-                <ondown condition="!Skin.HasSetting(trailerTMDB)">SetFocus(9804)</ondown>
-                <ondown condition="Skin.HasSetting(trailerTMDB)">SetFocus($PARAM[onback])</ondown>
+                <ondown condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</ondown>
+                <ondown condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</ondown>
                 <!-- <ondown>SetFocus($PARAM[onback])</ondown> -->
                 <ondown>ClearProperty(HasTrailer,Home)</ondown>
                 <ondown condition="Player.HasVideo">Stop</ondown>
+
             </control>
         </definition>
     </include>

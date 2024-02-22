@@ -626,7 +626,23 @@
                                 <visible>Container(3).HasFocus(5)</visible>
                                 <onclick>Skin.ToggleSetting(Startup.PluginInit)</onclick>
                                 <selected>Skin.HasSetting(Startup.PluginInit)</selected>
+                                <enable>![Skin.HasSetting(Behaviour.waitFast) | Skin.HasSetting(Behaviour.waitMedium) | Skin.HasSetting(Behaviour.waitSlow)]</enable>
                             </include>
+                            <!-- INI Jon - Entrada de menú para selección de tiempo de arranque de sistema y Palantir-->
+                            <include content="Dialog_Settings_Button" description="Wait Palantir">
+                                <param name="id">5014</param>
+                                <param name="control" value="button" />
+                                <label>$LOCALIZE[31513]</label>
+                                <label2>$VAR[Label_Behaviour_WaitTime]</label2>
+                                <visible>Container(3).HasFocus(5)</visible>
+                                <onclick>SetProperty(CustomDialogPresetTitle,$LOCALIZE[31513],Home)</onclick>
+                                <onclick>SetProperty(CustomDialogPresetItems,Items_DialogPreset_WaitPalantir,Home)</onclick>
+                                <onclick>ActivateWindow(1115)</onclick>
+                                <!-- condicionado a que no esté activo "Esperar que inicien plugins al arranque" -->
+                                <enable>!Skin.HasSetting(Startup.PluginInit)</enable>
+                            </include>
+                            <!-- FIN Jon -->
+                            
                             <!-- Playback -->
                             <include content="Dialog_Settings_Label" description="Playback">
                                 <param name="id">5005</param>

@@ -566,4 +566,12 @@
         <value condition="String.IsEqual(ListItem.DBTYPE,season)">season</value>
         <value condition="String.IsEqual(ListItem.DBTYPE,episode)">episode</value>
     </variable>
+    <!-- INI Jon - Variable con los valores para el selector de tiempo de espera a Palantir. "Nada", por defecto. -->
+    <variable name="Label_Behaviour_WaitTime">
+        <value condition="Skin.HasSetting(Behaviour.waitFast)">$LOCALIZE[31514]</value>
+        <value condition="Skin.HasSetting(Behaviour.waitMedium)">$LOCALIZE[31515]</value>
+        <value condition="Skin.HasSetting(Behaviour.waitSlow)">$LOCALIZE[31516]</value>
+        <value>$LOCALIZE[31517]</value>
+    </variable>
+	<!-- FIN Jon  -->
 </includes>

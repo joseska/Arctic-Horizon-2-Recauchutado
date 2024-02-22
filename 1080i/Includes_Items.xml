@@ -1958,6 +1958,59 @@
     </include>
     <!-- FIN Jon-->
 	
+	<!-- INI Jon - Items para el diálogo de menú del selector de tiempo de espera para Palantir-->
+    <include name="Items_DialogPreset_WaitPalantir">
+        <include content="Dialog_Settings_Button" description="No wait">
+            <param name="id" value="9001" />
+            <param name="control">radiobutton</param>
+            <label>$LOCALIZE[31517]</label>
+            <onclick>Skin.Reset(Behaviour.waitFast)</onclick>
+            <onclick>Skin.Reset(Behaviour.waitMedium)</onclick>
+            <onclick>Skin.Reset(Behaviour.waitSlow)</onclick>
+            <onclick>Close</onclick>
+            <!-- <onclick>ReloadSkin()</onclick> -->
+            <!-- <onclick>AlarmClock(refocus,SetFocus(1005),00:00,silent)</onclick> -->
+            <selected>!Skin.HasSetting(Behaviour.waitFast) + !Skin.HasSetting(Behaviour.waitMedium) + !Skin.HasSetting(Behaviour.waitSlow)</selected>
+        </include>
+        <include content="Dialog_Settings_Button" description="Fast">
+            <param name="id" value="9002" />
+            <param name="control">radiobutton</param>
+            <label>$LOCALIZE[31514]</label>
+            <onclick>Skin.SetBool(Behaviour.waitFast)</onclick>
+            <onclick>Skin.Reset(Behaviour.waitMedium)</onclick>
+            <onclick>Skin.Reset(Behaviour.waitSlow)</onclick>
+            <onclick>Close</onclick>
+            <!-- <onclick>ReloadSkin()</onclick> -->
+            <!-- <onclick>AlarmClock(refocus,SetFocus(1005),00:00,silent)</onclick> -->
+            <selected>Skin.HasSetting(Behaviour.waitFast) + !Skin.HasSetting(Behaviour.waitMedium) + !Skin.HasSetting(Behaviour.waitSlow)</selected>
+        </include>
+        <include content="Dialog_Settings_Button" description="Medium">
+            <param name="id" value="9003" />
+            <param name="control">radiobutton</param>
+            <label>$LOCALIZE[31515]</label>
+            <onclick>Skin.Reset(Behaviour.waitFast)</onclick>
+            <onclick>Skin.SetBool(Behaviour.waitMedium)</onclick>
+            <onclick>Skin.Reset(Behaviour.waitSlow)</onclick>
+            <onclick>Close</onclick>
+            <!-- <onclick>ReloadSkin()</onclick> -->
+            <!-- <onclick>AlarmClock(refocus,SetFocus(1005),00:00,silent)</onclick> -->
+            <selected>!Skin.HasSetting(Behaviour.waitFast) + Skin.HasSetting(Behaviour.waitMedium) + !Skin.HasSetting(Behaviour.waitSlow)</selected>
+        </include>
+        <include content="Dialog_Settings_Button" description="Slow">
+            <param name="id" value="9004" />
+            <param name="control">radiobutton</param>
+            <label>$LOCALIZE[31516]</label>
+            <onclick>Skin.Reset(Behaviour.waitFast)</onclick>
+            <onclick>Skin.Reset(Behaviour.waitMedium)</onclick>
+            <onclick>Skin.SetBool(Behaviour.waitSlow)</onclick>
+            <onclick>Close</onclick>
+            <!-- <onclick>ReloadSkin()</onclick> -->
+            <!-- <onclick>AlarmClock(refocus,SetFocus(1005),00:00,silent)</onclick> -->
+            <selected>!Skin.HasSetting(Behaviour.waitFast) + !Skin.HasSetting(Behaviour.waitMedium) + Skin.HasSetting(Behaviour.waitSlow)</selected>
+        </include>
+    </include>
+    <!-- FIN Jon-->
+	
 	
 
 

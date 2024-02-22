@@ -2002,7 +2002,7 @@ msgstr "Iconos + Textos (OFF)"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31510"
-msgid "Show info button"
+msgid "Disable Alternate Series View"
 msgstr "Desactivar Vista Alternativa Series"
 
 #: /1080i/Include_Items.xml
@@ -2014,5 +2014,30 @@ msgstr "Youtube"
 msgctxt "#31512"
 msgid "TMDB"
 msgstr "TMDB"
+
+#: /1080i/Include_Items.xml
+msgctxt "#31513"
+msgid "Wait for System and Palantir to start up (time)"
+msgstr "Esperar al Sistema y a Palantir (tiempo)"
+
+#: /1080i/Include_Items.xml
+msgctxt "#31514"
+msgid "Fast (10s)"
+msgstr "Rápido (10s)"
+
+#: /1080i/Include_Items.xml
+msgctxt "#31515"
+msgid "Medium (25s)"
+msgstr "Medio (25s)"
+
+#: /1080i/Include_Items.xml
+msgctxt "#31516"
+msgid "Slow (40s)"
+msgstr "Lento (40s)"
+
+#: /1080i/Include_Items.xml
+msgctxt "#31517"
+msgid "No wait"
+msgstr "Nada"
 
 ### FIN Joseska Jon ###

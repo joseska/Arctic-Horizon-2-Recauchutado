@@ -124,11 +124,9 @@
             <!-- Joseska - asignar el <onleft> a abrir el cuadro de dialogo de opciones  -->
             <onleft>SetFocus(4000)</onleft>
             <onright>SetFocus(4000)</onright>
-            <onup>SetFocus(4000)</onup>
-            <ondown>SetFocus(4000)</ondown>
-
-            <onback condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onback>
-            <onback condition="Skin.HasSetting(DialogInfo.FocusButtons)">Dialog.Close(movieinformation)</onback>
+            <!-- <onup>SetFocus(4000)</onup>
+            <ondown>SetFocus(4000)</ondown> -->
+            <onback>5000</onback>
             <include>$PARAM[include]</include>
         </control>
     </include>
@@ -357,22 +355,19 @@
         <control type="group">
             <!-- <visible>Control.HasFocus(9804)</visible> -->
             <include>Animation_FadeIn_Delay</include>
-
-            <!-- Lista Capítulos. $PARAM[include] == "List_BigLandscape_Row". - $PARAM[id]3 == 9802. - $PARAM[id]2 == 9801-->
             <include content="List_BigLandscape_Row">
                 <param name="id" value="9804" />
                 <param name="orientation">vertical</param>
-                <!-- <visible>!Container.IsUpdating(9801)</visible> -->
                 <height>divider_bottom</height>
                 <bottom>40</bottom>
                 <preloaditems>2</preloaditems>
                 <focusposition>0</focusposition>
-                <onback>7004</onback>
-                <content target="videos">$VAR[Path_Youtube2]</content>
-                <!-- <content target="videos">$VAR[Path_duffyou]</content> -->
                 <onclick>PlayMedia($ESCINFO[Container(9804).ListItem.FileNameAndPath],False,1,playlist_type_hint=1)</onclick>
                 <onclick>SetProperty(HasTrailer,$INFO[Container(9804).ListItem.FileNameAndPath],Home)</onclick>
                 <onclick>SetFocus(7001)</onclick>
+                <onback condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onback>
+                <onback condition="Skin.HasSetting(DialogInfo.FocusButtons)">4000</onback>
+                <content target="videos">$VAR[Path_Youtube2]</content>
                 <animation effect="fade" start="100" end="10" time="200" delay="400" condition="Container(9804).IsUpdating">Conditional</animation>
             </include>
             <!-- Cargando Trailers. -->
@@ -402,7 +397,7 @@
                     <param name="condition">$PARAM[selected]</param>
                 </include>
             </control> -->
-            
+            <!-- Joseska - animación para mantener fuera de la ventana si no tiene el foco.  -->
             <animation effect="slide" end="0,-1500" time="2" delay="0" condition="!Control.HasFocus(9804)">Conditional</animation>
             <animation effect="slide" end="0,0" time="2" delay="0" condition="Control.HasFocus(9804)">Conditional</animation>
         </control>
@@ -763,8 +758,7 @@
                 <centerleft>50%</centerleft> 
             </control>
             <control type="label" id="11">
-                <!-- <label>Pulsa abajo para cerrar el video</label> -->
-                <label>$INFO[Window(Home).Property(trailerTMDB)]</label>
+                <label>Pulsa abajo para cerrar el video</label>
                 <font>font_tiny</font>
                 <textcolor>main_fg_70</textcolor>
                 <selectedcolor>main_fg_70</selectedcolor>
@@ -813,10 +807,11 @@
                 <oninfo>ClearProperty(HasTrailer,Home)</oninfo>
                 <oninfo condition="Player.HasVideo">Stop</oninfo>
 
-                <onback condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onback>
-                <onback condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onback>
+                <onback condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">$PARAM[onback]</onback>
+                <onback condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">9804</onback>
                 <!-- <onback>SetFocus($PARAM[onback])</onback> -->
                 <onback>ClearProperty(HasTrailer,Home)</onback>
+                <onback>ClearProperty(trailerTMDB,Home)</onback>
                 <onback condition="Player.HasVideo">Stop</onback>
 
                 <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onleft>
@@ -829,6 +824,7 @@
                 <onunfocus condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onunfocus>
                 <!-- <onunfocus>SetFocus($PARAM[onback])</onunfocus> -->
                 <onunfocus>ClearProperty(HasTrailer,Home)</onunfocus>
+                <onunfocus>ClearProperty(trailerTMDB,Home)</onunfocus>
                 <onunfocus condition="Player.HasVideo">Stop</onunfocus>
 
                 <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onleft>

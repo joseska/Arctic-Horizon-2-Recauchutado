@@ -1993,4 +1993,50 @@ msgctxt "#31508"
 msgid "MPAA icon style"
 msgstr ""
 
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31509"
+msgid "Icons + Text (OFF)"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31510"
+msgid "Disable Alternate Series View"
+msgstr ""
+
+#: /1080i/Include_Items.xml
+msgctxt "#31511"
+msgid "Youtube"
+msgstr ""
+
+#: /1080i/Include_Items.xml
+msgctxt "#31512"
+msgid "TMDB"
+msgstr ""
+
+#: /1080i/Include_Items.xml
+msgctxt "#31513"
+msgid "Wait for System and Palantir to start up (time)"
+msgstr ""
+
+#: /1080i/Include_Items.xml
+msgctxt "#31514"
+msgid "Fast (10s)"
+msgstr ""
+
+#: /1080i/Include_Items.xml
+msgctxt "#31515"
+msgid "Medium (25s)"
+msgstr ""
+
+#: /1080i/Include_Items.xml
+msgctxt "#31516"
+msgid "Slow (40s)"
+msgstr ""
+
+#: /1080i/Include_Items.xml
+msgctxt "#31517"
+msgid "No wait"
+msgstr ""
+
 ### FIN Joseska Jon ###

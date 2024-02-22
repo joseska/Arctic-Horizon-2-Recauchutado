@@ -28,6 +28,9 @@
                 <!-- INI Jon - Include en el dialogo preset para abrir el diálogo con el selector de estilo de iconos de MPAA. -->
                 <include condition="String.IsEqual(Window(Home).Property(CustomDialogPresetItems),Items_DialogPreset_MPAAIcons)">Items_DialogPreset_MPAAIcons</include>
                 <!-- FIN Jon -->
+                <!-- INI Jon - Include en el dialogo preset para abrir el diálogo con el selector de tiempo de espera a Palantir. -->
+                <include condition="String.IsEqual(Window(Home).Property(CustomDialogPresetItems),Items_DialogPreset_WaitPalantir)">Items_DialogPreset_WaitPalantir</include>
+                <!-- FIN Jon -->
                 <include content="Dialog_Settings_Button">
                     <param name="id" value="9099" />
                     <param name="control" value="button" />

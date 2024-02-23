@@ -418,6 +418,7 @@
                 <height>divider_bottom</height>
                 <left>-3920</left>
                 <top>-3920</top>
+                <onfocus>Fullscreen</onfocus>
             </include>
 
             <!-- Lista Capítulos. $PARAM[include] == "List_BigLandscape_Row". - $PARAM[id]3 == 9802. - $PARAM[id]2 == 9801-->
@@ -429,15 +430,15 @@
                 <ondown>9801</ondown>
                 <preloaditems>2</preloaditems>
                 <focusposition>0</focusposition>
-                <onclick condition="Container(9802).ListItem.IsFolder">Container.Update($INFO[Container(9802).ListItem.FolderPath])</onclick>
-                <onclick condition="Container(9802).ListItem.IsFolder">SetFocus(50)</onclick>
-                <onclick condition="!Container(9802).ListItem.IsFolder">PlayMedia($ESCINFO[Container(9802).ListItem.FileNameAndPath],playlist_type_hint=1)</onclick>
+                Joseska - Cambios para arreglar BUG en la vista de series 
+                <onload condition="String.IsEqual(Window(Home).Property(vista9802),Si)">ClearProperty(vista9802,Home)</onload>
+                <onclick>SetProperty(vista9802,Si,Home)</onclick>
+                <onclick condition="!Container(9802).ListItem.IsFolder">RunScript(plugin.video.themoviedb.helper,recommendations=onaction,window_id=9802,after=True,builtin='PlayMedia($ESCINFO[Container(9802).ListItem.FileNameAndPath],playlist_type_hint=1)')</onclick>
                 <onback condition="!Skin.HasSetting(DialogInfo.FocusButtons)">5000</onback>
                 <onback condition="Skin.HasSetting(DialogInfo.FocusButtons)">4000</onback>
 
                 <content target="videos">$VAR[Path_CollectionNode_Content2]</content>
 
-                <!-- <onback>SetFocus(9801)</onback> -->
                 <animation effect="fade" start="100" end="10" time="200" delay="400" condition="Container(9802).IsUpdating">Conditional</animation>
             </include>
 

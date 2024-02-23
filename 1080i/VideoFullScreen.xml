@@ -2,6 +2,9 @@
 <window>
     <include>Animation_Fullscreen_Media</include>
     <onload>ClearProperty(OSDRelaunchFullscreen,Home)</onload>
+    <!-- joseska - Si viene de 9802, para volver al mismo sitio  -->
+    <onunload condition="String.IsEqual(Window(Home).Property(vista9802),Si)">AlarmClock(loadinfo1,Action(Info),00:00,silent)</onunload>
+    <onunload condition="String.IsEqual(Window(Home).Property(vista9802),Si)">AlarmClock(loadinfo2,SetFocus(9802),00:01,silent)</onunload>
     <controls>
         <control type="grouplist" id="0">
             <orientation>vertical</orientation>

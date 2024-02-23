@@ -218,7 +218,7 @@
 			<label>$LOCALIZE[1036]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/favourites2.png</icon>
-			<thumb />
+			<thumb>special://skin/extras/icons/Favoritos/favourites.png</thumb>
 			<property name="labelID">1036</property>
 			<property name="defaultID">1036</property>
 			<onclick>ActivateWindow(favourites)</onclick>
@@ -3573,7 +3573,7 @@
 			<label>$LOCALIZE[1036]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/favourites2.png</icon>
-			<thumb />
+			<thumb>special://skin/extras/icons/Favoritos/favourites.png</thumb>
 			<property name="labelID">1036</property>
 			<property name="defaultID">1036</property>
 			<onclick>ActivateWindow(favourites)</onclick>
@@ -3690,7 +3690,7 @@
 			<label>$LOCALIZE[1036]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/favourites2.png</icon>
-			<thumb />
+			<thumb>special://skin/extras/icons/Favoritos/favourites.png</thumb>
 			<property name="labelID">1036</property>
 			<property name="defaultID">1036</property>
 			<onclick>ActivateWindow(favourites)</onclick>
@@ -3798,7 +3798,7 @@
 			<param name="id" value="9003" />
 			<param name="groupid" value="9103" />
 			<param name="control" value="button" />
-			<param name="icon" value="special://skin/extras/icons/favourites2.png" />
+			<param name="icon" value="special://skin/extras/icons/Favoritos/favourites.png" />
 			<param name="bordersize" value="10" />
 			<label>$LOCALIZE[1036]</label>
 			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>

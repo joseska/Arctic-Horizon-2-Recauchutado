@@ -35,6 +35,7 @@
 			<property name="widgetTarget">videos</property>
 			<property name="widgetPath">plugin://plugin.video.palantir3/?5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIhxWdjlGblB1XzlGblB3X2BSTPJlRgAybyVmbldGLhFGctxibvlGdhJXdkxiYk1GdsQWYklGbhNGLvlGZ1FGLvRmbvZGLyVGdz9GcsQ3bsBHLyFWZ5xybsVHdpRHIUNURMV0UnAiOiwWczJCIscSXS9ETPN0LbNXYsV3YtOMblBVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
 			<property name="widgetStyle">Fullscreen</property>
+			<property name="widgetAutoScroll">True</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3",return)</property>
 			<property name="list">plugin://plugin.video.palantir3</property>
@@ -96,15 +97,27 @@
 			<thumb>special://skin/extras/icons/3.png</thumb>
 			<property name="labelID">20183</property>
 			<property name="defaultID">20183</property>
-			<property name="translatedPath">ReloadSkin()</property>
-			<onclick>ReloadSkin()</onclick>
-			<property name="path">ReloadSkin()</property>
-			<property name="list">ReloadSkin()</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
+			<property name="hasSubmenu">False</property>
+			</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<label>[COLOR ffffd700]Buscar por título[/COLOR]</label>
+			<label2>Elemento Personalizado</label2>
+			<icon>special://skin/extras/icons/shortcut.png</icon>
+			<thumb>special://skin/extras/icons/binoculars.png</thumb>
+			<property name="labelID">colorffffd700-buscarportitulo-color</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscyMyF2YzVnYnAiOi42bpR3YhJye9dyclAichN2c1JWZyByJgojIsF3ciACLn0lUPx0TD9yWvxWd016w0BicvBHIyF2YzVnQdBDM3QmZmZmZgI1TM90QbdCI6ICdvxGciACLwAiOiU2ZhBnIgwyJdJ1TM90Qvs1bsVHdtOMdgI3bwBichN2c1JUXwAzNkZmZmZGIS9ETPN0WnAiOiwWZiFGbiACLncmbw5ichN2c1JWZyxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscyMyF2YzVnYnAiOi42bpR3YhJye9dyclAichN2c1JWZyByJgojIsF3ciACLn0lUPx0TD9yWvxWd016w0BicvBHIyF2YzVnQdBDM3QmZmZmZgI1TM90QbdCI6ICdvxGciACLwAiOiU2ZhBnIgwyJdJ1TM90Qvs1bsVHdtOMdgI3bwBichN2c1JUXwAzNkZmZmZGIS9ETPN0WnAiOiwWZiFGbiACLncmbw5ichN2c1JWZyxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9")</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscyMyF2YzVnYnAiOi42bpR3YhJye9dyclAichN2c1JWZyByJgojIsF3ciACLn0lUPx0TD9yWvxWd016w0BicvBHIyF2YzVnQdBDM3QmZmZmZgI1TM90QbdCI6ICdvxGciACLwAiOiU2ZhBnIgwyJdJ1TM90Qvs1bsVHdtOMdgI3bwBichN2c1JUXwAzNkZmZmZGIS9ETPN0WnAiOiwWZiFGbiACLncmbw5ichN2c1JWZyxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9")</property>
+			<property name="list">plugin://plugin.video.palantir3/?GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscyMyF2YzVnYnAiOi42bpR3YhJye9dyclAichN2c1JWZyByJgojIsF3ciACLn0lUPx0TD9yWvxWd016w0BicvBHIyF2YzVnQdBDM3QmZmZmZgI1TM90QbdCI6ICdvxGciACLwAiOiU2ZhBnIgwyJdJ1TM90Qvs1bsVHdtOMdgI3bwBichN2c1JUXwAzNkZmZmZGIS9ETPN0WnAiOiwWZiFGbiACLncmbw5ichN2c1JWZyxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-20183</property>
+			<property name="submenuVisibility">colorffffd700-buscarportitulo-color</property>
 			<property name="group">mainmenu</property>
-			<property name="widgetOnDownAction">$INFO[Skin.String(widgetEndRowAction-20183)]</property>
-			<property name="menuOnUpAction">$INFO[Skin.String(menuOnUpAction-20183)]</property>
+			<property name="widgetOnDownAction">$INFO[Skin.String(widgetEndRowAction-colorffffd700-buscarportitulo-color)]</property>
+			<property name="menuOnUpAction">$INFO[Skin.String(menuOnUpAction-colorffffd700-buscarportitulo-color)]</property>
 			<property name="hasSubmenu">False</property>
 			</item>
 		</include>
@@ -180,7 +193,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[20183]</label>
 			<label2>Por defecto</label2>
 			<icon>special://skin/extras/icons/update.png</icon>
@@ -197,7 +210,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[8]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/sun.png</icon>
@@ -214,7 +227,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[1036]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/favourites2.png</icon>
@@ -230,7 +243,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/filebox.png</icon>
@@ -246,7 +259,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -262,7 +275,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/settings.png</icon>
@@ -278,7 +291,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/power.png</icon>
@@ -295,7 +308,7 @@
 			</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[342]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/film.png</icon>
@@ -311,7 +324,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -327,7 +340,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20360]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -344,7 +357,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -361,7 +374,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -378,7 +391,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[134]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -395,7 +408,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/musicvideo.png</icon>
@@ -411,7 +424,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/musicvideo.png</icon>
@@ -427,7 +440,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31168]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/film.png</icon>
@@ -443,7 +456,7 @@
 			</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -459,7 +472,7 @@
 			</item>
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31170]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/sets.png</icon>
@@ -475,7 +488,7 @@
 			</item>
 		<item id="12">
 			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31171]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/person.png</icon>
@@ -1557,7 +1570,7 @@
 							<param name="limit">7</param>
 							<param name="content">plugin://plugin.video.palantir3/?5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIhxWdjlGblB1XzlGblB3X2BSTPJlRgAybyVmbldGLhFGctxibvlGdhJXdkxiYk1GdsQWYklGbhNGLvlGZ1FGLvRmbvZGLyVGdz9GcsQ3bsBHLyFWZ5xybsVHdpRHIUNURMV0UnAiOiwWczJCIscSXS9ETPN0LbNXYsV3YtOMblBVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</param>
 							</include>
-						<include content="Defs_AutoScroll" condition="False">
+						<include content="Defs_AutoScroll" condition="True">
 							<param name="condition" value="!Control.HasFocus(301) + !System.ScreenSaverActive + String.IsEmpty(Window(Home).Property(Widgets.BlockAutoscroll))" />
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,301,Home)</onfocus>
@@ -2788,14 +2801,14 @@
 					</control>
 				</include>
 			</include>
-		<include content="Object_Control" condition="String.IsEqual(System.ProfileName,Master user)">
+		<include content="Object_Control" condition="False">
 			<param name="control">group</param>
 			<include content="Object_Control" condition="!False">
 				<param name="control">group</param>
 				<include content="Animation_LeftRight">
-					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183)]" />
+					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
 					</include>
-				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
+				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
 				<control type="grouplist" id="6400">
 					<animation effect="slide" end="0,120" condition="Integer.IsEqual(Container(6400).NumItems,1) + False + True">Conditional</animation>
 					<visible>!$EXP[Exp_InfoDialogs]</visible>
@@ -2806,12 +2819,12 @@
 					<onleft condition="Skin.HasSetting(Home.VerticalMenu)">SetFocus(300)</onleft>
 					<onup>SetFocus(300)</onup>
 					<ondown condition="Skin.HasSetting(Home.VerticalMenu)">SetFocus(300)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">SetProperty(CustomHubHeader,$INFO[Container(300).ListItem.Label],Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">SetProperty(submenuVisibility,$INFO[Container(300).ListItem.Property(submenuVisibility)],Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">$INFO[Skin.String(widgetEndRowAction-20183)]</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True]">ClearProperty(330_FocusBounce,Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True] + !String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">SetFocus(330)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True] + String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">AlarmClock(330_FocusBounce_Reset,SetProperty(330_FocusBounce,1,Home),00:00,silent)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False">SetProperty(CustomHubHeader,$INFO[Container(300).ListItem.Label],Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False">SetProperty(submenuVisibility,$INFO[Container(300).ListItem.Property(submenuVisibility)],Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False" />
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False]">ClearProperty(330_FocusBounce,Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False] + !String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">SetFocus(330)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False] + String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">AlarmClock(330_FocusBounce_Reset,SetProperty(330_FocusBounce,1,Home),00:00,silent)</ondown>
 					<include content="Object_Control" condition="False + True">
 						<param name="control">group</param>
 						<param name="id">6500</param>
@@ -2942,7 +2955,7 @@
 						<param name="label" value="$LOCALIZE[31105]" />
 						<param name="include" value="List_Poster_Row" />
 						<param name="labelvisible">!Skin.HasSetting(Widgets.ExpandedHeader)</param>
-						<param name="visible" value="String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183)" />
+						<param name="visible" value="String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)" />
 						<param name="busy_visible" value="[Integer.IsEqual(Container(301).NumItems,0) | [Integer.IsEqual(Container(301).NumItems,1) + !String.IsEmpty(Container(301).ListItemAbsolute(0).Property(blankitem))]]" />
 						<content>
 							<item>
@@ -2989,7 +3002,7 @@
 						<param name="altlabel">$INFO[Container(6600).ListItem.Label]</param>
 						<param name="usewidgetlabel" value="False" />
 						<param name="include" value="List_Landscape_Row" />
-						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + [![False] | [!Integer.IsEqual(Container(6600).NumItems,0) + Container(6600).ListItem.IsFolder]]]" />
+						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + [![False] | [!Integer.IsEqual(Container(6600).NumItems,0) + Container(6600).ListItem.IsFolder]]]" />
 						<param name="infowidget" value="True" />
 						<param name="infowidget_full" value="True" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(6601).NumItems,0) | [False + Container(6601).IsUpdating]" />
@@ -3026,7 +3039,7 @@
 							<param name="visible">Integer.IsEqual(Container(6600).NumItems,0) | String.IsEmpty(Container(6600).ListItem.FolderPath)</param>
 							</include>
 						<include content="Object_ContentInclude" condition="False">
-							<param name="include">skinshortcuts-group-num-20183</param>
+							<param name="include">skinshortcuts-group-</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,6601,Home)</onfocus>
 						<onfocus condition="True + ![False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,Trending This Week,Home)</onfocus>
@@ -3054,7 +3067,7 @@
 						<param name="label" value="$LOCALIZE[1034]" />
 						<param name="include" value="List_Button_Row" />
 						<param name="detailed">True</param>
-						<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183)]" />
+						<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
 						<param name="infowidget" value="False" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(6698).NumItems,0)" />
 						<include content="Object_ContentDynamic" condition="False">
@@ -3062,7 +3075,7 @@
 							<param name="target" />
 							</include>
 						<include content="Object_ContentInclude" condition="![False]">
-							<param name="include">skinshortcuts-group-num-20183</param>
+							<param name="include">skinshortcuts-group-</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,6698,Home)</onfocus>
 						<onfocus>SetProperty(Slide.WidgetInfoStyle,,Home)</onfocus>
@@ -3104,9 +3117,9 @@
 			<include content="Object_Control" condition="False">
 				<param name="control">group</param>
 				<include content="Animation_LeftRight">
-					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183)]" />
+					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
 					</include>
-				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
+				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
 				<control type="group">
 					<control type="button" id="6599">
 						<visible allowhiddenfocus="true">False</visible>
@@ -3532,10 +3545,46 @@
 	<include name="skinshortcuts-group-alt-num-20183-5">
 		<description>No items</description>
 		</include>
+	<include name="skinshortcuts-group-colorffffd700-buscarportitulo-color">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-colorffffd700-buscarportitulo-color">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-colorffffd700-buscarportitulo-color-1">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-colorffffd700-buscarportitulo-color-1">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-colorffffd700-buscarportitulo-color-2">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-colorffffd700-buscarportitulo-color-2">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-colorffffd700-buscarportitulo-color-3">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-colorffffd700-buscarportitulo-color-3">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-colorffffd700-buscarportitulo-color-4">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-colorffffd700-buscarportitulo-color-4">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-colorffffd700-buscarportitulo-color-5">
+		<description>No items</description>
+		</include>
+	<include name="skinshortcuts-group-alt-colorffffd700-buscarportitulo-color-5">
+		<description>No items</description>
+		</include>
 	<include name="skinshortcuts-group-powermenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[20183]</label>
 			<label2>Por defecto</label2>
 			<icon>special://skin/extras/icons/update.png</icon>
@@ -3552,7 +3601,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[8]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/sun.png</icon>
@@ -3569,7 +3618,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[1036]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/favourites2.png</icon>
@@ -3585,7 +3634,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/filebox.png</icon>
@@ -3601,7 +3650,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -3617,7 +3666,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/settings.png</icon>
@@ -3633,7 +3682,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/power.png</icon>
@@ -3652,7 +3701,7 @@
 	<include name="skinshortcuts-group-alt-powermenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[20183]</label>
 			<label2>Por defecto</label2>
 			<icon>special://skin/extras/icons/update.png</icon>
@@ -3669,7 +3718,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[8]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/sun.png</icon>
@@ -3686,7 +3735,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[1036]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/favourites2.png</icon>
@@ -3702,7 +3751,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/filebox.png</icon>
@@ -3718,7 +3767,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -3734,7 +3783,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/settings.png</icon>
@@ -3750,7 +3799,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">7</property>
+			<property name="mainmenuid">8</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Power Shortcut</label2>
 			<icon>special://skin/extras/icons/power.png</icon>
@@ -3888,7 +3937,7 @@
 	<include name="skinshortcuts-group-searchmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[342]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/film.png</icon>
@@ -3904,7 +3953,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -3920,7 +3969,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20360]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -3937,7 +3986,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -3954,7 +4003,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -3971,7 +4020,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[134]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -3988,7 +4037,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/musicvideo.png</icon>
@@ -4004,7 +4053,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/musicvideo.png</icon>
@@ -4020,7 +4069,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31168]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/film.png</icon>
@@ -4036,7 +4085,7 @@
 			</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -4052,7 +4101,7 @@
 			</item>
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31170]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/sets.png</icon>
@@ -4068,7 +4117,7 @@
 			</item>
 		<item id="12">
 			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31171]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/person.png</icon>
@@ -4086,7 +4135,7 @@
 	<include name="skinshortcuts-group-alt-searchmenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[342]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/film.png</icon>
@@ -4102,7 +4151,7 @@
 			</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -4118,7 +4167,7 @@
 			</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20360]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -4135,7 +4184,7 @@
 			</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -4152,7 +4201,7 @@
 			</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -4169,7 +4218,7 @@
 			</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[134]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/songs.png</icon>
@@ -4186,7 +4235,7 @@
 			</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/musicvideo.png</icon>
@@ -4202,7 +4251,7 @@
 			</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/musicvideo.png</icon>
@@ -4218,7 +4267,7 @@
 			</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31168]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/film.png</icon>
@@ -4234,7 +4283,7 @@
 			</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/tv.png</icon>
@@ -4250,7 +4299,7 @@
 			</item>
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31170]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/sets.png</icon>
@@ -4266,7 +4315,7 @@
 			</item>
 		<item id="12">
 			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">9</property>
 			<label>$LOCALIZE[31171]</label>
 			<label2>$LOCALIZE[571]</label2>
 			<icon>special://skin/extras/icons/person.png</icon>
@@ -4875,9 +4924,12 @@
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(5400).HasPrevious]</visible>
 		<visible>!Control.HasFocus(5601) | [False + False]</visible>
 		<visible>!Control.HasFocus(5501) + !Control.HasFocus(5503) + !Control.HasFocus(301)</visible>
-		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + Container(6400).HasPrevious]</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(6400).HasPrevious]</visible>
 		<visible>!Control.HasFocus(6601) | [False + False]</visible>
 		<visible>!Control.HasFocus(6501) + !Control.HasFocus(6503) + !Control.HasFocus(301)</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + Container(7400).HasPrevious]</visible>
+		<visible>!Control.HasFocus(7601) | [False + False]</visible>
+		<visible>!Control.HasFocus(7501) + !Control.HasFocus(7503) + !Control.HasFocus(301)</visible>
 		</include>
 	<include name="skinshortcuts-template-wallfade-bottom-visible">
 		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-wallfade-bottom-visible-Master user</include>
@@ -4888,7 +4940,8 @@
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + Container(3400).HasNext]</visible>
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(4400).HasNext]</visible>
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(5400).HasNext]</visible>
-		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + Container(6400).HasNext]</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(6400).HasNext]</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + Container(7400).HasNext]</visible>
 		</include>
 	<include name="skinshortcuts-template-textmenu">
 		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-textmenu-Master user</include>
@@ -4909,8 +4962,11 @@
 		<include content="Home_Horz_Menubar_Text_Button" condition="False">
 			<param name="label">Pelis TMDB</param>
 			</include>
-		<include content="Home_Horz_Menubar_Text_Button" condition="String.IsEqual(System.ProfileName,Master user)">
+		<include content="Home_Horz_Menubar_Text_Button" condition="False">
 			<param name="label">$LOCALIZE[20183]</param>
+			</include>
+		<include content="Home_Horz_Menubar_Text_Button" condition="String.IsEqual(System.ProfileName,Master user)">
+			<param name="label">[COLOR ffffd700]Buscar por título[/COLOR]</param>
 			</include>
 		</include>
 	<include name="skinshortcuts-template-dialog-lookup">
@@ -4946,6 +5002,11 @@
 			<visible>String.IsEqual(Container(211).ListItem.Property(labelID),20183)</visible>
 			<property name="widgetOnDownAction">$INFO[Skin.String(widgetEndRowAction-20183)]</property>
 			<property name="menuOnUpAction">$INFO[Skin.String(menuOnUpAction-20183)]</property>
+			</item>
+		<item>
+			<visible>String.IsEqual(Container(211).ListItem.Property(labelID),colorffffd700-buscarportitulo-color)</visible>
+			<property name="widgetOnDownAction">$INFO[Skin.String(widgetEndRowAction-colorffffd700-buscarportitulo-color)]</property>
+			<property name="menuOnUpAction">$INFO[Skin.String(menuOnUpAction-colorffffd700-buscarportitulo-color)]</property>
 			</item>
 		</include>
 	<include name="skinshortcuts-template-menubar">
@@ -4987,13 +5048,20 @@
 		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + True">5599</ondown>
 		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + !True">301</ondown>
 		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !False">5601</ondown>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + !Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !String.IsEmpty(Window(Home).Property(TMDBHelper.WidgetContainer))">SetFocus($INFO[Window(Home).Property(TMDBHelper.WidgetContainer)])</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">6599</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + !True">301</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !False">6601</onright>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + False + True">6599</ondown>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + False + !True">301</ondown>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183) + !False">6601</ondown>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !String.IsEmpty(Window(Home).Property(TMDBHelper.WidgetContainer))">SetFocus($INFO[Window(Home).Property(TMDBHelper.WidgetContainer)])</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">6599</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + !True">301</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !False">6601</onright>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + True">6599</ondown>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + !True">301</ondown>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !False">6601</ondown>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + !Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !String.IsEmpty(Window(Home).Property(TMDBHelper.WidgetContainer))">SetFocus($INFO[Window(Home).Property(TMDBHelper.WidgetContainer)])</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">7599</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + !True">301</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !False">7601</onright>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + False + True">7599</ondown>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + False + !True">301</ondown>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color) + !False">7601</ondown>
 		</include>
 	<include name="skinshortcuts-template-fullscreen-fallback">
 		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-fullscreen-fallback-Master user</include>
@@ -5027,7 +5095,12 @@
 		<item>
 			<label>[COLOR=00ffffff]$INFO[Container(6601).ListItem.Label][/COLOR]</label>
 			<property name="fanart">$INFO[Container(6601).ListItem.Art(fanart)]</property>
-			<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-20183)</visible>
+			<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)</visible>
+			</item>
+		<item>
+			<label>[COLOR=00ffffff]$INFO[Container(7601).ListItem.Label][/COLOR]</label>
+			<property name="fanart">$INFO[Container(7601).ListItem.Art(fanart)]</property>
+			<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-buscarportitulo-color)</visible>
 			</item>
 		</include>
 	<include name="skinshortcuts-template-fullscreen-widget">
@@ -5046,7 +5119,7 @@
 			<orientation>horizontal</orientation>
 			<scrolltime tween="quadratic">400</scrolltime>
 			<hitrect x="0" y="0" w="0" h="0" />
-			<include content="Defs_AutoScroll" condition="False">
+			<include content="Defs_AutoScroll" condition="True">
 				<param name="condition" value="[Control.HasFocus(300) | Control.HasFocus(399)] + !System.ScreenSaverActive + String.IsEmpty(Window(Home).Property(Widgets.BlockAutoscroll))" />
 				</include>
 			<itemlayout width="1920" height="1080" />

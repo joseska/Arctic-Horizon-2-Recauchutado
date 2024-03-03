@@ -7,6 +7,19 @@
 > [Enlace al Tutorial de instalación y configuración.](https://telegra.ph/AH2-Tutorial-02-02)
 
 
+
+### Actualización 0.2.8 (0.2.8.1) - 22/02/2024
+- [x] Arreglado BUG en vista Series.
+- [x] Nueva vista alternativa para ver los capítulos y las temporadas en las series pinchando en el botón "Ver" (o dando a la derecha) en la pantalla de información.
+- [x] Nueva opción en los ajustes del skin para cambiar el comportamiento del botón "Ver" en la pantalla del Información (Skin - Configurar skin - Comportamiento - Desactivar Vista Alternativa Series)
+- [x] Nueva vista Trailers Youtube (Junto con un dos nuevos Botones dentro del botón trailers en la pantalla de información [Trailers desde TMDB / Trailers desde Youtube]).
+- [x] Cambios para mostrar correctamente los videos de las Series/Películas en la pantalla Detalles (Botón Detalles en la pantalla de información).
+- [x] Priorizar el título del ListItem correspondiente para que si en ajustes de Palantir está desmarcado "Incluir información extra en los títulos" no se vea la información de año e idiomas en los títulos de las series.
+- [X] Nueva opción que espera un tiempo para ejecutar Palantir y esperar a que cargue. A elegir entre 4 opciones Nada (por defecto, como hasta antes de este cambio) /Rápido/Medio/Lento, en función de la potencia del dispositivo. 
+Durante ese tiempo la skin se verá vacía y se mostrará dos notificaciones, una al empezar y otra cuando sólo quede por cargar Palantir.
+Ajuste en "Skin - Configurar skin - Comportamiento - "Esperar al Sistema y a Palantir (tiempo)".
+- [X] Compatibilidad con Kodi 21 Omega.
+
 ### Actualización 0.2.7
 - [x] Rediseño de pantalla de carga de la skin, corrigiendo el bug por el que se tapaba los elementos relativos a Perfiles de Kodi.
 - [x] Nueva opción en los ajustes del skin con enlace al tutorial (Skin - Configurar skin - Soporte)

@@ -24,6 +24,10 @@
                     <label>         --slide.container: $INFO[Window(Home).Property(Slide.WidgetInfoStyle),style: , ]$INFO[Window(Home).Property(Slide.WidgetContainer),container: , ]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
+                <include content="Overlay_InfoLabel">
+                    <label> --Otros: $INFO[ListItem.Title]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
             </control>
             <control type="grouplist">
                 <align>bottom</align>

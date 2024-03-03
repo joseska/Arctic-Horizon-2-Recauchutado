@@ -2040,9 +2040,4 @@ msgctxt "#31517"
 msgid "No wait"
 msgstr "Nada"
 
-#: /1080i/Includes_DialogInfo.xml
-msgctxt "#31518"
-msgid "Click below to close the video."
-msgstr "Pulsa abajo para cerrar el video"
-
 ### FIN Joseska Jon ###

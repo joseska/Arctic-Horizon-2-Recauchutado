@@ -751,15 +751,16 @@
             </control>
             <control type="videowindow" />
             <include>DialogInfo_VideoTrailerControl</include>
+            <!-- Joseska - Texto e imagen Pulsa abajo para cerrar el video  -->
             <control type="image">
-                <texture colordiffuse="main_fg_80">special://skin/extras/icons/angle-down.png</texture>
+                <texture colordiffuse="main_fg_80">special://skin/extras/icons/Flechas/angle-down.png</texture>
                 <width>40</width>
                 <height>40</height>
                 <centerbottom>-11</centerbottom>
                 <centerleft>50%</centerleft> 
             </control>
             <control type="label" id="11">
-                <label>Pulsa abajo para cerrar el video</label>
+                <label>$LOCALIZE[31518]</label>
                 <font>font_tiny</font>
                 <textcolor>main_fg_70</textcolor>
                 <selectedcolor>main_fg_70</selectedcolor>
@@ -767,14 +768,13 @@
                 <centerbottom>17</centerbottom>
                 <centerleft>38%</centerleft> 
             </control>
+            <!-- FIN Joseska  -->
         </include>
     </include>
 
     <!-- Trailer Control Button -->
     <include name="DialogInfo_VideoTrailerControl">
         <param name="onback">5000</param>
-        <!-- <param name="onback">9804</param> -->
-
         <definition>
             <control type="group">
                 <bottom>0</bottom>
@@ -815,38 +815,34 @@
                 <onback>ClearProperty(trailerTMDB,Home)</onback>
                 <onback condition="Player.HasVideo">Stop</onback>
 
-                <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onleft>
-                <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onleft>
-                <!-- <onclick condition="!Player.HasVideo">SetFocus($PARAM[onback])</onclick> -->
-                <onclick condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onclick>
+                <!-- <onclick condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onclick>
+                <onclick condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onclick>
+                <onclick condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onclick> -->
                 <onclick condition="Player.HasVideo">PlayerControl(Play)</onclick>
 
                 <onunfocus condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onunfocus>
                 <onunfocus condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onunfocus>
-                <!-- <onunfocus>SetFocus($PARAM[onback])</onunfocus> -->
                 <onunfocus>ClearProperty(HasTrailer,Home)</onunfocus>
                 <onunfocus>ClearProperty(trailerTMDB,Home)</onunfocus>
                 <onunfocus condition="Player.HasVideo">Stop</onunfocus>
 
-                <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onleft>
+                <!-- <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onleft>
                 <onleft condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onleft>
-                <onleft condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onleft>
+                <onleft condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onleft> -->
                 <onleft condition="Player.HasVideo">StepBack</onleft>
 
-                <onright condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onright>
+                <!-- <onright condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onright>
                 <onright condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onright>
-                <onright condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onright>
+                <onright condition="!Player.HasVideo">ClearProperty(HasTrailer,Home)</onright> -->
                 <onright condition="Player.HasVideo">StepForward</onright>
 
-                <onup condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onup>
+                <!-- <onup condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</onup>
                 <onup condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</onup>
-                <!-- <onup>SetFocus($PARAM[onback])</onup> -->
                 <onup>ClearProperty(HasTrailer,Home)</onup>
-                <onup condition="Player.HasVideo">Stop</onup>
+                <onup condition="Player.HasVideo">Stop</onup> -->
 
                 <ondown condition="String.IsEqual(Window(Home).Property(trailerTMDB),tmdb)">SetFocus($PARAM[onback])</ondown>
                 <ondown condition="String.IsEqual(Window(Home).Property(trailerTMDB),youtube)">SetFocus(9804)</ondown>
-                <!-- <ondown>SetFocus($PARAM[onback])</ondown> -->
                 <ondown>ClearProperty(HasTrailer,Home)</ondown>
                 <ondown condition="Player.HasVideo">Stop</ondown>
 
@@ -865,9 +861,28 @@
             </control>
             <control type="videowindow" />
             <include>DialogInfo_VideoTrailerControl</include>
+            <!-- Joseska - Texto e imagen Pulsa abajo para cerrar el video  -->
+            <control type="image">
+                <texture colordiffuse="main_fg_80">special://skin/extras/icons/Flechas/angle-down.png</texture>
+                <width>40</width>
+                <height>40</height>
+                <centerbottom>9</centerbottom>
+                <centerleft>50%</centerleft> 
+            </control>
+            <control type="label" id="11">
+                <label>$LOCALIZE[31518]</label>
+                <font>font_tiny</font>
+                <textcolor>main_fg_70</textcolor>
+                <selectedcolor>main_fg_70</selectedcolor>
+                <width>auto</width>
+                <centerbottom>33</centerbottom>
+                <centerleft>42.5%</centerleft> 
+            </control>
+            <!-- FIN Joseska  -->
         </include>
     </include>
 
+    
 
     <!-- PlotBox Large -->
     <include name="DialogInfo_PlotBox">

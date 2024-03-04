@@ -430,7 +430,7 @@
                 <ondown>9801</ondown>
                 <preloaditems>2</preloaditems>
                 <focusposition>0</focusposition>
-                Joseska - Cambios para arreglar BUG en la vista de series 
+                <!--Joseska - Cambios para arreglar BUG en la vista de series -->
                 <onload condition="String.IsEqual(Window(Home).Property(vista9802),Si)">ClearProperty(vista9802,Home)</onload>
                 <onclick>SetProperty(vista9802,Si,Home)</onclick>
                 <onclick condition="!Container(9802).ListItem.IsFolder">RunScript(plugin.video.themoviedb.helper,recommendations=onaction,window_id=9802,after=True,builtin='PlayMedia($ESCINFO[Container(9802).ListItem.FileNameAndPath],playlist_type_hint=1)')</onclick>

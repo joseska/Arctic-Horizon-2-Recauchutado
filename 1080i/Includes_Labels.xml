@@ -431,8 +431,11 @@
     </variable>
 
     <variable name="Label_NextAired">
+        <value condition="[!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired)) + String.IsEqual(Container(99950).ListItem.Property(Status),Returning Series)]">$LOCALIZE[31519]$INFO[Container(99950).ListItem.Property(Next_Aired), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired))">$INFO[Container(99950).ListItem.Property(Status), ,]$INFO[Container(99950).ListItem.Property(Next_Aired), ,]</value>
-        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Returning Series)">$INFO[Container(99950).ListItem.Property(Status), ,]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Returning Series)">$LOCALIZE[31520]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Canceled)">$LOCALIZE[31521]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Ended)">$LOCALIZE[31522]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired))">$INFO[Container(99950).ListItem.Property(Status), ,]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Premiered)">$INFO[Container(99950).ListItem.Status, ,]$INFO[Container(99950).ListItem.Premiered, ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Status))">$INFO[Container(99950).ListItem.Property(Status), ,]</value>

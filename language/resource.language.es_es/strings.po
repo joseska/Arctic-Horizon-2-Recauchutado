@@ -2045,4 +2045,24 @@ msgctxt "#31518"
 msgid "Click below to close the video."
 msgstr "Pulsa abajo para cerrar el video"
 
+#: /1080i/Labels.xml
+msgctxt "#31519"
+msgid "Returning Series"
+msgstr "Continúa en"
+
+#: /1080i/Labels.xml
+msgctxt "#31520"
+msgid "Returning Series"
+msgstr "En emisión"
+
+#: /1080i/Labels.xml
+msgctxt "#31521"
+msgid "Canceled"
+msgstr "Cancelada"
+
+#: /1080i/Labels.xml
+msgctxt "#31522"
+msgid "Ended"
+msgstr "Finalizada"
+
 ### FIN Joseska Jon ###

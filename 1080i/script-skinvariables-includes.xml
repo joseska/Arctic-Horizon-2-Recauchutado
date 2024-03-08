@@ -407,7 +407,9 @@
     <variable name="Label_Plot_C301">
         <value condition="!String.IsEmpty(Container(301).ListItem.Property(Artist_Description))">$INFO[Container(301).ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Property(Album_Description))">$INFO[Container(301).ListItem.Property(Album_Description)]</value>
-        <value condition="!String.IsEmpty(Container(301).ListItem.AddonDescription)">$INFO[Container(301).ListItem.AddonDescription]</value>
+        <!-- JON - Concatenar AddonNews a la descripción para mostrar los cambios -->
+        <!-- <value condition="!String.IsEmpty(Container(301).ListItem.AddonDescription)">$INFO[Container(301).ListItem.AddonDescription]</value> -->
+        <value condition="!String.IsEmpty(Container(301).ListItem.AddonDescription)">$INFO[Container(301).ListItem.AddonDescription][CR][CR]$INFO[Container(301).ListItem.AddonNews]</value>
         <value condition="String.IsEqual(Container(301).ListItem.DBType,episode) + !String.IsEmpty(Container(301).ListItem.Plot)">$INFO[Container(301).ListItem.Title,[B], ~ [/B]]$INFO[Container(301).ListItem.Plot]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Plot)">$INFO[Container(301).ListItem.Plot]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Property(biography))">$INFO[Container(301).ListItem.Property(biography)]</value>
@@ -420,7 +422,9 @@
     <variable name="Label_Plot">
         <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
-        <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
+        <!-- JON - Concatenar AddonNews a la descripción para mostrar los cambios -->
+        <!-- <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value> -->
+        <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription][CR][CR]$INFO[ListItem.AddonNews]</value>
         <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Title,[B], ~ [/B]]$INFO[ListItem.Plot]</value>
         <value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
         <value condition="!String.IsEmpty(ListItem.Property(biography))">$INFO[ListItem.Property(biography)]</value>

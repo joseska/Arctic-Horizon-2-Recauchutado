@@ -305,6 +305,8 @@
     <!-- Título no asociado a una vista concreta. Es el que sale en widgets de Palantir (estilo Póster)-->
     <variable name="Label_Title">
         <!-- INI Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
+        <value condition="!String.IsEmpty(Container(99950).ListItem.TvShowTitle)">$INFO[Container(99950).ListItem.TvShowTitle]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Titulo))">$INFO[ListItem.Property(Titulo)]</value>
         <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <!-- FIN Jon - Añadido para que salga el título limpio si así se pone en los ajustes de Palantir -->
         <value condition="!String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle]</value>
@@ -313,6 +315,7 @@
         <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
     </variable>
+    <!-- Esto obtiene el título con "$VAR[Label_Title]" (obtenido en la variable de encima de ésta) y transfiere algo como "1x01 Título del capítulo" a Includes_Labels.xml  al tag <variable name="Label_Title_Main"> -->
     <variable name="Label_Title_Parent">
         <value condition="Control.HasFocus(50)">$VAR[Label_Title_C50]</value>
         <value condition="Control.HasFocus(591)">$VAR[Label_Title_C591]</value>
@@ -404,7 +407,9 @@
     <variable name="Label_Plot_C301">
         <value condition="!String.IsEmpty(Container(301).ListItem.Property(Artist_Description))">$INFO[Container(301).ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Property(Album_Description))">$INFO[Container(301).ListItem.Property(Album_Description)]</value>
-        <value condition="!String.IsEmpty(Container(301).ListItem.AddonDescription)">$INFO[Container(301).ListItem.AddonDescription]</value>
+        <!-- JON - Concatenar AddonNews a la descripción para mostrar los cambios -->
+        <!-- <value condition="!String.IsEmpty(Container(301).ListItem.AddonDescription)">$INFO[Container(301).ListItem.AddonDescription]</value> -->
+        <value condition="!String.IsEmpty(Container(301).ListItem.AddonDescription)">$INFO[Container(301).ListItem.AddonDescription][CR][CR]$INFO[Container(301).ListItem.AddonNews]</value>
         <value condition="String.IsEqual(Container(301).ListItem.DBType,episode) + !String.IsEmpty(Container(301).ListItem.Plot)">$INFO[Container(301).ListItem.Title,[B], ~ [/B]]$INFO[Container(301).ListItem.Plot]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Plot)">$INFO[Container(301).ListItem.Plot]</value>
         <value condition="!String.IsEmpty(Container(301).ListItem.Property(biography))">$INFO[Container(301).ListItem.Property(biography)]</value>
@@ -417,7 +422,9 @@
     <variable name="Label_Plot">
         <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
-        <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
+        <!-- JON - Concatenar AddonNews a la descripción para mostrar los cambios -->
+        <!-- <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value> -->
+        <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription][CR][CR]$INFO[ListItem.AddonNews]</value>
         <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Title,[B], ~ [/B]]$INFO[ListItem.Plot]</value>
         <value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
         <value condition="!String.IsEmpty(ListItem.Property(biography))">$INFO[ListItem.Property(biography)]</value>

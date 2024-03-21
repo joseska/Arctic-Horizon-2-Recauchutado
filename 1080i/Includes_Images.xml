@@ -310,12 +310,18 @@
         <value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
+        <!-- JON - Clearlogo OSD-->
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.Player.CropImage))">$INFO[Window(Home).Property(TMDBHelper.Player.CropImage)]</value>
     </variable>
 
     <variable name="Image_Clearlogo">
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
+        <!-- JON - Clearlogo-->
+        <value condition="!String.IsEmpty(Container(99950).ListItem.Art(ClearLogo))">$ESCINFO[Container(99950).ListItem.Art(ClearLogo)]</value>
+        <value condition="!String.IsEmpty(Container(99950).ListItem.Art(CropImage))">$ESCINFO[Container(99950).ListItem.Art(CropImage)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.Player.CropImage))">$INFO[Window(Home).Property(TMDBHelper.Player.CropImage)]</value>
     </variable>
 
     <variable name="Image_MuteBug_Seekbar">

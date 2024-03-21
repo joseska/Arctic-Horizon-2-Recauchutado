@@ -367,6 +367,7 @@
         <value>$INFO[ListItem.Year]</value>
     </variable>
 
+    <!-- Este es el título mostrado en las vistas de series entre otras (en series se muestra "1x01 Título del capítulo" y nos lo da "$VAR[Label_Title_Parent]")-->
     <variable name="Label_Title_Main">
         <value condition="Window.IsVisible(script-tmdbhelper-recommendations.xml)">$INFO[Window.Property(Title)]</value>
         <value condition="$EXP[Exp_InfoDialogs]">$VAR[Label_Title]</value>
@@ -385,12 +386,15 @@
         <value condition="!String.IsEmpty(ListItem.AddonInstallDate)">$INFO[ListItem.AddonInstallDate]</value>
     </variable>
 
+    <!-- Titulo mostrado en el reproductor, cuando se muestra el OSD (abajo, encima de la línea de tiempo de la reproducción)-->
     <variable name="Label_OSD_Title">
-        <value condition="!String.IsEmpty(VideoPlayer.TvShowTitle)">$INFO[VideoPlayer.TvShowTitle]</value>
-        <value condition="!String.IsEmpty(VideoPlayer.Title)">$INFO[VideoPlayer.Title]</value>
-        <value condition="!String.IsEmpty(VideoPlayer.Label)">$INFO[VideoPlayer.Label]</value>
-        <value condition="!String.IsEmpty(Player.Title)">$INFO[Player.Title]</value>
-        <value condition="!String.IsEmpty(Player.Label)">$INFO[Player.Label]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.Player.TVShowTitle))">$INFO[Window(Home).Property(TMDBHelper.Player.TVShowTitle)]</value>
+        <value condition="!String.IsEmpty(VideoPlayer.Property(Titulo))">$INFO[VideoPlayer.Property(Titulo)]</value>  <!-- No pinta nada -->
+        <value condition="!String.IsEmpty(VideoPlayer.TvShowTitle)">$INFO[VideoPlayer.TvShowTitle]</value> <!--#1x01 Blablabla-->
+        <value condition="!String.IsEmpty(VideoPlayer.Title)">$INFO[VideoPlayer.Title]</value> <!--#1x01 Blablabla-->
+        <value condition="!String.IsEmpty(VideoPlayer.Label)">$INFO[VideoPlayer.Label]</value> <!-- No pinta nada -->
+        <value condition="!String.IsEmpty(Player.Title)">$INFO[Player.Title]</value> <!--#1x01 Blablabla-->
+        <value condition="!String.IsEmpty(Player.Label)">$INFO[Player.Label]</value> <!-- No pinta nada -->
         <value condition="!String.IsEmpty(VideoPlayer.ChannelName)">$INFO[VideoPlayer.ChannelName]</value>
     </variable>
 
@@ -427,9 +431,13 @@
     </variable>
 
     <variable name="Label_NextAired">
+        <value condition="[!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired)) + String.IsEqual(Container(99950).ListItem.Property(Status),Returning Series)]">$LOCALIZE[31519]$INFO[Container(99950).ListItem.Property(Next_Aired), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Next_Aired))">$INFO[Container(99950).ListItem.Property(Status), ,]$INFO[Container(99950).ListItem.Property(Next_Aired), ,]</value>
-        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Returning Series)">$INFO[Container(99950).ListItem.Property(Status), ,]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Returning Series)">$LOCALIZE[31520]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Canceled)">$LOCALIZE[31521]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Ended)">$LOCALIZE[31522]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired))">$INFO[Container(99950).ListItem.Property(Status), ,]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="!String.IsEmpty(Container(99950).ListItem.Premiered) + String.IsEqual(Container(99950).ListItem.Status,Released)">$LOCALIZE[31523]$INFO[Container(99950).ListItem.Premiered, ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Premiered)">$INFO[Container(99950).ListItem.Status, ,]$INFO[Container(99950).ListItem.Premiered, ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Status))">$INFO[Container(99950).ListItem.Property(Status), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Status)">$INFO[Container(99950).ListItem.Status, ,]</value>

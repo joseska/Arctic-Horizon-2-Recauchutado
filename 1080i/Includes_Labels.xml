@@ -437,6 +437,7 @@
         <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Canceled)">$LOCALIZE[31521]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
         <value condition="String.IsEqual(Container(99950).ListItem.Property(Status),Ended)">$LOCALIZE[31522]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Last_Aired))">$INFO[Container(99950).ListItem.Property(Status), ,]$INFO[Container(99950).ListItem.Property(Last_Aired), ,]</value>
+        <value condition="!String.IsEmpty(Container(99950).ListItem.Premiered) + String.IsEqual(Container(99950).ListItem.Status,Released)">$LOCALIZE[31523]$INFO[Container(99950).ListItem.Premiered, ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Premiered)">$INFO[Container(99950).ListItem.Status, ,]$INFO[Container(99950).ListItem.Premiered, ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Property(Status))">$INFO[Container(99950).ListItem.Property(Status), ,]</value>
         <value condition="!String.IsEmpty(Container(99950).ListItem.Status)">$INFO[Container(99950).ListItem.Status, ,]</value>

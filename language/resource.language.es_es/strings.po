@@ -2065,4 +2065,9 @@ msgctxt "#31522"
 msgid "Ended"
 msgstr "Finalizada"
 
+#: /1080i/Labels.xml
+msgctxt "#31523"
+msgid "Released"
+msgstr "Estrenada"
+
 ### FIN Joseska Jon ###

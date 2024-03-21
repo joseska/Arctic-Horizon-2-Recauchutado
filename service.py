@@ -1,5 +1,5 @@
 # Module: default
-# Author: Joseska y Jon
+# Author: Team Recauchutado
 # Muchas gracias a Oscar Alonso
 # License: GPL v.3 https://www.gnu.org/copyleft/gpl.html
 

@@ -391,11 +391,13 @@
             <control type="group">
                 <height>120</height>
                 <width>960</width>
+                <!-- Título a mostrar en caso de que no haya ClearLogo-->
                 <include content="Info_Title_Label">
                     <param name="colordiffuse">panel_fg</param>
                     <param name="label">$VAR[Label_OSD_Title]</param>
                     <visible>String.IsEmpty(Window(Home).Property(TMDBHelper.Player.CropImage))</visible>
                 </include>
+                <!--Mostrar ClearLogo, si lo hay -->
                 <control type="image">
                     <height>120</height>
                     <aspectratio align="left">keep</aspectratio>
@@ -954,6 +956,7 @@
                     <include>Dimension_HeaderTitleShadow</include>
                 </include>
                 <include content="Furniture_Top_Left">
+                    <!-- Muestra el título de arriba a la izquierda del todo durante la reproducción. -->
                     <param name="label">$VAR[Label_OSD_HeaderEpisodeChapter]</param>
                 </include>
             </control>

@@ -269,6 +269,36 @@
         </include>
     </include>
 
+    <!-- Joseska - videowindow para AutoTrailers  ponerlo en includes_background.xml-->
+    <include name="Background_Video_Trailer">
+        <control type="group">
+            <description>videowindow para AutoTrailer</description>
+            <control type="group">
+                <top>0</top>
+                <height>720</height>
+                <visible>![$EXP[Exp_Video_IsNotPlaying]]</visible>
+                <control type="videowindow">
+                    <right>0</right>
+                    <width>1280</width>
+                </control>
+                <control type="image">
+                    <right>0</right>
+                    <width>1280</width>
+                    <texture colordiffuse="black">diffuse/flixart_invert.png</texture>
+                </control>
+                <control type="image">
+                    <left>0</left>
+                    <right>1280</right>
+                    <texture colordiffuse="black">common/white.png</texture>
+                </control>
+            </control>
+            <control type="image">
+                <top>720</top>
+                <texture colordiffuse="black">common/white.png</texture>
+            </control>
+        </control>
+    </include>
+
     <include name="Background_ForegroundArtwork">
         <include content="Object_Control" condition="Skin.String(ForegroundStyle,KeyArt)">
             <param name="control">group</param>
@@ -296,6 +326,7 @@
         <value condition="Skin.HasSetting(UseBackgroundVideo) + Player.HasVideo">black</value>
         <value>main_bg_100</value>
     </variable>
+
     <include name="Background_Main">
         <param name="plain_background">false</param>
         <definition>
@@ -309,12 +340,13 @@
             <include content="Object_Control" condition="!$PARAM[plain_background]">
                 <param name="control" value="group" />
                 <include>Animation_Background_FadeInOut</include>
-                <include condition="Skin.String(BackgroundStyle,None)">Background_None</include>
+                <include condition="Skin.HasSetting(autoplay.trailer)">Background_Video_Trailer</include>
+                <!-- <include condition="Skin.String(BackgroundStyle,None)">Background_None</include>
                 <include condition="Skin.String(BackgroundStyle,Image)">Background_Stretch</include>
                 <include condition="Skin.String(BackgroundStyle,Fanart)">Background_Fanart</include>
                 <include condition="Skin.String(BackgroundStyle,Blur)">Background_Blur</include>
                 <include condition="!Skin.String(BackgroundStyle,Fanart)">Background_ForegroundArtwork</include>
-                <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include>
+                <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include> -->
                 <nested />
             </include>
             <control type="image">

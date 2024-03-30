@@ -817,6 +817,22 @@
         </definition>
     </include>
 
+    <include name="SetAutoTrailerControl">
+        <control type="button">
+            <visible>false</visible>
+
+            <!-- Set Property / Skin String -->
+            <onfocus>SetProperty(listitem.trailer,$ESCINFO[Container(99950).ListItem.Trailer],home)</onfocus>
+
+            <!-- Reset / Stop On Unfocus -->
+            <!-- <onunfocus condition="String.IsEmpty(Window(home).Property(TrailerIsPlayingFullscreen))">ClearProperty(TrailerPath,home)</onunfocus>
+            <onunfocus condition="$EXP[TrailerIsPlaying] + !Skin.HasSetting(trailer.dont.stop.on.unfocus) + String.IsEmpty(Window(home).Property(TrailerIsPlayingFullscreen))">Stop</onunfocus> -->
+
+            <!-- Reset Fullscreen Property -->
+            <!-- <onunfocus condition="!String.IsEmpty(Window(home).Property(TrailerIsPlayingFullscreen))">ClearProperty(TrailerIsPlayingFullscreen,home)</onunfocus> -->
+        </control>
+    </include>
+
     <include name="List_Core">
         <param name="orientation">horizontal</param>
         <param name="controltype">list</param>
@@ -904,6 +920,26 @@
                                 <param name="shadow_colordiffuse">$PARAM[shadow_colordiffuse]</param>
                             </include>
                         </control>
+
+                        <!-- Joseska - Boton que ejecuta el AutoTrailer  -->
+                        <control type="button">
+                            <visible>false</visible>
+                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container(99950).ListItem.Trailer]),00:05,silent)</onfocus>
+                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container(99950).ListItem.Trailer],1),00:05,silent)</onfocus>
+
+                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container($PARAM[id]).ListItem.Trailer]),00:05,silent)</onfocus>
+                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container($PARAM[id]).ListItem.Trailer],1),00:05,silent)</onfocus>
+                            
+                            <onfocus condition="!Player.HasVideo + String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) | String.IsEmpty(Container(99950).ListItem.Trailer)">CancelAlarm(playtrailer,silent)</onfocus>
+                            <onfocus condition="!Player.HasVideo + String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) | String.IsEmpty(Container(99950).ListItem.Trailer)">CancelAlarm(autotrailer,silent)</onfocus>
+                            
+                            <onunfocus>CancelAlarm(playtrailer,silent)</onunfocus>
+                            <onunfocus>CancelAlarm(autotrailer,silent)</onunfocus>
+
+                            <onunfocus condition="Player.HasVideo + String.IsEqual(Window.Property(AutoTrailer),Player.FileNameAndPath)">Action(Stop)</onunfocus>
+                        </control>
+
+
                     </control>
                 </focusedlayout>
             </control>

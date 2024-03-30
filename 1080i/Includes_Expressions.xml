@@ -123,4 +123,10 @@
     <expression name="infolineFlags100">Skin.HasSetting(Infoline.EnableGenre) + !Skin.HasSetting(Infoline.EnableDirector) + !Skin.HasSetting(Infoline.EnableEndTime)</expression>
     <!-- FIN Jon - Expresiones Infoline Title1--> 
 
+    <!-- INI Joseska - Expresiones Autotrailer-->
+    <expression name="TrailerWindowIsActive">Skin.HasSetting(autoplay.trailer) + Window.IsVisible(Home.xml) + !Window.IsVisible(DialogVideoInfo.xml)</expression>
+    <expression name="TrailerWindowIsActiveInfo">Skin.HasSetting(autoplay.trailer) + !Window.IsVisible(Home.xml) + Window.IsVisible(DialogVideoInfo.xml)</expression>
+    <!-- <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused | Skin.HasSetting(UseBackgroundVideo)]</expression> -->
+    <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused]</expression>
+
 </includes>

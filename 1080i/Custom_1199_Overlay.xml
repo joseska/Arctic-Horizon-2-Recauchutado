@@ -3,6 +3,7 @@
     <zorder>20</zorder>
     <visible>Skin.HasSetting(DebugInfo)</visible>
     <controls>
+        <include>Defs_TMDbHelper_Loader</include>
         <include content="Object_Control" condition="Skin.HasSetting(DebugInfo)">
             <param name="control">group</param>
             <control type="grouplist">
@@ -25,7 +26,7 @@
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label> --Otros: $INFO[ListItem.Title]</label>
+                    <label> --Otros: AutoTrailerCount=$INFO[Window(Home).Property(AutoTrailerCount)];AutoTrailer=$INFO[Window(Home).Property(AutoTrailer)]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
             </control>

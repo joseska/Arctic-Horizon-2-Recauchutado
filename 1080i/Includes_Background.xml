@@ -341,12 +341,12 @@
                 <param name="control" value="group" />
                 <include>Animation_Background_FadeInOut</include>
                 <include condition="Skin.HasSetting(autoplay.trailer)">Background_Video_Trailer</include>
-                <!-- <include condition="Skin.String(BackgroundStyle,None)">Background_None</include>
+                <include condition="Skin.String(BackgroundStyle,None)">Background_None</include>
                 <include condition="Skin.String(BackgroundStyle,Image)">Background_Stretch</include>
                 <include condition="Skin.String(BackgroundStyle,Fanart)">Background_Fanart</include>
                 <include condition="Skin.String(BackgroundStyle,Blur)">Background_Blur</include>
                 <include condition="!Skin.String(BackgroundStyle,Fanart)">Background_ForegroundArtwork</include>
-                <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include> -->
+                <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include>
                 <nested />
             </include>
             <control type="image">

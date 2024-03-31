@@ -924,23 +924,16 @@
                         <!-- Joseska - Boton que ejecuta el AutoTrailer  -->
                         <control type="button">
                             <visible>false</visible>
+                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container(99950).ListItem.Trailer]),00:05,silent)</onfocus>
+                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container(99950).ListItem.Trailer],1),00:05,silent)</onfocus>
+                            <!-- <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + String.IsEmpty(Container(99950).ListItem.Trailer)">Notification(No hay info de trailer,$ESCINFO[Container(99950).ListItem.Trailer])</onfocus>
+                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer)">Notification(Sí hay info de trailer,$ESCINFO[Container(99950).ListItem.Trailer])</onfocus> -->
 
-                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home),00:05,silent)</onfocus>
-                            <onfocus condition="Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) + !String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container($PARAM[id]).ListItem.Trailer],1),00:05,silent)</onfocus>
-                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(autotrailer_count,SetProperty(AutoTrailerCount,1,Home),00:10,silent)</onfocus>
-
-
-                            <!-- <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container(99950).ListItem.Trailer],Home),00:05,silent)</onfocus>
-                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer) + !String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container(99950).ListItem.Trailer],1),00:05,silent)</onfocus>
-                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(autotrailer_count,SetProperty(AutoTrailerCount,1,Home),00:10,silent)</onfocus> -->
-
-                        
-                            <!-- <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container($PARAM[id]).ListItem.Trailer]),00:05,silent)</onfocus>
-                            <onfocus condition="!Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container($PARAM[id]).ListItem.Trailer],1),00:05,silent)</onfocus> -->
+                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container($PARAM[id]).ListItem.Trailer]),00:05,silent)</onfocus>
+                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container($PARAM[id]).ListItem.Trailer],1),00:05,silent)</onfocus>
                             
-                            <onfocus condition="!Player.HasVideo + [String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) | String.IsEmpty(Container(99950).ListItem.Trailer)]">CancelAlarm(playtrailer,silent)</onfocus>
-                            <onfocus condition="!Player.HasVideo + [String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) | String.IsEmpty(Container(99950).ListItem.Trailer)]">CancelAlarm(autotrailer,silent)</onfocus>
-                            <onfocus condition="!Player.HasVideo + [String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) | String.IsEmpty(Container(99950).ListItem.Trailer)]">CancelAlarm(autotrailer_count,silent)</onfocus>
+                            <onfocus condition="!Player.HasVideo + String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) | String.IsEmpty(Container(99950).ListItem.Trailer)">CancelAlarm(playtrailer,silent)</onfocus>
+                            <onfocus condition="!Player.HasVideo + String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) | String.IsEmpty(Container(99950).ListItem.Trailer)">CancelAlarm(autotrailer,silent)</onfocus>
                             
                             <onunfocus>CancelAlarm(playtrailer,silent)</onunfocus>
                             <onunfocus>CancelAlarm(autotrailer,silent)</onunfocus>

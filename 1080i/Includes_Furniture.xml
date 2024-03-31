@@ -49,6 +49,8 @@
                 <visible>!Window.IsVisible(DialogExtendedProgressBar.xml)</visible>
                 <visible>!Window.IsVisible(DialogNotification.xml)</visible>
                 <visible>!Window.IsVisible(DialogVolumeBar.xml) | Player.Muted</visible>
+                <!-- JON - Ocultar Furniture_Top_Right si hay autotrailer -->
+                <visible>![Player.HasVideo + !String.IsEmpty(Window.Property(AutoTrailer))]</visible>
                 <include content="Furniture_Topbar_Group" condition="$PARAM[enabled]">
                     <include content="Furniture_Gutters">
                         <visible>!$EXP[Exp_HasFurnitureNowPlaying]</visible>

@@ -281,11 +281,11 @@
                     <right>0</right>
                     <width>1280</width>
                 </control>
-                <control type="image">
+                <!-- <control type="image">
                     <right>0</right>
                     <width>1280</width>
                     <texture colordiffuse="black">diffuse/flixart_invert.png</texture>
-                </control>
+                </control> -->
                 <control type="image">
                     <left>0</left>
                     <right>1280</right>

@@ -6,6 +6,7 @@
     <onunload condition="String.IsEqual(Window(Home).Property(vista9802),Si)">AlarmClock(loadinfo1,Action(Info),00:00,silent)</onunload>
     <onunload condition="String.IsEqual(Window(Home).Property(vista9802),Si)">AlarmClock(loadinfo2,SetFocus(9802),00:01,silent)</onunload>
     <onunload>AlarmClock(loadinfo3,ClearProperty(vista9802,Home),00:02,silent)</onunload>
+    <onunload condition="String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">ClearProperty(AutoTrailerCount,Home)</onunload>
     <!-- FIN Joseska  -->
     <controls>
         <control type="grouplist" id="0">

@@ -13,6 +13,8 @@
         <param name="defaultcontrol">5010</param>
     </include>
     <menucontrol>4000</menucontrol>
+    <onload condition="String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">ClearProperty(AutoTrailerCount)</onload>
+    <onload condition="Player.HasVideo + String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">Action(Stop)</onload>
     <onfocus>AlarmClock(ClearRecLoading,ClearProperty(Recommendations.IsLoading,Home),00:00,silent)</onfocus>
     <onunload>ClearProperty(HasTrailer,Home)</onunload>
     <controls>

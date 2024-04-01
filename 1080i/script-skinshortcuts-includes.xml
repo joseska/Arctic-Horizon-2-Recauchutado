@@ -594,7 +594,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Big Landscape</property>
+			<property name="widgetAspect">Landscape</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</property>
@@ -664,7 +664,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Landscape</property>
+			<property name="widgetAspect">Banner</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
@@ -1643,7 +1643,7 @@
 						<param name="usealtlabel" value="False" />
 						<param name="altlabel">$INFO[Container(3600).ListItem.Label]</param>
 						<param name="usewidgetlabel" value="False" />
-						<param name="include" value="List_BigLandscape_Row" />
+						<param name="include" value="List_Landscape_Row" />
 						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + [![False] | [!Integer.IsEqual(Container(3600).NumItems,0) + Container(3600).ListItem.IsFolder]]]" />
 						<param name="infowidget" value="True" />
 						<param name="infowidget_full" value="True" />
@@ -1655,7 +1655,7 @@
 							<param name="sortorder" />
 							<param name="target">videos</param>
 							<param name="limit" />
-							<param name="autolimit">3</param>
+							<param name="autolimit">4</param>
 							<param name="is_autolimit">false</param>
 							<param name="content">plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR</param>
 							</include>
@@ -1664,7 +1664,7 @@
 							<param name="sortorder" />
 							<param name="target">videos</param>
 							<param name="limit" />
-							<param name="autolimit">3</param>
+							<param name="autolimit">4</param>
 							<param name="is_autolimit">false</param>
 							<param name="content">$INFO[Container(3600).ListItem.FolderPath]</param>
 							</include>
@@ -1688,7 +1688,7 @@
 						<onfocus condition="True + [False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,[CAPITALIZE]$INFO[Container(3601).ListItem.Property(widget)][/CAPITALIZE],Home)</onfocus>
 						<onfocus condition="True">SetProperty(Slide.WidgetContainer,3601,Home)</onfocus>
 						<onfocus>SetProperty(Slide.WidgetInfoStyle,Full,Home)</onfocus>
-						<onfocus>SetProperty(Slide.WidgetAspect,Big Landscape,Home)</onfocus>
+						<onfocus>SetProperty(Slide.WidgetAspect,Landscape,Home)</onfocus>
 						<onunfocus>ClearProperty(Slide.WidgetAspect,Home)</onunfocus>
 						<onunfocus>ClearProperty(Slide.WidgetInfoStyle,Home)</onunfocus>
 						<onunfocus>ClearProperty(Slide.WidgetContainer,Home)</onunfocus>
@@ -2715,7 +2715,7 @@
 						<param name="usealtlabel" value="False" />
 						<param name="altlabel">$INFO[Container(6600).ListItem.Label]</param>
 						<param name="usewidgetlabel" value="False" />
-						<param name="include" value="List_Landscape_Row" />
+						<param name="include" value="List_Banner_Row" />
 						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),pelistmdb) + [![False] | [!Integer.IsEqual(Container(6600).NumItems,0) + Container(6600).ListItem.IsFolder]]]" />
 						<param name="infowidget" value="True" />
 						<param name="infowidget_full" value="True" />
@@ -2727,7 +2727,7 @@
 							<param name="sortorder" />
 							<param name="target">videos</param>
 							<param name="limit" />
-							<param name="autolimit">4</param>
+							<param name="autolimit">1</param>
 							<param name="is_autolimit">false</param>
 							<param name="content">plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]</param>
 							</include>
@@ -2736,7 +2736,7 @@
 							<param name="sortorder" />
 							<param name="target">videos</param>
 							<param name="limit" />
-							<param name="autolimit">4</param>
+							<param name="autolimit">1</param>
 							<param name="is_autolimit">false</param>
 							<param name="content">$INFO[Container(6600).ListItem.FolderPath]</param>
 							</include>
@@ -2760,7 +2760,7 @@
 						<onfocus condition="True + [False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,[CAPITALIZE]$INFO[Container(6601).ListItem.Property(widget)][/CAPITALIZE],Home)</onfocus>
 						<onfocus condition="True">SetProperty(Slide.WidgetContainer,6601,Home)</onfocus>
 						<onfocus>SetProperty(Slide.WidgetInfoStyle,Full,Home)</onfocus>
-						<onfocus>SetProperty(Slide.WidgetAspect,Landscape,Home)</onfocus>
+						<onfocus>SetProperty(Slide.WidgetAspect,Banner,Home)</onfocus>
 						<onunfocus>ClearProperty(Slide.WidgetAspect,Home)</onunfocus>
 						<onunfocus>ClearProperty(Slide.WidgetInfoStyle,Home)</onunfocus>
 						<onunfocus>ClearProperty(Slide.WidgetContainer,Home)</onunfocus>
@@ -3599,7 +3599,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Big Landscape</property>
+			<property name="widgetAspect">Landscape</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</property>
@@ -3634,7 +3634,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Big Landscape</property>
+			<property name="widgetAspect">Landscape</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?Wa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVZpJXZz91bkFGdzlGbnAiOi42bpR3YhJye9dSKzVCKg4WagIGZtRHIlJXZodHIsFmcl5WZH91cllmclN3X2BSTPJlRgAybyVmbldGLhFGctxybpRWdhxiYk1Gds8GZu9mZsIXZ0N3bwxCdvxGcsIXYllHLvxWd0lGdgQ1QFxURTdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZtBSZ0NXZgMXY0NXa2BychOcTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzVWayV2ccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblR",return)</property>
@@ -3871,7 +3871,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Landscape</property>
+			<property name="widgetAspect">Banner</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
@@ -3893,7 +3893,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Landscape</property>
+			<property name="widgetAspect">Banner</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=trending_week&amp;tmdb_type=movie&amp;widget=true&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]&amp;reload=$INFO[Window(Home).Property(TMDbHelper.Widgets.Reload)]",return)</property>

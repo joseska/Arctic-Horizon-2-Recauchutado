@@ -274,6 +274,7 @@
         <control type="group">
             <description>videowindow para AutoTrailer</description>
             <control type="group">
+                <include>Animation_Background_FadeInOut</include>
                 <top>0</top>
                 <height>720</height>
                 <visible>![$EXP[Exp_Video_IsNotPlaying]]</visible>
@@ -284,18 +285,18 @@
                 <control type="image">
                     <right>0</right>
                     <width>1280</width>
-                    <texture colordiffuse="black">diffuse/flixart_invert.png</texture>
+                    <texture colordiffuse="ff181818">diffuse/flixart_invert.png</texture>
                 </control>
                 <control type="image">
                     <left>0</left>
                     <right>1280</right>
-                    <texture colordiffuse="black">common/white.png</texture>
+                    <texture colordiffuse="ff181818">common/white.png</texture>
                 </control>
             </control>
-            <control type="image">
+            <!-- <control type="image">
                 <top>720</top>
-                <texture colordiffuse="black">common/white.png</texture>
-            </control>
+                <texture colordiffuse="ff181818">common/white.png</texture>
+            </control> -->
         </control>
     </include>
 
@@ -340,12 +341,12 @@
             <include content="Object_Control" condition="!$PARAM[plain_background]">
                 <param name="control" value="group" />
                 <include>Animation_Background_FadeInOut</include>
-                <include condition="Skin.HasSetting(autoplay.trailer)">Background_Video_Trailer</include>
                 <include condition="Skin.String(BackgroundStyle,None)">Background_None</include>
                 <include condition="Skin.String(BackgroundStyle,Image)">Background_Stretch</include>
                 <include condition="Skin.String(BackgroundStyle,Fanart)">Background_Fanart</include>
                 <include condition="Skin.String(BackgroundStyle,Blur)">Background_Blur</include>
                 <include condition="!Skin.String(BackgroundStyle,Fanart)">Background_ForegroundArtwork</include>
+                <include condition="Skin.HasSetting(autoplay.trailer)">Background_Video_Trailer</include>
                 <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include>
                 <nested />
             </include>

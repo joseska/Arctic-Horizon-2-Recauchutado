@@ -40,7 +40,7 @@
                 <texturenofocus colordiffuse="panel_bg">common/white.png</texturenofocus>
                 <textoffsetx>0</textoffsetx>
                 <aligny>center</aligny>
-                <height>40</height>
+                <height>27</height>
                 <font>font_debug</font>
                 <align>left</align>
                 <textcolor>magenta</textcolor>

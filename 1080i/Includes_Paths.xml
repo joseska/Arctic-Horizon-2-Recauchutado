@@ -334,6 +334,13 @@
     </variable>
     <!-- FIN Joseska  -->
 
+    <!-- Joseska - Variables AutoTrailer  -->
+    <variable name="AutoTrailerUrl">
+        <value condition="!String.IsEmpty(ListItem.Trailer)">$ESCINFO[ListItem.Trailer]</value>
+        <value condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">$ESCINFO[Container($PARAM[id]).ListItem.Trailer]</value>
+        <value condition="!String.IsEmpty(Container(99950).ListItem.Trailer)">$ESCINFO[Container(99950).ListItem.Trailer]</value>
+    </variable>
+
 
 	<!-- Joseska  Modificado para pillar bien el nombre en la wikipedia -->
     <variable name="Path_Wikipedia_Title">

@@ -1,0 +1,30 @@
+<timers>
+
+    <!-- Joseska - Funcionando bien con ListItem.Trailer  -->
+    <!-- <timer>
+        <name>timer_autotrailer3idletimer</name>
+        <start reset="true">$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + !Player.HasMedia + !String.IsEmpty(ListItem.Trailer)</start>
+        <onstart condition="!String.IsEmpty(ListItem.Trailer)">SetProperty(AutoTrailer,$ESCINFO[ListItem.Trailer],Home)</onstart>
+        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailer3idletimer), 5)</stop>
+        <onstop condition="!String.IsEqual(Window(Home).Property(AutoTrailerCount),1) + !String.IsEmpty(Window(Home).Property(AutoTrailer))">PlayMedia($ESCINFO[Window(Home).Property(AutoTrailer)],1)</onstop>
+        <onstop condition="!String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailerCount,1,Home)</onstop>
+    </timer> -->
+
+
+    <timer>
+        <name>timer_autotrailer3idletimer</name>
+        <start reset="true">$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + !Player.HasMedia + !String.IsEmpty(ListItem.Trailer)</start>
+        <onstart condition="!String.IsEmpty(ListItem.Trailer)">SetProperty(AutoTrailer,$ESCINFO[ListItem.Trailer],Home)</onstart>
+        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailer3idletimer), 5)</stop>
+        <onstop condition="String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailer,$ESCINFO[Container(99950).ListItem.Trailer],Home)</onstop>
+        <onstop>Skin.TimerStart(timer_autotrailerexecute)</onstop>
+    </timer>
+    
+    <timer>
+        <name>timer_autotrailerexecute</name>
+        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailer3idletimer), 1)</stop>
+        <onstop condition="!String.IsEqual(Window(Home).Property(AutoTrailerCount),1) + !String.IsEmpty(Window(Home).Property(AutoTrailer))">PlayMedia($ESCINFO[Window(Home).Property(AutoTrailer)],1)</onstop>
+        <onstop condition="!String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailerCount,1,Home)</onstop>
+    </timer>
+
+</timers>

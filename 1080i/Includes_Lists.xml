@@ -924,26 +924,41 @@
                         <!-- Joseska - Boton que ejecuta el AutoTrailer  -->
                         <control type="button">
                             <visible>false</visible>
-                            
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container(99950).ListItem.Trailer]),00:04,silent)</onfocus>
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + !String.IsEmpty(Container(99950).ListItem.Trailer) + !String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container(99950).ListItem.Trailer],1),00:05,silent)</onfocus>
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + !String.IsEmpty(Container(99950).ListItem.Trailer)">AlarmClock(autotrailer_count,SetProperty(AutoTrailerCount,1,Home),00:10,silent)</onfocus>
 
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(autotrailer,SetProperty(AutoTrailer,$ESCINFO[Container($PARAM[id]).ListItem.Trailer]),00:04,silent)</onfocus>
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) + !String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">AlarmClock(playtrailer,PlayMedia($ESCINFO[Container($PARAM[id]).ListItem.Trailer],1),00:05,silent)</onfocus>
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + !String.IsEmpty(Container($PARAM[id]).ListItem.Trailer)">AlarmClock(autotrailer_count,SetProperty(AutoTrailerCount,1,Home),00:10,silent)</onfocus>
-
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) + String.IsEmpty(Container(99950).ListItem.Trailer)">CancelAlarm(playtrailer,silent)</onfocus>
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) + String.IsEmpty(Container(99950).ListItem.Trailer)">CancelAlarm(autotrailer,silent)</onfocus>
-                            <onfocus condition="$EXP[Exp_IsVideoContent] + !Player.HasVideo + String.IsEmpty(Container($PARAM[id]).ListItem.Trailer) + String.IsEmpty(Container(99950).ListItem.Trailer)">CancelAlarm(autotrailer_count,silent)</onfocus>
+                            <!-- Joseska - reset  -->
+                            <!-- <onfocus>ClearProperty(AutoTrailer)</onfocus>
+                            <onfocus>ClearProperty(AutoTrailerCount)</onfocus> -->
                             
-                            <onunfocus>CancelAlarm(playtrailer,silent)</onunfocus>
-                            <onunfocus>CancelAlarm(autotrailer,silent)</onunfocus>
-                            <onunfocus>CancelAlarm(autotrailer_count,silent)</onunfocus>
+
+                            <!-- Joseska - Timers  -->
+                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer)">Skin.TimerStart(timer_autotrailer3idletimer)</onfocus>
+
+                            <!-- Joseska - AutoTrailerCount  -->
+                            <!-- <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + Player.HasVideo + String.IsEqual(Window.Property(AutoTrailer),Player.FileNameAndPath)">SetProperty(AutoTrailerCount,1,Home)</onfocus> -->
+                            <!-- <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer)">Skin.TimerStart(timer_autotrailercount)</onfocus> -->
+
+
+                            <!-- Joseska - Debug  -->
+                            <!-- <onfocus>SetProperty(list1,$ESCINFO[ListItem.Trailer],Home)</onfocus>
+                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus>
+                            <onfocus>SetProperty(list3,$ESCINFO[Container(99950).ListItem.Trailer],Home)</onfocus> -->
+
+
                             <onunfocus>ClearProperty(AutoTrailer)</onunfocus>
                             <onunfocus>ClearProperty(AutoTrailerCount)</onunfocus>
-
                             <onunfocus condition="Player.HasVideo + String.IsEqual(Window.Property(AutoTrailer),Player.FileNameAndPath)">Action(Stop)</onunfocus>
+
+                            <onleft>ClearProperty(AutoTrailer)</onleft>
+                            <onright>ClearProperty(AutoTrailer)</onright>
+                            <onup>ClearProperty(AutoTrailer)</onup>
+                            <ondown>ClearProperty(AutoTrailer)</ondown>
+
+                            <onup>ClearProperty(AutoTrailerCount)</onup>
+                            <ondown>ClearProperty(AutoTrailerCount)</ondown>
+                            <onright>ClearProperty(AutoTrailerCount)</onright>
+                            <onleft>ClearProperty(AutoTrailerCount)</onleft>
+
+
                         </control>
                     </control>
                 </focusedlayout>

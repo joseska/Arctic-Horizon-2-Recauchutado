@@ -460,8 +460,8 @@
                 <include condition="Skin.String(BackgroundStyle,Blur)">Background_Blur</include>
                 <include condition="!Skin.String(BackgroundStyle,Fanart)">Background_ForegroundArtwork</include>
                 <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include>
-                <include condition="Skin.HasSetting(autoplay.trailer) + !Skin.HasSetting(autoplay.trailer.vista.alt) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(AutoTrailer))">Background_Video_Trailer</include>
-                <include condition="Skin.HasSetting(autoplay.trailer) + Skin.HasSetting(autoplay.trailer.vista.alt) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(AutoTrailer))">Background_Video_Trailer_2</include>
+                <include condition="Skin.HasSetting(autoplay.trailer) + !Skin.HasSetting(autoplay.trailer.vista.alt) + Player.HasMedia + !String.IsEmpty(Window(Home).Property(AutoTrailer))">Background_Video_Trailer</include>
+                <include condition="Skin.HasSetting(autoplay.trailer) + Skin.HasSetting(autoplay.trailer.vista.alt) + Player.HasMedia + !String.IsEmpty(Window(Home).Property(AutoTrailer))">Background_Video_Trailer_2</include>
                 <nested />
             </include>
             <control type="image">

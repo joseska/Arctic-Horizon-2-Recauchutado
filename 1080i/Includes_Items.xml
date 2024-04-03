@@ -1940,6 +1940,27 @@
             <selected>Skin.HasSetting(autoplay.trailer)</selected>
             <label>AutoTrailers</label>
         </include>
+        <include content="Dialog_Settings_Button">
+            <param name="id" value="8005" />
+            <param name="control" value="radiobutton" />
+            <onclick>Skin.ToggleSetting(autoplay.trailer.corregir.normal)</onclick>
+            <selected>Skin.HasSetting(autoplay.trailer.corregir.normal)</selected>
+            <label>AutoTrailers Correción Normal</label>
+        </include>
+        <include content="Dialog_Settings_Button">
+            <param name="id" value="8006" />
+            <param name="control" value="radiobutton" />
+            <onclick>Skin.ToggleSetting(autoplay.trailer.corregir.maximo)</onclick>
+            <selected>Skin.HasSetting(autoplay.trailer.corregir.maximo)</selected>
+            <label>AutoTrailers Correción Maximo</label>
+        </include>
+        <include content="Dialog_Settings_Button">
+            <param name="id" value="8007" />
+            <param name="control" value="radiobutton" />
+            <onclick>Skin.ToggleSetting(autoplay.trailer.vista.alt)</onclick>
+            <selected>Skin.HasSetting(autoplay.trailer.vista.alt)</selected>
+            <label>AutoTrailers Vista Alternativa</label>
+        </include>
 	</include>
 	<!-- Fin Joseska -->
  

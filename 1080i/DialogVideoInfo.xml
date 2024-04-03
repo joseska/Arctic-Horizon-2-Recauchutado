@@ -16,7 +16,7 @@
     <onload condition="String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">ClearProperty(AutoTrailerCount)</onload>
     <!-- <onload condition="Player.HasVideo + String.IsEqual(Window(Home).Property(AutoTrailerCount),1)">Action(Stop)</onload> -->
     <!-- Joseska - Si está el trailer activo. Pararlo  -->
-    <onload condition="!$EXP[AutoTrailerIsActive]">Action(Stop)</onload>
+    <onload condition="$EXP[AutoTrailerIsActive]">Action(Stop)</onload>
     <onfocus>AlarmClock(ClearRecLoading,ClearProperty(Recommendations.IsLoading,Home),00:00,silent)</onfocus>
     <onunload>ClearProperty(HasTrailer,Home)</onunload>
     <controls>

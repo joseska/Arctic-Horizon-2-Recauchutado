@@ -62,8 +62,8 @@
                     <label>  99950 ListItem.Trailer: $INFO[Window(Home).Property(list3)]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
-                <include content="Overlay_InfoLabel" condition="Player.HasMedia">
-                    <label>  !Player.HasMedia: True</label>
+                <include content="Overlay_InfoLabel">
+                    <label>  VideoPlayer.VideoAspect: $INFO[VideoPlayer.VideoAspect]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
 

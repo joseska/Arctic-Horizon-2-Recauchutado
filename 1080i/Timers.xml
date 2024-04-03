@@ -15,7 +15,7 @@
         <name>timer_autotrailer3idletimer</name>
         <start reset="true">$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + !Player.HasMedia + !String.IsEmpty(ListItem.Trailer)</start>
         <onstart condition="!String.IsEmpty(ListItem.Trailer)">SetProperty(AutoTrailer,$ESCINFO[ListItem.Trailer],Home)</onstart>
-        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailer3idletimer), 5)</stop>
+        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailer3idletimer), 3)</stop>
         <onstop condition="String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailer,$ESCINFO[Container(99950).ListItem.Trailer],Home)</onstop>
         <onstop>Skin.TimerStart(timer_autotrailerexecute)</onstop>
     </timer>

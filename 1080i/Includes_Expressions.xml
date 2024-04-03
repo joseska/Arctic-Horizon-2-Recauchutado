@@ -128,7 +128,7 @@
     <expression name="TrailerWindowIsActiveInfo">Skin.HasSetting(autoplay.trailer) + !Window.IsVisible(Home.xml) + Window.IsVisible(DialogVideoInfo.xml)</expression>
     <expression name="AutoTrailerIsActive">Skin.HasSetting(autoplay.trailer) + Player.HasMedia + !String.IsEmpty(Window(Home).Property(AutoTrailer))</expression>
     <!-- <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused | Skin.HasSetting(UseBackgroundVideo)]</expression> -->
-    <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused]</expression>
+    <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + Window.IsVisible(Home.xml)</expression>
     
     <expression name="Exp_IsVideoContent">String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)</expression>
 

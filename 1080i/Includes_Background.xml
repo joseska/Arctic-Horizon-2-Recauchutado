@@ -269,6 +269,9 @@
         </include>
     </include>
 
+
+
+
     <!-- Joseska - videowindow para AutoTrailers  ponerlo en includes_background.xml-->
     <include name="Background_Video_Trailer">
         <control type="group">
@@ -293,13 +296,123 @@
                     <texture colordiffuse="ff181818">common/white.png</texture>
                 </control>
             </control>
-            <!-- <control type="image">
+            <control type="image">
+                <visible>![$EXP[Exp_Video_IsNotPlaying]]</visible>
                 <top>720</top>
                 <texture colordiffuse="ff181818">common/white.png</texture>
-            </control> -->
+            </control>
         </control>
     </include>
 
+
+
+    <!-- Joseska - videowindow para AutoTrailers  ponerlo en includes_background.xml-->
+    <include name="Background_Video_Trailer_2">
+        <param name="flixart_size_w">flixart_size_w</param> <!-- 1280-->
+        <param name="flixart_size_h">flixart_size_h</param> <!-- 720-->
+        <definition>
+
+            <control type="group">
+                <description>videowindow para AutoTrailer</description>
+                <include content="Object_Control">
+                    <param name="control" value="group" />
+                    <!-- Izquierda -->
+                    <control type="group">
+                        <right>$PARAM[flixart_size_w]</right>
+                        <width>150%</width>
+                        <!-- Top  -->
+                        <control type="image">
+                            <fadetime>600</fadetime>
+                            <height>$PARAM[flixart_size_h]</height>
+                            <texture background="true" flipx="true" flipy="false">$VAR[Image_Background_Blur]</texture>
+                        </control>
+                        <!-- Bottom -->
+                        <control type="image">
+                            <fadetime>600</fadetime>
+                            <height>$PARAM[flixart_size_h]</height>
+                            <top>$PARAM[flixart_size_h]</top>
+                            <texture background="true" flipx="true" flipy="true">$VAR[Image_Background_Blur]</texture>
+                        </control>
+                    </control>
+
+                    <!-- Derecha -->
+                    <control type="group">
+                        <right>0</right>
+                        <width>$PARAM[flixart_size_w]</width>
+                        <!-- Top  -->
+                        <control type="image">
+                            <fadetime>600</fadetime>
+                            <height>$PARAM[flixart_size_h]</height>
+                            <texture background="true" flipx="false" flipy="false">$VAR[Image_Background_Blur]</texture>
+                        </control>
+                        <!-- Bottom -->
+                        <control type="image">
+                            <fadetime>600</fadetime>
+                            <height>$PARAM[flixart_size_h]</height>
+                            <top>$PARAM[flixart_size_h]</top>
+                            <texture background="true" flipx="false" flipy="true">$VAR[Image_Background_Blur]</texture>
+                        </control>
+                    </control>
+
+                </include>
+
+                <control type="group">
+                    <include>Animation_Background_FadeInOut</include>
+                    <top>0</top>
+                    <height>720</height>
+                    <visible>![$EXP[Exp_Video_IsNotPlaying]]</visible>
+                    <!-- Joseska - Ventana del Video  -->
+                    <control type="videowindow">
+                        <right>0</right>
+                        <width>1280</width>
+                        <animation center="auto" effect="zoom" end="109" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.maximo)">Conditional</animation>
+                    </control>
+                    <!-- Joseska - Degradado de la ventana del Video  -->
+                    <control type="image">
+                        <right>0</right>
+                        <width>1280</width>
+                        <!-- <texture colordiffuse="ff181818">diffuse/flixart_invert.png</texture> -->
+                        <texture diffuse="diffuse/flixart_invert.png">$VAR[Image_Background_Blur]</texture>
+                        <animation center="auto" effect="zoom" end="109" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.maximo)">Conditional</animation>
+                    </control>
+
+                    <!-- <control type="image">
+                        <right>0</right>
+                        <top>720</top>
+                        <width>1280</width>
+                        <texture colordiffuse="red">common/white.png</texture>
+                        <animation effect="slide" start="0,0" end="0,-90" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.maximo)">Conditional</animation>
+                        <animation effect="slide" start="0,0" end="0,-50" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.normal) + String.IsEqual(VideoPlayer.VideoAspect,1.85) + !String.IsEmpty(VideoPlayer.VideoAspect)">Conditional</animation>
+                        <animation effect="slide" start="0,0" end="0,-90" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.normal) + !String.IsEqual(VideoPlayer.VideoAspect,1.85) + !String.IsEqual(VideoPlayer.VideoAspect,1.78) + !String.IsEqual(VideoPlayer.VideoAspect,1.66) + !String.IsEqual(VideoPlayer.VideoAspect,1.37) + !String.IsEqual(VideoPlayer.VideoAspect,1.33) + !String.IsEmpty(VideoPlayer.VideoAspect)">Conditional</animation>
+                        <animation type="WindowClose" reversible="false">
+                            <effect type="zoom" center="auto" start="100" end="0" time="0" />
+                        </animation>
+                    </control> -->
+                    <!-- <control type="image">
+                        <left>0</left>
+                        <right>1280</right>
+                        <texture colordiffuse="ff181818">common/white.png</texture>
+                    </control> -->
+                </control>
+                <!-- <control type="image">
+                    <top>720</top>
+                    <texture colordiffuse="ff181818">common/white.png</texture>
+                    <animation effect="slide" start="0,0" end="0,-90" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.maximo)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-50" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.normal) + String.IsEqual(VideoPlayer.VideoAspect,1.85) + !String.IsEmpty(VideoPlayer.VideoAspect)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-90" time="0" condition="Skin.HasSetting(autoplay.trailer.corregir.normal) + !String.IsEqual(VideoPlayer.VideoAspect,1.85) + !String.IsEqual(VideoPlayer.VideoAspect,1.78) + !String.IsEqual(VideoPlayer.VideoAspect,1.66) + !String.IsEqual(VideoPlayer.VideoAspect,1.37) + !String.IsEqual(VideoPlayer.VideoAspect,1.33) + !String.IsEmpty(VideoPlayer.VideoAspect)">Conditional</animation>
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="zoom" center="auto" start="100" end="0" time="0" />
+                    </animation>
+                </control> -->
+
+
+            </control>
+
+        </definition>
+    </include>
+
+
+    
     <include name="Background_ForegroundArtwork">
         <include content="Object_Control" condition="Skin.String(ForegroundStyle,KeyArt)">
             <param name="control">group</param>
@@ -346,8 +459,9 @@
                 <include condition="Skin.String(BackgroundStyle,Fanart)">Background_Fanart</include>
                 <include condition="Skin.String(BackgroundStyle,Blur)">Background_Blur</include>
                 <include condition="!Skin.String(BackgroundStyle,Fanart)">Background_ForegroundArtwork</include>
-                <include condition="Skin.HasSetting(autoplay.trailer)">Background_Video_Trailer</include>
                 <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include>
+                <include condition="Skin.HasSetting(autoplay.trailer) + !Skin.HasSetting(autoplay.trailer.vista.alt) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(AutoTrailer))">Background_Video_Trailer</include>
+                <include condition="Skin.HasSetting(autoplay.trailer) + Skin.HasSetting(autoplay.trailer.vista.alt) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(AutoTrailer))">Background_Video_Trailer_2</include>
                 <nested />
             </include>
             <control type="image">

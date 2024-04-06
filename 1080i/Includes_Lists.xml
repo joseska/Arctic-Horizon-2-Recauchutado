@@ -817,22 +817,6 @@
         </definition>
     </include>
 
-    <include name="SetAutoTrailerControl">
-        <control type="button">
-            <visible>false</visible>
-
-            <!-- Set Property / Skin String -->
-            <onfocus>SetProperty(listitem.trailer,$ESCINFO[Container(99950).ListItem.Trailer],home)</onfocus>
-
-            <!-- Reset / Stop On Unfocus -->
-            <!-- <onunfocus condition="String.IsEmpty(Window(home).Property(TrailerIsPlayingFullscreen))">ClearProperty(TrailerPath,home)</onunfocus>
-            <onunfocus condition="$EXP[TrailerIsPlaying] + !Skin.HasSetting(trailer.dont.stop.on.unfocus) + String.IsEmpty(Window(home).Property(TrailerIsPlayingFullscreen))">Stop</onunfocus> -->
-
-            <!-- Reset Fullscreen Property -->
-            <!-- <onunfocus condition="!String.IsEmpty(Window(home).Property(TrailerIsPlayingFullscreen))">ClearProperty(TrailerIsPlayingFullscreen,home)</onunfocus> -->
-        </control>
-    </include>
-
     <include name="List_Core">
         <param name="orientation">horizontal</param>
         <param name="controltype">list</param>
@@ -924,25 +908,13 @@
                         <!-- Joseska - Boton que ejecuta el AutoTrailer  -->
                         <control type="button">
                             <visible>false</visible>
-
-                            <!-- Joseska - reset  -->
-                            <!-- <onfocus>ClearProperty(AutoTrailer)</onfocus>
-                            <onfocus>ClearProperty(AutoTrailerCount)</onfocus> -->
-                            
-
-                            <!-- Joseska - Timers  -->
+                            <!-- Joseska - Timer para AutoTrailer (Timers.xml)  -->
                             <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer)">Skin.TimerStart(timer_autotrailer3idletimer)</onfocus>
-
-                            <!-- Joseska - AutoTrailerCount  -->
-                            <!-- <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + Player.HasVideo + String.IsEqual(Window.Property(AutoTrailer),Player.FileNameAndPath)">SetProperty(AutoTrailerCount,1,Home)</onfocus> -->
-                            <!-- <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer)">Skin.TimerStart(timer_autotrailercount)</onfocus> -->
-
 
                             <!-- Joseska - Debug  -->
                             <!-- <onfocus>SetProperty(list1,$ESCINFO[ListItem.Trailer],Home)</onfocus>
-                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus>-->
-                            <onfocus>SetProperty(list3,$VAR[Image_Background_Stretch],Home)</onfocus> 
-
+                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus>
+                            <onfocus>SetProperty(list3,BackgroundStyle,Home)</onfocus> -->
 
                             <onunfocus>ClearProperty(AutoTrailer)</onunfocus>
                             <onunfocus>ClearProperty(AutoTrailerCount)</onunfocus>

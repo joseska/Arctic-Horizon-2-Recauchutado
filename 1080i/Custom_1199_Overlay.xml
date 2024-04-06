@@ -59,7 +59,7 @@
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label>  VAR[Image_Background_Stretch]: $INFO[Window(Home).Property(list3)]</label>
+                    <label>  BackgroundStyle: $INFO[Window(Home).Property(list3)]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">

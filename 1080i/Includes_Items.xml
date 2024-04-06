@@ -1943,19 +1943,12 @@
         <include content="Dialog_Settings_Button">
             <param name="id" value="8005" />
             <param name="control" value="radiobutton" />
-            <onclick>Skin.ToggleSetting(autoplay.trailer.corregir.normal)</onclick>
-            <selected>Skin.HasSetting(autoplay.trailer.corregir.normal)</selected>
-            <label>AutoTrailers Correción Normal</label>
+            <onclick>Skin.ToggleSetting(autoplay.trailer.corregir)</onclick>
+            <selected>Skin.HasSetting(autoplay.trailer.corregir)</selected>
+            <label>AutoTrailers Desactivar Corrección Franjas Negras</label>
         </include>
         <include content="Dialog_Settings_Button">
             <param name="id" value="8006" />
-            <param name="control" value="radiobutton" />
-            <onclick>Skin.ToggleSetting(autoplay.trailer.corregir.maximo)</onclick>
-            <selected>Skin.HasSetting(autoplay.trailer.corregir.maximo)</selected>
-            <label>AutoTrailers Correción Maximo</label>
-        </include>
-        <include content="Dialog_Settings_Button">
-            <param name="id" value="8007" />
             <param name="control" value="radiobutton" />
             <enable>Skin.String(BackgroundStyle,Blur)</enable>
             <onclick>Skin.ToggleSetting(autoplay.trailer.vista.alt)</onclick>

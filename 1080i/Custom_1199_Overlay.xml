@@ -38,7 +38,7 @@
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label>  AutoTrailerUrl: $VAR[AutoTrailerUrl]</label>
+                    <label>  Image_Background_Stretch: $VAR[Image_Background_Stretch]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
@@ -59,7 +59,7 @@
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label>  99950 ListItem.Trailer: $INFO[Window(Home).Property(list3)]</label>
+                    <label>  VAR[Image_Background_Stretch]: $INFO[Window(Home).Property(list3)]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">

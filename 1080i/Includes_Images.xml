@@ -37,6 +37,7 @@
     </variable>
 
     <variable name="Image_Background_Floor">
+        <!-- <value condition="Skin.HasSetting(autoplay.trailer) + Skin.String(BackgroundStyle,Blur) + !Skin.HasSetting(autoplay.trailer.vista.alt)">background/combined_flixart_Autotrailer.png</value> -->
         <value condition="Skin.String(BackgroundStyle,Fanart)">background/combined_fanart.png</value>
         <value condition="Skin.String(BackgroundStyle,Blur)">background/combined_flixart.png</value>
         <value>background/combined_stretch.png</value>

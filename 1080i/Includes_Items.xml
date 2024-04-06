@@ -1957,9 +1957,10 @@
         <include content="Dialog_Settings_Button">
             <param name="id" value="8007" />
             <param name="control" value="radiobutton" />
+            <enable>Skin.String(BackgroundStyle,Blur)</enable>
             <onclick>Skin.ToggleSetting(autoplay.trailer.vista.alt)</onclick>
             <selected>Skin.HasSetting(autoplay.trailer.vista.alt)</selected>
-            <label>AutoTrailers Vista Alternativa</label>
+            <label>AutoTrailers Activar Vista Alternativa</label>
         </include>
 	</include>
 	<!-- Fin Joseska -->

@@ -940,8 +940,8 @@
 
                             <!-- Joseska - Debug  -->
                             <!-- <onfocus>SetProperty(list1,$ESCINFO[ListItem.Trailer],Home)</onfocus>
-                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus>
-                            <onfocus>SetProperty(list3,$ESCINFO[Container(99950).ListItem.Trailer],Home)</onfocus> -->
+                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus>-->
+                            <onfocus>SetProperty(list3,$VAR[Image_Background_Stretch],Home)</onfocus> 
 
 
                             <onunfocus>ClearProperty(AutoTrailer)</onunfocus>

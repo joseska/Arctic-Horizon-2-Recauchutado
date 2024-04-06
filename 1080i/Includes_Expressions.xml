@@ -124,12 +124,12 @@
     <!-- FIN Jon - Expresiones Infoline Title1--> 
 
     <!-- INI Joseska - Expresiones Autotrailer-->
-    <expression name="TrailerWindowIsActive">Skin.HasSetting(autoplay.trailer) + Window.IsVisible(Home.xml) + ![$EXP[Exp_InfoDialogs]</expression>
-    <expression name="TrailerWindowIsActiveInfo">Skin.HasSetting(autoplay.trailer) + !Window.IsVisible(Home.xml) + Window.IsVisible(DialogVideoInfo.xml)</expression>
-    <expression name="AutoTrailerIsActive">Skin.HasSetting(autoplay.trailer) + Player.HasMedia + !String.IsEmpty(Window(Home).Property(AutoTrailer))</expression>
-    <!-- <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused | Skin.HasSetting(UseBackgroundVideo)]</expression> -->
-    <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + Window.IsVisible(Home.xml)</expression>
-    
+    <!-- Joseska - utilizado para backgrounds sean visibles o no dependiendo de si se está reproducciendo Autotrailer o no.  -->
+    <expression name="TrailerWindowIsActive">Player.HasVideo + Window.IsVisible(Home.xml) + !$EXP[Exp_InfoDialogs] + !String.IsEmpty(Window(Home).Property(AutoTrailer)) + String.IsEqual(Window.Property(AutoTrailer),Player.FileNameAndPath)</expression>
+    <!-- Joseska - Utilizado para parar el autotrailer. Por ahora solo en DialogVideoInfo.xml  -->
+    <expression name="AutoTrailerStop">Skin.HasSetting(autoplay.trailer) + Player.HasMedia + !String.IsEmpty(Window(Home).Property(AutoTrailer))</expression>
+    <!-- <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + Window.IsVisible(Home.xml)</expression> -->
+    <expression name="Exp_Video_IsNotPlaying">Skin.HasSetting(autoplay.trailer) + [!Player.HasVideo | Player.Paused] + Window.IsVisible(Home.xml) + !String.IsEmpty(Window(Home).Property(AutoTrailer)) + String.IsEqual(Window.Property(AutoTrailer),Player.FileNameAndPath)</expression>
     <expression name="Exp_IsVideoContent">String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)</expression>
 
 

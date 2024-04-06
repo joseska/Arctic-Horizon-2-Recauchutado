@@ -52,7 +52,10 @@
                         <label2>        $LOCALIZE[31036]        </label2>
                         <onclick>Skin.Reset(TMDbHelper.EnableBlur)</onclick>
                         <onclick>Skin.SetString(BackgroundStyle,Fanart)</onclick>
+                        <!-- Joseska - Activar Vista alternativa AutoTrailer  -->
+                        <onclick>Skin.SetBool(autoplay.trailer.vista.alt)</onclick>
                         <selected>Skin.String(BackgroundStyle,Fanart)</selected>
+
                     </include>
                     <include content="Dialog_Settings_Button">
                         <param name="id" value="7004" />
@@ -61,6 +64,8 @@
                         <label2>        $LOCALIZE[31037]        </label2>
                         <onclick>Skin.SetBool(TMDbHelper.EnableBlur)</onclick>
                         <onclick>Skin.SetString(BackgroundStyle,Blur)</onclick>
+                        <!-- Joseska - Desactivar Vista alternativa AutoTrailer  -->
+                        <onclick>Skin.Reset(autoplay.trailer.vista.alt)</onclick>
                         <selected>Skin.String(BackgroundStyle,Blur)</selected>
                     </include>
                     <control type="group" id="7901">

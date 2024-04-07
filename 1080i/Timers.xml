@@ -22,7 +22,7 @@
     
     <timer>
         <name>timer_autotrailerexecute</name>
-        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailer3idletimer), 1)</stop>
+        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailerexecute), 1)</stop>
         <onstop condition="!String.IsEqual(Window(Home).Property(AutoTrailerCount),1) + !String.IsEmpty(Window(Home).Property(AutoTrailer))">PlayMedia($ESCINFO[Window(Home).Property(AutoTrailer)],1)</onstop>
         <onstop condition="!String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailerCount,1,Home)</onstop>
     </timer>

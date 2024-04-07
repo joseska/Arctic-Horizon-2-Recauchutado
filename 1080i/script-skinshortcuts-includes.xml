@@ -40,15 +40,8 @@
 			<thumb>special://skin/extras/icons/Películas/episode.png</thumb>
 			<property name="labelID">colorffffd700-series-color</property>
 			<property name="defaultID" />
-			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?ZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscSduVWbnAiOi42bpR3YhJye03JjNXYgQWaf1WZ0lGI5JGISVERS9EIgADN9QWafVnbl1GIlJXZodHIzVnbl1GIt9mcmBCdyFmbhZGLsF3cs42bjlGLu9Wa0NWYswWZiFGbgQ3YlxWZzdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZpJXZT1FMwcDZmZmZmBiUPx0TDt1JgojIsVmYhxmIgwyJn5GcuMXZpJXZzxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVG",return)</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?ZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscSduVWbnAiOi42bpR3YhJye03JjNXYgQWaf1WZ0lGI5JGISVERS9EIgADN9QWafVnbl1GIlJXZodHIzVnbl1GIt9mcmBCdyFmbhZGLsF3cs42bjlGLu9Wa0NWYswWZiFGbgQ3YlxWZzdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZpJXZT1FMwcDZmZmZmBiUPx0TDt1JgojIsVmYhxmIgwyJn5GcuMXZpJXZzxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVG",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?ZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscSduVWbnAiOi42bpR3YhJye03JjNXYgQWaf1WZ0lGI5JGISVERS9EIgADN9QWafVnbl1GIlJXZodHIzVnbl1GIt9mcmBCdyFmbhZGLsF3cs42bjlGLu9Wa0NWYswWZiFGbgQ3YlxWZzdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZpJXZT1FMwcDZmZmZmBiUPx0TDt1JgojIsVmYhxmIgwyJn5GcuMXZpJXZzxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVG",return)</property>
-			<property name="list">plugin://plugin.video.palantir3/?ZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscSduVWbnAiOi42bpR3YhJye03JjNXYgQWaf1WZ0lGI5JGISVERS9EIgADN9QWafVnbl1GIlJXZodHIzVnbl1GIt9mcmBCdyFmbhZGLsF3cs42bjlGLu9Wa0NWYswWZiFGbgQ3YlxWZzdCI6ICbxNnIgwyJdJ1TM90Qvs1cllmclNVXwAzNkZmZmZGIS9ETPN0WnAiOiQ3bsBnIgwCMgojIldWYwJCIscSXS9ETPN0LbNXZpJXZT1FMwcDZmZmZmBiUPx0TDt1JgojIsVmYhxmIgwyJn5GcuMXZpJXZzxFXhlGZl1GXcNXZjJXdvNXZyxFXzIXa05WYsFGcu8WZklmdu4WanVHbwxFXz52bkRWYcxVak92Scx1ZulWbh9mUcxVY0FGRwBXQcxVYrNXZz9macx1cyV2cVxFX6M0JgojIu92YpJCIsciZpdmL0JXYuFmZcx1MylGduFGbhBnLvVG</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">colorffffd700-series-color</property>
-			<property name="group">mainmenu</property>
-			<property name="widgetOnDownAction">$INFO[Skin.String(widgetEndRowAction-colorffffd700-series-color)]</property>
-			<property name="menuOnUpAction">$INFO[Skin.String(menuOnUpAction-colorffffd700-series-color)]</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">False</property>
 			</item>
 		<item id="4">
@@ -59,8 +52,15 @@
 			<thumb>special://skin/extras/icons/Addons/dazn.png</thumb>
 			<property name="labelID">plugin.video.palantir3--0</property>
 			<property name="defaultID">plugin.video.palantir3</property>
-			<visible>False</visible>
-			<onclick>noop</onclick>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3",return)</property>
+			<property name="list">plugin://plugin.video.palantir3</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-palantir3-0</property>
+			<property name="group">mainmenu</property>
+			<property name="widgetOnDownAction">$INFO[Skin.String(widgetEndRowAction-plugin.video.palantir3--0)]</property>
+			<property name="menuOnUpAction">$INFO[Skin.String(menuOnUpAction-plugin.video.palantir3--0)]</property>
 			<property name="hasSubmenu">True</property>
 			</item>
 		<item id="5">
@@ -627,7 +627,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Landscape</property>
+			<property name="widgetAspect">Big Landscape</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</property>
@@ -1443,14 +1443,14 @@
 					</control>
 				</include>
 			</include>
-		<include content="Object_Control" condition="String.IsEqual(System.ProfileName,Master user)">
+		<include content="Object_Control" condition="False">
 			<param name="control">group</param>
 			<include content="Object_Control" condition="!False">
 				<param name="control">group</param>
 				<include content="Animation_LeftRight">
-					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color)]" />
+					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
 					</include>
-				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
+				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
 				<control type="grouplist" id="3400">
 					<animation effect="slide" end="0,120" condition="Integer.IsEqual(Container(3400).NumItems,1) + False + True">Conditional</animation>
 					<visible>!$EXP[Exp_InfoDialogs]</visible>
@@ -1461,12 +1461,12 @@
 					<onleft condition="Skin.HasSetting(Home.VerticalMenu)">SetFocus(300)</onleft>
 					<onup>SetFocus(300)</onup>
 					<ondown condition="Skin.HasSetting(Home.VerticalMenu)">SetFocus(300)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">SetProperty(CustomHubHeader,$INFO[Container(300).ListItem.Label],Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">SetProperty(submenuVisibility,$INFO[Container(300).ListItem.Property(submenuVisibility)],Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">$INFO[Skin.String(widgetEndRowAction-colorffffd700-series-color)]</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True]">ClearProperty(330_FocusBounce,Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True] + !String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">SetFocus(330)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True] + String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">AlarmClock(330_FocusBounce_Reset,SetProperty(330_FocusBounce,1,Home),00:00,silent)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False">SetProperty(CustomHubHeader,$INFO[Container(300).ListItem.Label],Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False">SetProperty(submenuVisibility,$INFO[Container(300).ListItem.Property(submenuVisibility)],Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False" />
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False]">ClearProperty(330_FocusBounce,Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False] + !String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">SetFocus(330)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False] + String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">AlarmClock(330_FocusBounce_Reset,SetProperty(330_FocusBounce,1,Home),00:00,silent)</ondown>
 					<include content="Object_Control" condition="False + True">
 						<param name="control">group</param>
 						<param name="id">3500</param>
@@ -1597,7 +1597,7 @@
 						<param name="label" value="$LOCALIZE[31105]" />
 						<param name="include" value="List_Poster_Row" />
 						<param name="labelvisible">!Skin.HasSetting(Widgets.ExpandedHeader)</param>
-						<param name="visible" value="String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color)" />
+						<param name="visible" value="String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)" />
 						<param name="busy_visible" value="[Integer.IsEqual(Container(301).NumItems,0) | [Integer.IsEqual(Container(301).NumItems,1) + !String.IsEmpty(Container(301).ListItemAbsolute(0).Property(blankitem))]]" />
 						<content>
 							<item>
@@ -1644,7 +1644,7 @@
 						<param name="altlabel">$INFO[Container(3600).ListItem.Label]</param>
 						<param name="usewidgetlabel" value="False" />
 						<param name="include" value="List_Landscape_Row" />
-						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + [![False] | [!Integer.IsEqual(Container(3600).NumItems,0) + Container(3600).ListItem.IsFolder]]]" />
+						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + [![False] | [!Integer.IsEqual(Container(3600).NumItems,0) + Container(3600).ListItem.IsFolder]]]" />
 						<param name="infowidget" value="True" />
 						<param name="infowidget_full" value="True" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(3601).NumItems,0) | [False + Container(3601).IsUpdating]" />
@@ -1681,7 +1681,7 @@
 							<param name="visible">Integer.IsEqual(Container(3600).NumItems,0) | String.IsEmpty(Container(3600).ListItem.FolderPath)</param>
 							</include>
 						<include content="Object_ContentInclude" condition="False">
-							<param name="include">skinshortcuts-group-colorffffd700-series-color</param>
+							<param name="include">skinshortcuts-group-</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,3601,Home)</onfocus>
 						<onfocus condition="True + ![False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,Más vistas este mes,Home)</onfocus>
@@ -1711,7 +1711,7 @@
 						<param name="altlabel">$INFO[Container(3601).ListItem.Label]</param>
 						<param name="usewidgetlabel" value="False" />
 						<param name="include" value="List_Poster_Row" />
-						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + [![False] | [!Integer.IsEqual(Container(3601).NumItems,0) + Container(3601).ListItem.IsFolder]]]" />
+						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + [![False] | [!Integer.IsEqual(Container(3601).NumItems,0) + Container(3601).ListItem.IsFolder]]]" />
 						<param name="infowidget" value="False" />
 						<param name="infowidget_full" value="False" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(3602).NumItems,0) | [False + Container(3602).IsUpdating]" />
@@ -1748,7 +1748,7 @@
 							<param name="visible">Integer.IsEqual(Container(3601).NumItems,0) | String.IsEmpty(Container(3601).ListItem.FolderPath)</param>
 							</include>
 						<include content="Object_ContentInclude" condition="False">
-							<param name="include">skinshortcuts-group-colorffffd700-series-color</param>
+							<param name="include">skinshortcuts-group-</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,3602,Home)</onfocus>
 						<onfocus condition="False + ![False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,Series en seguimiento,Home)</onfocus>
@@ -1776,7 +1776,7 @@
 						<param name="label" value="$LOCALIZE[1034]" />
 						<param name="include" value="List_Button_Row" />
 						<param name="detailed">True</param>
-						<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color)]" />
+						<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
 						<param name="infowidget" value="False" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(3698).NumItems,0)" />
 						<include content="Object_ContentDynamic" condition="False">
@@ -1784,7 +1784,7 @@
 							<param name="target" />
 							</include>
 						<include content="Object_ContentInclude" condition="![False]">
-							<param name="include">skinshortcuts-group-colorffffd700-series-color</param>
+							<param name="include">skinshortcuts-group-</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,3698,Home)</onfocus>
 						<onfocus>SetProperty(Slide.WidgetInfoStyle,,Home)</onfocus>
@@ -1826,9 +1826,9 @@
 			<include content="Object_Control" condition="False">
 				<param name="control">group</param>
 				<include content="Animation_LeftRight">
-					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color)]" />
+					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
 					</include>
-				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
+				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
 				<control type="group">
 					<control type="button" id="3599">
 						<visible allowhiddenfocus="true">False</visible>
@@ -1845,14 +1845,14 @@
 					</control>
 				</include>
 			</include>
-		<include content="Object_Control" condition="False">
+		<include content="Object_Control" condition="String.IsEqual(System.ProfileName,Master user)">
 			<param name="control">group</param>
 			<include content="Object_Control" condition="!False">
 				<param name="control">group</param>
 				<include content="Animation_LeftRight">
-					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
+					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0)]" />
 					</include>
-				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
+				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
 				<control type="grouplist" id="4400">
 					<animation effect="slide" end="0,120" condition="Integer.IsEqual(Container(4400).NumItems,1) + False + True">Conditional</animation>
 					<visible>!$EXP[Exp_InfoDialogs]</visible>
@@ -1863,12 +1863,12 @@
 					<onleft condition="Skin.HasSetting(Home.VerticalMenu)">SetFocus(300)</onleft>
 					<onup>SetFocus(300)</onup>
 					<ondown condition="Skin.HasSetting(Home.VerticalMenu)">SetFocus(300)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False">SetProperty(CustomHubHeader,$INFO[Container(300).ListItem.Label],Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False">SetProperty(submenuVisibility,$INFO[Container(300).ListItem.Property(submenuVisibility)],Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + False" />
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False]">ClearProperty(330_FocusBounce,Home)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False] + !String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">SetFocus(330)</ondown>
-					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![False] + String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">AlarmClock(330_FocusBounce_Reset,SetProperty(330_FocusBounce,1,Home),00:00,silent)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">SetProperty(CustomHubHeader,$INFO[Container(300).ListItem.Label],Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">SetProperty(submenuVisibility,$INFO[Container(300).ListItem.Property(submenuVisibility)],Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + True">$INFO[Skin.String(widgetEndRowAction-plugin.video.palantir3--0)]</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True]">ClearProperty(330_FocusBounce,Home)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True] + !String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">SetFocus(330)</ondown>
+					<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + ![True] + String.IsEqual(Window.Property(Slide.WidgetInfoStyle),Full)">AlarmClock(330_FocusBounce_Reset,SetProperty(330_FocusBounce,1,Home),00:00,silent)</ondown>
 					<include content="Object_Control" condition="False + True">
 						<param name="control">group</param>
 						<param name="id">4500</param>
@@ -1999,7 +1999,7 @@
 						<param name="label" value="$LOCALIZE[31105]" />
 						<param name="include" value="List_Poster_Row" />
 						<param name="labelvisible">!Skin.HasSetting(Widgets.ExpandedHeader)</param>
-						<param name="visible" value="String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)" />
+						<param name="visible" value="String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0)" />
 						<param name="busy_visible" value="[Integer.IsEqual(Container(301).NumItems,0) | [Integer.IsEqual(Container(301).NumItems,1) + !String.IsEmpty(Container(301).ListItemAbsolute(0).Property(blankitem))]]" />
 						<content>
 							<item>
@@ -2045,8 +2045,8 @@
 						<param name="usealtlabel" value="False" />
 						<param name="altlabel">$INFO[Container(4600).ListItem.Label]</param>
 						<param name="usewidgetlabel" value="False" />
-						<param name="include" value="List_Landscape_Row" />
-						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + [![False] | [!Integer.IsEqual(Container(4600).NumItems,0) + Container(4600).ListItem.IsFolder]]]" />
+						<param name="include" value="List_BigLandscape_Row" />
+						<param name="visible" value="[[True] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + [![False] | [!Integer.IsEqual(Container(4600).NumItems,0) + Container(4600).ListItem.IsFolder]]]" />
 						<param name="infowidget" value="True" />
 						<param name="infowidget_full" value="True" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(4601).NumItems,0) | [False + Container(4601).IsUpdating]" />
@@ -2057,7 +2057,7 @@
 							<param name="sortorder" />
 							<param name="target">videos</param>
 							<param name="limit" />
-							<param name="autolimit">4</param>
+							<param name="autolimit">3</param>
 							<param name="is_autolimit">false</param>
 							<param name="content">plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY</param>
 							</include>
@@ -2066,7 +2066,7 @@
 							<param name="sortorder" />
 							<param name="target">videos</param>
 							<param name="limit" />
-							<param name="autolimit">4</param>
+							<param name="autolimit">3</param>
 							<param name="is_autolimit">false</param>
 							<param name="content">$INFO[Container(4600).ListItem.FolderPath]</param>
 							</include>
@@ -2083,14 +2083,14 @@
 							<param name="visible">Integer.IsEqual(Container(4600).NumItems,0) | String.IsEmpty(Container(4600).ListItem.FolderPath)</param>
 							</include>
 						<include content="Object_ContentInclude" condition="False">
-							<param name="include">skinshortcuts-group-</param>
+							<param name="include">skinshortcuts-group-plugin-video-palantir3-0</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,4601,Home)</onfocus>
 						<onfocus condition="True + ![False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,[COLOR ffffd700]Novedades[/COLOR],Home)</onfocus>
 						<onfocus condition="True + [False] + Skin.HasSetting(Widgets.ExpandedHeader)">SetProperty(Slide.WidgetTitle,[CAPITALIZE]$INFO[Container(4601).ListItem.Property(widget)][/CAPITALIZE],Home)</onfocus>
 						<onfocus condition="True">SetProperty(Slide.WidgetContainer,4601,Home)</onfocus>
 						<onfocus>SetProperty(Slide.WidgetInfoStyle,Full,Home)</onfocus>
-						<onfocus>SetProperty(Slide.WidgetAspect,Landscape,Home)</onfocus>
+						<onfocus>SetProperty(Slide.WidgetAspect,Big Landscape,Home)</onfocus>
 						<onunfocus>ClearProperty(Slide.WidgetAspect,Home)</onunfocus>
 						<onunfocus>ClearProperty(Slide.WidgetInfoStyle,Home)</onunfocus>
 						<onunfocus>ClearProperty(Slide.WidgetContainer,Home)</onunfocus>
@@ -2111,7 +2111,7 @@
 						<param name="label" value="$LOCALIZE[1034]" />
 						<param name="include" value="List_Button_Row" />
 						<param name="detailed">True</param>
-						<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
+						<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0)]" />
 						<param name="infowidget" value="False" />
 						<param name="busy_visible" value="Integer.IsEqual(Container(4698).NumItems,0)" />
 						<include content="Object_ContentDynamic" condition="False">
@@ -2119,7 +2119,7 @@
 							<param name="target" />
 							</include>
 						<include content="Object_ContentInclude" condition="![False]">
-							<param name="include">skinshortcuts-group-</param>
+							<param name="include">skinshortcuts-group-plugin-video-palantir3-0</param>
 							</include>
 						<onfocus>SetProperty(TMDbHelper.WidgetContainer,4698,Home)</onfocus>
 						<onfocus>SetProperty(Slide.WidgetInfoStyle,,Home)</onfocus>
@@ -2161,9 +2161,9 @@
 			<include content="Object_Control" condition="False">
 				<param name="control">group</param>
 				<include content="Animation_LeftRight">
-					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)]" />
+					<param name="visible" value="[String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0)]" />
 					</include>
-				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
+				<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) | !String.IsEmpty(Window(Home).Property(WidgetWait))</visible>
 				<control type="group">
 					<control type="button" id="4599">
 						<visible allowhiddenfocus="true">False</visible>
@@ -3729,7 +3729,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Landscape</property>
+			<property name="widgetAspect">Big Landscape</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</property>
@@ -3751,7 +3751,7 @@
 			<property name="defaultID" />
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetAspect">Landscape</property>
+			<property name="widgetAspect">Big Landscape</property>
 			<property name="widgetInfo">Full</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.palantir3/?w5yblRWa25ibpdWdsBHXcNnbvRGZhxFXpR2bLxFXn5WatF2bSxFXhRXYEBHcBxFXht2clN3bqxFXzJXZzVFXcpzQnAiOiQnch5WYmJCIscyclxWamdCI6ICduVGdu92YiACLnMVYsV3YpxWZw91bkFGdzlGbnAiOi42bpR3YhJye9dyYzVGZgQWZ0FGZwVHIsM2clRGIyFWZ5BSeiBiclRmcvBSYsV3YpxWZQ91cpxWZw9ldg00TSZEIg8mcl5WZnxSYhBXbs42bpRXYyVHZsIGZtRHLkFGZpxWYjxybpRWdhxybk52bmxiclR3cvBHL09GbwxichVWes8Gb1RXa0BCVDVETFN1JgojIsF3ciACLn0lUPx0TD9yWzFGb1NWrDzWZQ1FMwcDZmZmZmBiUPx0TDt1JgojI09GbwJCIsADI6ISZnFGciACLn0lUPx0TD9yWzVGZhRWZ29mTdBDM3QmZmZmZgI1TM90QbdCI6ICblJWYsJCIscyZuBnLzFGb1NWasVGccxVYpRWZtxFXzV2YyV3bzVmccx1MylGduFGbhBnLvVGZpZnLul2Z1xGccx1cu9GZkFGXclGZvtEXcdmbp1WYvJFXcFGdhREcwFEXcF2azV2cvpGXcNnclNXVcxlODdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWY",return)</property>
@@ -5445,10 +5445,10 @@
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(2400).HasPrevious]</visible>
 		<visible>!Control.HasFocus(2601) | [False + False]</visible>
 		<visible>!Control.HasFocus(2501) + !Control.HasFocus(2503) + !Control.HasFocus(301)</visible>
-		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + Container(3400).HasPrevious]</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(3400).HasPrevious]</visible>
 		<visible>!Control.HasFocus(3601) | [False + False]</visible>
 		<visible>!Control.HasFocus(3501) + !Control.HasFocus(3503) + !Control.HasFocus(301)</visible>
-		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(4400).HasPrevious]</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + Container(4400).HasPrevious]</visible>
 		<visible>!Control.HasFocus(4601) | [False + False]</visible>
 		<visible>!Control.HasFocus(4501) + !Control.HasFocus(4503) + !Control.HasFocus(301)</visible>
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(5400).HasPrevious]</visible>
@@ -5473,8 +5473,8 @@
 	<include name="skinshortcuts-template-wallfade-bottom-visible-Master user">
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-31085) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-31085) + Container(1400).HasNext]</visible>
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(2400).HasNext]</visible>
-		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + Container(3400).HasNext]</visible>
-		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(4400).HasNext]</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(3400).HasNext]</visible>
+		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + Container(4400).HasNext]</visible>
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(5400).HasNext]</visible>
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),pelistmdb) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),pelistmdb) + Container(6400).HasNext]</visible>
 		<visible>!String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) | [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Container(7400).HasNext]</visible>
@@ -5491,10 +5491,10 @@
 		<include content="Home_Horz_Menubar_Text_Button" condition="False">
 			<param name="label">Peliculas</param>
 			</include>
-		<include content="Home_Horz_Menubar_Text_Button" condition="String.IsEqual(System.ProfileName,Master user)">
+		<include content="Home_Horz_Menubar_Text_Button" condition="False">
 			<param name="label">[COLOR ffffd700]Series[/COLOR]</param>
 			</include>
-		<include content="Home_Horz_Menubar_Text_Button" condition="False">
+		<include content="Home_Horz_Menubar_Text_Button" condition="String.IsEqual(System.ProfileName,Master user)">
 			<param name="label">[COLOR gold]Palantir 3[/COLOR]</param>
 			</include>
 		<include content="Home_Horz_Menubar_Text_Button" condition="False">
@@ -5581,20 +5581,20 @@
 		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + True">2599</ondown>
 		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + !True">301</ondown>
 		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !False">2601</ondown>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + !Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !String.IsEmpty(Window(Home).Property(TMDBHelper.WidgetContainer))">SetFocus($INFO[Window(Home).Property(TMDBHelper.WidgetContainer)])</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">3599</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + !True">301</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !False">3601</onright>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + False + True">3599</ondown>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + False + !True">301</ondown>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color) + !False">3601</ondown>
 		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !String.IsEmpty(Window(Home).Property(TMDBHelper.WidgetContainer))">SetFocus($INFO[Window(Home).Property(TMDBHelper.WidgetContainer)])</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">4599</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">3599</onright>
 		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + !True">301</onright>
-		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !False">4601</onright>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + True">4599</ondown>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !False">3601</onright>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + True">3599</ondown>
 		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + False + !True">301</ondown>
-		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !False">4601</ondown>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !False">3601</ondown>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + !Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !String.IsEmpty(Window(Home).Property(TMDBHelper.WidgetContainer))">SetFocus($INFO[Window(Home).Property(TMDBHelper.WidgetContainer)])</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">4599</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + !True">301</onright>
+		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !False">4601</onright>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + False + True">4599</ondown>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + False + !True">301</ondown>
+		<ondown condition="!Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0) + !False">4601</ondown>
 		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + !Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + !String.IsEmpty(Window(Home).Property(TMDBHelper.WidgetContainer))">SetFocus($INFO[Window(Home).Property(TMDBHelper.WidgetContainer)])</onright>
 		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + True">5599</onright>
 		<onright condition="Skin.HasSetting(Home.VerticalMenu) + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),) + Integer.IsEqual(Window(Home).Property(TMDBHelper.WidgetContainer),301) + False + !True">301</onright>
@@ -5648,12 +5648,12 @@
 		<item>
 			<label>[COLOR=00ffffff]$INFO[Container(3601).ListItem.Label][/COLOR]</label>
 			<property name="fanart">$INFO[Container(3601).ListItem.Art(fanart)]</property>
-			<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),colorffffd700-series-color)</visible>
+			<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)</visible>
 			</item>
 		<item>
 			<label>[COLOR=00ffffff]$INFO[Container(4601).ListItem.Label][/COLOR]</label>
 			<property name="fanart">$INFO[Container(4601).ListItem.Art(fanart)]</property>
-			<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),)</visible>
+			<visible>String.IsEqual(Container(300).ListItem.Property(submenuVisibility),plugin-video-palantir3-0)</visible>
 			</item>
 		<item>
 			<label>[COLOR=00ffffff]$INFO[Container(5601).ListItem.Label][/COLOR]</label>

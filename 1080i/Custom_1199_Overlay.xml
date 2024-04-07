@@ -9,7 +9,8 @@
             <control type="grouplist">
                 <align>top</align>
                 <orientation>vertical</orientation>
-                <!-- <include content="Overlay_InfoLabel">
+
+                <include content="Overlay_InfoLabel">
                     <label> -system.currentcontrolid: $INFO[System.CurrentControlID]$INFO[System.CurrentControl, | ,]$INFO[ListItem.IMDBNumber, | ,]$INFO[System.CurrentWindow, | ,]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
@@ -24,7 +25,7 @@
                 <include content="Overlay_InfoLabel">
                     <label>         -slide.container: $INFO[Window(Home).Property(Slide.WidgetInfoStyle),style: , ]$INFO[Window(Home).Property(Slide.WidgetContainer),container: , ]</label>
                     <textcolor>yellowgreen</textcolor>
-                </include> -->
+                </include>
 
 
 
@@ -63,7 +64,7 @@
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label>  VideoPlayer.VideoAspect: $INFO[VideoPlayer.VideoAspect]</label>
+                    <label>  Slide.WidgetContainer: $INFO[System.CurrentControlID]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
 

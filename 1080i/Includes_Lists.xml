@@ -838,6 +838,8 @@
         <param name="indicator">true</param>
         <definition>
             <control type="$PARAM[controltype]" id="$PARAM[id]">
+                <!-- Joseska - Animación Autotrailer  -->
+                <animation effect="slide" start="0,0" end="0,27" time="500" condition="$EXP[TrailerWindowIsActive]">Conditional</animation>
                 <nested />
                 <orientation>$PARAM[orientation]</orientation>
                 <preloaditems>$PARAM[preloaditems]</preloaditems>
@@ -913,8 +915,8 @@
 
                             <!-- Joseska - Debug  -->
                             <!-- <onfocus>SetProperty(list1,$ESCINFO[ListItem.Trailer],Home)</onfocus>
-                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus>
-                            <onfocus>SetProperty(list3,BackgroundStyle,Home)</onfocus> -->
+                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus> 
+                            <onfocus>SetProperty(list3,$INFO[System.CurrentControlID],Home)</onfocus> -->
 
                             <onunfocus>ClearProperty(AutoTrailer)</onunfocus>
                             <onunfocus>ClearProperty(AutoTrailerCount)</onunfocus>

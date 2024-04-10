@@ -1,0 +1,42 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>peliculasmasvistasmes</defaultID>
+		<label>Películas Más vistas este mes</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[PeliculasIcon]</icon>
+		<thumb>$VAR[PeliculasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[PeliculasMasVistasEsteMesPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>peliculas-accesos</defaultID>
+		<label>Películas - Accesos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[PeliculasIcon]</icon>
+		<thumb>$VAR[PeliculasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[PeliculasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>peliculasnofinalizadas</defaultID>
+		<label>Películas no finalizadas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[PeliculasIcon]</icon>
+		<thumb>$VAR[PeliculasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[PeliculasNoFinalizadasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>peliculasnuevas</defaultID>
+		<label>Novedades en Películas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[PeliculasIcon]</icon>
+		<thumb>$VAR[PeliculasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[PeliculasNovedadesPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>peliculasultimas</defaultID>
+		<label>Últimas películas añadidas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[PeliculasIcon]</icon>
+		<thumb>$VAR[PeliculasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[PeliculasUltimasPath]",return)</action>
+		</shortcut>
+	</shortcuts>

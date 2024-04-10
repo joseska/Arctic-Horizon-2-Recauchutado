@@ -1,0 +1,42 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>animeseriesnuevas</defaultID>
+		<label>Series Nuevas</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[AnimeIcon]</icon>
+		<thumb>$VAR[AnimeIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SerieAnimeNuevasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>anime-accesos</defaultID>
+		<label>Anime - Accesos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[AnimeIcon]</icon>
+		<thumb>$VAR[AnimeIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[AnimePath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>animeseriesultimas</defaultID>
+		<label>Últimas Series Actualizadas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[AnimeIcon]</icon>
+		<thumb>$VAR[AnimeIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[AnimeUltimasActualizadasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>animepeliculasnuevas</defaultID>
+		<label>Novedades en Películas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[AnimeIcon]</icon>
+		<thumb>$VAR[AnimeIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[AnimeNovedadesPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>animepeliculasultimas</defaultID>
+		<label>Últimas Películas añadidas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[AnimeIcon]</icon>
+		<thumb>$VAR[AnimeIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[AnimeUltimasAnadidasPath]",return)</action>
+		</shortcut>
+	</shortcuts>

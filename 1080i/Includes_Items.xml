@@ -1936,9 +1936,10 @@
         <include content="Dialog_Settings_Button">
             <param name="id" value="8004" />
             <param name="control" value="radiobutton" />
-            <onclick>Skin.ToggleSetting(autoplay.trailer)</onclick>
             <selected>Skin.HasSetting(autoplay.trailer)</selected>
-            <label>AutoTrailers</label>
+            <!-- <onclick>Skin.ToggleSetting(autoplay.trailer)</onclick> -->
+            <!-- <label>AutoTrailers</label> -->
+            <label>Nueva característica misteriosa - próximamente</label>
         </include>
         <include content="Dialog_Settings_Button">
             <param name="id" value="8005" />
@@ -1946,6 +1947,7 @@
             <onclick>Skin.ToggleSetting(autoplay.trailer.corregir)</onclick>
             <selected>Skin.HasSetting(autoplay.trailer.corregir)</selected>
             <label>AutoTrailers Desactivar Corrección Franjas Negras</label>
+            <visible>Skin.HasSetting(autoplay.trailer)</visible>
         </include>
         <include content="Dialog_Settings_Button">
             <param name="id" value="8006" />
@@ -1954,6 +1956,27 @@
             <onclick>Skin.ToggleSetting(autoplay.trailer.vista.alt)</onclick>
             <selected>Skin.HasSetting(autoplay.trailer.vista.alt)</selected>
             <label>AutoTrailers Activar Vista Alternativa</label>
+            <visible>Skin.HasSetting(autoplay.trailer)</visible>
+        </include>
+        <include content="Dialog_Settings_Button">
+            <param name="id" value="8007" />
+            <param name="control" value="button" />
+            <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
+            <label>Copia de seguridad de los menús (req. skin.helper.backup)</label>
+            <!-- <visible>System.HasAddon(script.skin.helper.service) + System.HasAddon(script.skin.helper.service)</visible> -->
+        </include>
+        <include content="Dialog_Settings_Button">
+            <param name="id" value="8008" />
+            <param name="control" value="button" />
+            <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
+            <label>Restaurar copia de seguridad de los menús (req. skin.helper.backup)</label>
+            <!-- <visible>System.HasAddon(script.skin.helper.service) + System.HasAddon(script.skin.helper.service)</visible> -->
+        </include>
+        <include content="Dialog_Settings_Button">
+            <param name="id" value="8009" />
+            <param name="control" value="button" />
+            <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
+            <label>***¡CUIDADO!***:  RESETEAR TODOS LOS MENÚS. Borra los widgets y pone todo por defecto.</label>
         </include>
 	</include>
 	<!-- Fin Joseska -->

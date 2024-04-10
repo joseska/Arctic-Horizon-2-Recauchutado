@@ -1,0 +1,26 @@
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Series en Seguimiento</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>$VAR[SeriesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Ver más tarde Series</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[TraktIcon]</icon>
+		<thumb>$VAR[TraktIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[TraktPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Listas Trakt.tv</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[TraktIcon]</icon>
+		<thumb>$VAR[TraktIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[TraktPath]",return)</action>
+		</shortcut>
+</shortcuts>

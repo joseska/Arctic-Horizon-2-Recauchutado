@@ -1,0 +1,10 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>seriesenseguimiento</defaultID>
+		<label>$VAR[p3NameSeriesSeguimiento]</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[SeriesIcon]</icon>
+		<thumb>$VAR[SeriesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]",return)</action>
+		</shortcut>
+	</shortcuts>

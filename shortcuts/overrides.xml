@@ -454,11 +454,8 @@
     <widgetdefault labelID="documentalespeliculasultimas" group="documentales.1">documentalespeliculasultimas</widgetdefault>
 
     <!-- Redefinición Properties para Widgets por defecto - Palantir -->
-          <!-- Series - Palantir 3-->
-    <!-- <widgetdefaultnode group="series" labelID="seriesenseguimiento" label="$VAR[p3NameSeriesSeguimiento]" path="ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]",return)" target="videos">seriesenseguimiento</widgetdefaultnode> -->
-    <!-- <propertydefault labelID="menuSeries" property="onclick_condition">ListItem.IsResumable</propertydefault>
-    <propertydefault labelID="menuSeries" property="onclick_action">PlayMedia($INFO[ListItem.FileNameAndPath]&amp;resumable=true)</propertydefault> -->
 
+          <!-- Series - Palantir 3-->
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widget">Addon</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetType">video</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetTarget">videos</propertydefault>

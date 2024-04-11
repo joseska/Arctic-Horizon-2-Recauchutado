@@ -6,6 +6,11 @@
 > [!IMPORTANT]
 > [Enlace al Tutorial de instalación y configuración.](https://telegra.ph/AH2-Tutorial-02-02)
 
+### Actualización 0.3.1 - 11/04/2024
+- [x] Menús por defecto para Palantir en instalación nueva. Permitirá que en futuras actualizaciones de Palantir podamos actualizar los enlaces de los widgets y compartirlos con una nueva versión sin mayores dolores de cabeza para gente que no se quieran complicar, o como base para los que sí.
+- [x] Botón de reset de menús que permite restablecer los menús por defecto del punto anterior (se perderá la configuración hecha por el usuario). En ajustes de la skin - Detalles - Extras, la opción que dice "¡CUIDADO!" 😉
+- [x] Posibilidad de hacer una copia/restauración de la configuración de menús de todas las skin modificadas por el usuario (dependiente de SO, no se puede pasar de PC a Android y viceversa ya que puede contener rutas absolutas). Requiere de los plugins Skin Helper Service y Skin Helper Service Skin Backup (en repositorio de Marcelveldt, disponible en Luar).
+
 
 ### Actualización 0.3 - 21/03/2024
 - [x] Clearlogo en vista Temporadas, Capítulos (dependiente de TMDB Helper del Repositorio Joseska).

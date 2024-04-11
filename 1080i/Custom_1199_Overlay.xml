@@ -3,31 +3,76 @@
     <zorder>20</zorder>
     <visible>Skin.HasSetting(DebugInfo)</visible>
     <controls>
+        <include>Defs_TMDbHelper_Loader</include>
         <include content="Object_Control" condition="Skin.HasSetting(DebugInfo)">
             <param name="control">group</param>
             <control type="grouplist">
                 <align>top</align>
                 <orientation>vertical</orientation>
+
                 <include content="Overlay_InfoLabel">
-                    <label> --system.currentcontrolid: $INFO[System.CurrentControlID]$INFO[System.CurrentControl, | ,]$INFO[ListItem.IMDBNumber, | ,]$INFO[System.CurrentWindow, | ,]</label>
+                    <label> -system.currentcontrolid: $INFO[System.CurrentControlID]$INFO[System.CurrentControl, | ,]$INFO[ListItem.IMDBNumber, | ,]$INFO[System.CurrentWindow, | ,]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label>    --recommendations.prev: $INFO[Window(Home).Property(TMDBHelper.Recommendations.HideRecs),ANI: , ]$INFO[Window(Home).Property(TMDBHelper.Recommendations.HideInfo),HID: , ]$INFO[Window(Home).Property(TMDBHelper.Recommendations.IsActive),POS: , ]</label>
+                    <label>    -recommendations.prev: $INFO[Window(Home).Property(TMDBHelper.Recommendations.HideRecs),ANI: , ]$INFO[Window(Home).Property(TMDBHelper.Recommendations.HideInfo),HID: , ]$INFO[Window(Home).Property(TMDBHelper.Recommendations.IsActive),POS: , ]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label>   --tmdbhelper.isupdating: $INFO[Window(Home).Property(TMDBHelper.WidgetContainer),widget: , ]$INFO[Window(Home).Property(TMDBHelper.CurrentWindow),window: , ]$INFO[Window(Home).Property(TMDBHelper.IsUpdating),details: , ]$INFO[Window(Home).Property(TMDBHelper.IsUpdatingRatings),ratings: , ]</label>
+                    <label>   -tmdbhelper.isupdating: $INFO[Window(Home).Property(TMDBHelper.WidgetContainer),widget: , ]$INFO[Window(Home).Property(TMDBHelper.CurrentWindow),window: , ]$INFO[Window(Home).Property(TMDBHelper.IsUpdating),details: , ]$INFO[Window(Home).Property(TMDBHelper.IsUpdatingRatings),ratings: , ]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label>         --slide.container: $INFO[Window(Home).Property(Slide.WidgetInfoStyle),style: , ]$INFO[Window(Home).Property(Slide.WidgetContainer),container: , ]</label>
+                    <label>         -slide.container: $INFO[Window(Home).Property(Slide.WidgetInfoStyle),style: , ]$INFO[Window(Home).Property(Slide.WidgetContainer),container: , ]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+
+
+
+
+                <include content="Overlay_InfoLabel">
+                    <label>  AutoTrailerCount: $INFO[Window(Home).Property(AutoTrailerCount)]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
                 <include content="Overlay_InfoLabel">
-                    <label> --Otros: $INFO[ListItem.Title]</label>
+                    <label>  AutoTrailer: $INFO[Window(Home).Property(AutoTrailer)]</label>
                     <textcolor>yellowgreen</textcolor>
                 </include>
+                <include content="Overlay_InfoLabel">
+                    <label>  Image_Background_Stretch: $VAR[Image_Background_Stretch]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+                <include content="Overlay_InfoLabel">
+                    <label>  Player.FileNameAndPath: $INFO[Player.FileNameAndPath]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+
+                <include content="Overlay_InfoLabel">
+                    <label>  VAR[AutoTrailerUrl]: $VAR[AutoTrailerUrl]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+                <include content="Overlay_InfoLabel">
+                    <label>  ListItem.Trailer: $INFO[Window(Home).Property(list1)]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+                <include content="Overlay_InfoLabel">
+                    <label>  PARAM[id] ListItem.Trailer: $INFO[Window(Home).Property(list2)]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+                <include content="Overlay_InfoLabel">
+                    <label>  BackgroundStyle: $INFO[Window(Home).Property(list3)]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+                <include content="Overlay_InfoLabel">
+                    <label>  Slide.WidgetContainer: $INFO[System.CurrentControlID]</label>
+                    <textcolor>yellowgreen</textcolor>
+                </include>
+
+
+
+
+
+
             </control>
             <control type="grouplist">
                 <align>bottom</align>

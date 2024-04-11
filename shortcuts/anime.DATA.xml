@@ -1,0 +1,10 @@
+<shortcuts>
+    <shortcut>
+		<defaultID />
+		<label>Listas Trakt.tv</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[TraktIcon]</icon>
+		<thumb>$VAR[TraktIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[TraktPath]",return)</action>
+		</shortcut>
+</shortcuts>

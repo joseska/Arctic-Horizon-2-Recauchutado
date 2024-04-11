@@ -238,8 +238,8 @@
         <font>
             <name>font_debug</name>
             <filename>RobotoMono-Light.ttf</filename>
-            <size>24</size>
-            <aspect>0.8</aspect>
+            <size>19</size>
+            <aspect>0.7</aspect>
         </font>
     </fontset>
 
@@ -458,8 +458,8 @@
         <font>
             <name>font_debug</name>
             <filename>RobotoMono-Light.ttf</filename>
-            <size>24</size>
-            <aspect>0.8</aspect>
+            <size>19</size>
+            <aspect>0.7</aspect>
         </font>
     </fontset>
 
@@ -710,8 +710,8 @@
         <font>
             <name>font_debug</name>
             <filename>RobotoMono-Light.ttf</filename>
-            <size>24</size>
-            <aspect>0.8</aspect>
+            <size>19</size>
+            <aspect>0.7</aspect>
         </font>
     </fontset>
 

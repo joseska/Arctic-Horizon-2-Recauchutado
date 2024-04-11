@@ -838,6 +838,8 @@
         <param name="indicator">true</param>
         <definition>
             <control type="$PARAM[controltype]" id="$PARAM[id]">
+                <!-- Joseska - Animación Autotrailer  -->
+                <animation effect="slide" start="0,0" end="0,27" time="500" condition="$EXP[TrailerWindowIsActive]">Conditional</animation>
                 <nested />
                 <orientation>$PARAM[orientation]</orientation>
                 <preloaditems>$PARAM[preloaditems]</preloaditems>
@@ -903,6 +905,34 @@
                                 <param name="textcolor">$PARAM[textcolor]</param>
                                 <param name="shadow_colordiffuse">$PARAM[shadow_colordiffuse]</param>
                             </include>
+                        </control>
+
+                        <!-- Joseska - Boton que ejecuta el AutoTrailer  -->
+                        <control type="button">
+                            <visible>false</visible>
+                            <!-- Joseska - Timer para AutoTrailer (Timers.xml)  -->
+                            <onfocus condition="$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer)">Skin.TimerStart(timer_autotrailer3idletimer)</onfocus>
+
+                            <!-- Joseska - Debug  -->
+                            <!-- <onfocus>SetProperty(list1,$ESCINFO[ListItem.Trailer],Home)</onfocus>
+                            <onfocus>SetProperty(list2,$ESCINFO[Container($PARAM[id]).ListItem.Trailer],Home)</onfocus> 
+                            <onfocus>SetProperty(list3,$INFO[System.CurrentControlID],Home)</onfocus> -->
+
+                            <onunfocus>ClearProperty(AutoTrailer)</onunfocus>
+                            <onunfocus>ClearProperty(AutoTrailerCount)</onunfocus>
+                            <onunfocus condition="Player.HasVideo + String.IsEqual(Window.Property(AutoTrailer),Player.FileNameAndPath)">Action(Stop)</onunfocus>
+
+                            <onleft>ClearProperty(AutoTrailer)</onleft>
+                            <onright>ClearProperty(AutoTrailer)</onright>
+                            <onup>ClearProperty(AutoTrailer)</onup>
+                            <ondown>ClearProperty(AutoTrailer)</ondown>
+
+                            <onup>ClearProperty(AutoTrailerCount)</onup>
+                            <ondown>ClearProperty(AutoTrailerCount)</ondown>
+                            <onright>ClearProperty(AutoTrailerCount)</onright>
+                            <onleft>ClearProperty(AutoTrailerCount)</onleft>
+
+
                         </control>
                     </control>
                 </focusedlayout>

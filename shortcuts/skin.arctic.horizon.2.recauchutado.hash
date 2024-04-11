@@ -1,0 +1,236 @@
+[
+    [
+        "::PROFILELIST::",
+        [
+            [
+                "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\",
+                "String.IsEqual(System.ProfileName,Master user)",
+                "Master user"
+            ]
+        ]
+    ],
+    [
+        "::SCRIPTVER::",
+        "2.0.3"
+    ],
+    [
+        "::XBMCVER::",
+        "20"
+    ],
+    [
+        "::HIDEPVR::",
+        "false"
+    ],
+    [
+        "::SHARED::",
+        "true"
+    ],
+    [
+        "::SKINDIR::",
+        "skin.arctic.horizon.2.recauchutado"
+    ],
+    [
+        "::FULLMENU::",
+        "True"
+    ],
+    [
+        "::SKINVER::",
+        "0.3"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-documentales.DATA.xml",
+        "15c16657851d7b6191f51c31cd0807df"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-music-1.DATA.xml",
+        "0908afc96fc20b006db047f268a30f49"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\videos-1.DATA.xml",
+        "7c6e6126aba194098674992e8c09e589"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-movies.DATA.xml",
+        "fbd1564848d0faf8e8d6cea7c6bd307f"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-dibujos.DATA.xml",
+        "379c0cb0f0c8c3963235d19fe6e1308b"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\tvshows-1.DATA.xml",
+        "03f60171667e51b15374e4951d722987"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\music-1.DATA.xml",
+        "57310444ed61be2eac8b30867eb52341"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\movies-1.DATA.xml",
+        "a24ca16d2eae48a776b4a76f434d82c7"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-plugin-video-movistarplus-1.DATA.xml",
+        "2d9688025824af98472a38b47a12e87d"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-dibujos-1.DATA.xml",
+        "2f1698977f7b892dbf32e904aa4d09fb"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-movies-1.DATA.xml",
+        "ab25d62c2b376e5e2c42e39d1335da52"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-livetv-1.DATA.xml",
+        "bfcb95188a05e482be15e30158115fa2"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-addons.DATA.xml",
+        "379c0cb0f0c8c3963235d19fe6e1308b"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\searchmenu.DATA.xml",
+        "5a1a42da5b69e075a58633796967653e"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\movies.DATA.xml",
+        "546daaa92f7c482b3c39956adedb07ba"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\livetv-1.DATA.xml",
+        "99d905f6019e63aa3e1270ded949220a"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\script.skinshortcuts\\resources\\shortcuts\\movies.DATA.xml",
+        "4997634763cceea26b3e7ed557b130e2"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\tvshows.DATA.xml",
+        "906df2b702a793b4f9c24743da172ba5"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\script.skinshortcuts\\resources\\shortcuts\\videos.DATA.xml",
+        "dc44f89b483d572c54e44410e2dfd674"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\script.skinshortcuts\\resources\\shortcuts\\music.DATA.xml",
+        "4298ef1d05ab4baf46890fc30c2a3b10"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-tvshows.DATA.xml",
+        "95aa409d48ce77c34ae030c2712fc4a4"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-documentales-1.DATA.xml",
+        "c22129457eb4edd93a09e7e3ab6d6fc0"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-buscar.DATA.xml",
+        "379c0cb0f0c8c3963235d19fe6e1308b"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-livetv.DATA.xml",
+        "de1d843c6274f7d0fe80c6519b17788d"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-series-1.DATA.xml",
+        "20aa20f97a2da9ed93d9da961fc11b8a"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-powermenu.DATA.xml",
+        "2445640181969ea4c3594c3f4708ef2d"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-videos-1.DATA.xml",
+        "3795735a76e3cc6dce0fd968772a5537"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-peliculas.DATA.xml",
+        "630ece6d8460fa597d6e34bda5ad2d29"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-anime.DATA.xml",
+        "379c0cb0f0c8c3963235d19fe6e1308b"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-music.DATA.xml",
+        "4d5e4c442da963102ee9386e33d4ddb1"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-plugin-video-movistarplus.DATA.xml",
+        "379c0cb0f0c8c3963235d19fe6e1308b"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\1080i\\script-skinshortcuts-includes.xml",
+        "89f97dbd1559c9394908a8d780389d48"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-videos.DATA.xml",
+        "ac1e6369b95236e2ed5675811254d887"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-searchmenu.DATA.xml",
+        "3a8db9e7ce5291d68ac2ebf7217ed273"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\template.xml",
+        "9302f42f9b5fcb24d3649eb6dbc03849"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado.properties",
+        "45a18cf4726e3eee2ec43329dc17eea6"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\script.skinshortcuts\\resources\\shortcuts\\mainmenu.DATA.xml",
+        "8523f5b50afc14f67af449ca99ee21f8"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-addons-1.DATA.xml",
+        "1cf47f0ecd7ec2e075bbede955d8e552"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\powermenu.DATA.xml",
+        "207d44ba6b63c6055f081a3f438cdf8c"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-tvshows-1.DATA.xml",
+        "d5c9e8e6477034ea95f267b2ff1ab6ed"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\script.skinshortcuts\\resources\\shortcuts\\tvshows.DATA.xml",
+        "a86ff5cfeb2ecd934ccf77a45b7a0deb"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\script.skinshortcuts\\resources\\shortcuts\\livetv.DATA.xml",
+        "fb7cefbdccd70e243187cce2cb0e385c"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-mainmenu.DATA.xml",
+        "87b0c1dbd0f5cd7ff14a41eb545ec241"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\mainmenu.DATA.xml",
+        "aeeb4a2fa382484b1dfbd17ead6753a2"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-anime-1.DATA.xml",
+        "08359e8c0627a71ff584dcd55d644fed"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-peliculas-1.DATA.xml",
+        "5b3e75606c0b564030da2078a5d07f76"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\userdata\\addon_data\\script.skinshortcuts\\skin.arctic.horizon.2.recauchutado-series.DATA.xml",
+        "1d8094bdea6b1c3b635e9fd3ce4abb6b"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\script.skinshortcuts\\resources\\shortcuts\\overrides.xml",
+        "5d367b4cf434ffcb86069273d402dc28"
+    ],
+    [
+        "G:\\Programas\\Kodi TEST - develop\\portable_data\\addons\\skin.arctic.horizon.2.recauchutado\\shortcuts\\overrides.xml",
+        "502aaa945a0093a515a8b116f69c0e04"
+    ]
+]

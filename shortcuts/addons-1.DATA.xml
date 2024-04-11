@@ -1,0 +1,18 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>1037</defaultID>
+		<label>1037</label>
+		<label2>videos</label2>
+		<icon>special://skin/extras/icons/video-addons.png</icon>
+		<thumb />
+		<action>addons://sources/video/</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>programs</defaultID>
+		<label>10001</label>
+		<label2>programs</label2>
+		<icon>special://skin/extras/icons/addons.png</icon>
+		<thumb />
+		<action>addons://sources/executable/</action>
+		</shortcut>
+	</shortcuts>

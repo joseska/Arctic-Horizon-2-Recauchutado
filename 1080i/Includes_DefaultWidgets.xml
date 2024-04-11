@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
+    <!-- Palantir plugin -->
+    <variable name="PalantirPath">
+        <value>plugin://plugin.video.palantir3</value>
+    </variable>
+    <variable name="PalantirIcon">
+         <value>special://skin/extras/icons/Addons/Palantir.png</value>
+    </variable>
+
     <!-- Series -->
     <variable name="SeriesPath">
         <value>plugin://plugin.video.palantir3/?ibpdWdsBHXcNnbvRGZhxFXhRXYk9VZsJWY0J3bwxFXw9GblZXZkBSLgQ1UFRFIpR2bLxFXzFWbhJ3ZvJHUcxlOHdCI6ICdyFmbhZmIgwyJzVGbpZ2JgojI05WZ052bjJCIscSduVWbnAiOi42bpR3YhJyeQfnM2chBCZp9VblRXagknYgIVREJ1TgACM00DZp9VduVWbgUmclh2dgMXduVWbg02byZGI0JXYuFmZswWczxibvNWas42bpR3YhxCblJWYsBCdjVGblN3JgojIsF3ciACLn0lUPx0TD9yWzVWayV2UdZmZ4YGOmZmZgI1TM90QbdCI6ICdvxGciACLwAiOiU2ZhBnIgwyJdJ1TM90Qvs1cllmclNVXmZGOmhjZmZGIS9ETPN0WnAiOiwWZiFGbiACLncmbw5ycllmclNHXcFWakVWbcx1clNmc192clJHXcNjcpRnbhxWYw5yblRWa25ibpdWdsBHXcNnbvRGZhxFXhRXYk9VZsJWY0J3bwxFXw9GblZXZkBSLgQ1UFRFIpR2bLxFXzFWbhJ3ZvJHUcxlOHdCI6IibvNWaiACLnYWan5CdyFmbhZGXcNjcpRnbhxWYw5yblRWa25</value>

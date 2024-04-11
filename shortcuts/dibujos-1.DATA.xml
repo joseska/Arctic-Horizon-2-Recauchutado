@@ -1,0 +1,46 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>dibujosseriesultimas</defaultID>
+		<label>Últimas Series Actualizadas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[DibujosIcon]</icon>
+		<thumb>$VAR[DibujosIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DibujosUltimasActualizadasPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>dibujos-accesos</defaultID>
+		<label>Dibujos - Accesos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[DibujosIcon]</icon>
+		<thumb>$VAR[DibujosIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DibujosPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>dibujosseriesnuevas</defaultID>
+		<label>Series Nuevas</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[DibujosIcon]</icon>
+		<thumb>$VAR[DibujosIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SerieDibujosNuevasPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>dibujospeliculasnuevas</defaultID>
+		<label>Novedades en Películas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[DibujosIcon]</icon>
+		<thumb>$VAR[DibujosIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DibujosNovedadesPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>dibujospeliculasultimas</defaultID>
+		<label>Últimas Películas añadidas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[DibujosIcon]</icon>
+		<thumb>$VAR[DibujosIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DibujosUltimasAnadidasPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	</shortcuts>

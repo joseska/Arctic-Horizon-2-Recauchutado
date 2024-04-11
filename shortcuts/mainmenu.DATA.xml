@@ -1,40 +1,113 @@
-<?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
-    <shortcut>
-        <label>342</label>
-        <label2>Common Shortcut</label2>
-        <defaultID>movies</defaultID>
-        <icon>special://skin/extras/icons/film.png</icon>
-        <action>ActivateWindow(Videos,MovieTitles,return)</action>
-    </shortcut>
-    <shortcut>
-        <label>20343</label>
-        <label2>Common Shortcut</label2>
-        <defaultID>tvshows</defaultID>
-        <icon>special://skin/extras/icons/tv.png</icon>
-        <action>ActivateWindow(Videos,TVShowTitles,return)</action>
-    </shortcut>
-    <shortcut>
-        <label>2</label>
-        <label2>Common Shortcut</label2>
-        <defaultID>music</defaultID>
-        <icon>special://skin/extras/icons/songs.png</icon>
-        <action>ActivateWindow(Music)</action>
-    </shortcut>
-    <shortcut>
-        <label>31085</label>
-        <label2>Common Shortcut</label2>
-        <defaultID>livetv</defaultID>
-        <icon>special://skin/extras/icons/livetv.png</icon>
-        <action>ActivateWindow(TVChannels)</action>
-        <visible>PVR.HasTVChannels</visible>
-    </shortcut>
-    <shortcut>
-        <label>3</label>
-        <label2>Common Shortcut</label2>
-        <defaultID>videos</defaultID>
-        <icon>special://skin/extras/icons/video.png</icon>
-        <action>ActivateWindow(Videos)</action>
-        <visible>!Library.HasContent(Movies) + !Library.HasContent(TVShows)</visible>
-    </shortcut>
-</shortcuts>
+	<shortcut>
+		<defaultID>livetv</defaultID>
+		<label>32022</label>
+		<label2>Elemento de menú común</label2>
+		<icon>special://skin/extras/icons/tv.png</icon>
+		<thumb>special://skin/extras/icons/livetv.png</thumb>
+		<action>ActivateWindow(TVGuide)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>series</defaultID>
+		<label>Series</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[SeriesIcon]</icon>
+		<thumb>$VAR[SeriesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SeriesPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>peliculas</defaultID>
+		<label>Películas</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[PeliculasIcon]</icon>
+		<thumb>$VAR[PeliculasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[PeliculasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>anime</defaultID>
+		<label>Anime</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[AnimeIcon]</icon>
+		<thumb>$VAR[AnimeIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[AnimePath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>dibujos</defaultID>
+		<label>Dibujos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[DibujosIcon]</icon>
+		<thumb>$VAR[DibujosIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DibujosPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>documentales</defaultID>
+		<label>Documentales</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[DocumentalesIcon]</icon>
+		<thumb>$VAR[DocumentalesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DocumentalesPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>telenovelas</defaultID>
+		<label>Telenovelas</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[TelenovelasIcon]</icon>
+		<thumb>$VAR[TelenovelasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[TelenovelasPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Addons</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>special://skin/extras/icons/addon.png</thumb>
+		<action>noop</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>music</defaultID>
+		<label>2</label>
+		<label2>Common Shortcut</label2>
+		<icon>special://skin/extras/icons/songs.png</icon>
+		<thumb>special://skin/extras/icons/Generos/music.png</thumb>
+		<action>ActivateWindow(Music)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>buscar</defaultID>
+		<label>Buscar</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>$VAR[BuscarIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[BuscarPath]",return)</action>
+		<disabled>True</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>movies</defaultID>
+		<label>342</label>
+		<label2>Common Shortcut</label2>
+		<icon>special://skin/extras/icons/film.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,MovieTitles,return)</action>
+		<disabled>True</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>tvshows</defaultID>
+		<label>20343</label>
+		<label2>Common Shortcut</label2>
+		<icon>special://skin/extras/icons/tv.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,TVShowTitles,return)</action>
+		<disabled>True</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>videos</defaultID>
+		<label>3</label>
+		<label2>Common Shortcut</label2>
+		<icon>special://skin/extras/icons/video.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos)</action>
+		<visible>!Library.HasContent(Movies) + !Library.HasContent(TVShows)</visible>
+		<disabled>True</disabled>
+		</shortcut>
+	</shortcuts>

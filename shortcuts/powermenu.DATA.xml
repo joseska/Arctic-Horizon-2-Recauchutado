@@ -1,39 +1,83 @@
-<?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
-    <shortcut>
-        <icon>special://skin/extras/icons/sun.png</icon>
-        <label>$LOCALIZE[8]</label>
-        <label2>Power Shortcut</label2>
-        <action>ActivateWindow(weather)</action>
-    </shortcut>
-    <shortcut>
-        <icon>special://skin/extras/icons/favourites2.png</icon>
-        <label>$LOCALIZE[1036]</label>
-        <label2>Power Shortcut</label2>
-        <action>ActivateWindow(favourites)</action>
-    </shortcut>
-    <shortcut>
-        <icon>special://skin/extras/icons/filebox.png</icon>
-        <label>$LOCALIZE[7]</label>
-        <label2>Power Shortcut</label2>
-        <action>ActivateWindow(filemanager)</action>
-    </shortcut>
-    <shortcut>
-        <icon>special://skin/extras/icons/addon.png</icon>
-        <label>$LOCALIZE[24001]</label>
-        <label2>Power Shortcut</label2>
-        <action>ActivateWindow(addonbrowser)</action>
-    </shortcut>
-    <shortcut>
-        <icon>special://skin/extras/icons/settings.png</icon>
-        <label>$LOCALIZE[5]</label>
-        <label2>Power Shortcut</label2>
-        <action>ActivateWindow(interfacesettings)</action>
-    </shortcut>
-    <shortcut>
-        <icon>special://skin/extras/icons/power.png</icon>
-        <label>$LOCALIZE[13009]</label>
-        <label2>Power Shortcut</label2>
-        <action>Quit()</action>
-    </shortcut>
-</shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Buscar</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[BuscarIcon]</icon>
+		<thumb>$VAR[BuscarIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[BuscarPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Favoritos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[FavoritosIcon]</icon>
+		<thumb>$VAR[FavoritosIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[FavoritosPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>8</defaultID>
+		<label>8</label>
+		<label2>Power Shortcut</label2>
+		<icon>$VAR[MeteoIcon]</icon>
+		<thumb>$VAR[MeteoIcon]</thumb>
+		<action>ActivateWindow(weather)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>script.luar</defaultID>
+		<label>Luar</label>
+		<label2>Programa</label2>
+		<icon>$VAR[LuarIcon]</icon>
+		<thumb>$VAR[LuarIcon]</thumb>
+		<action>ActivateWindow(Programs,"plugin://script.luar",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>7</defaultID>
+		<label>7</label>
+		<label2>Power Shortcut</label2>
+		<icon>$VAR[FileManagerIcon]</icon>
+		<thumb>$VAR[FileManagerIcon]</thumb>
+		<action>ActivateWindow(filemanager)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>24001</defaultID>
+		<label>24001</label>
+		<label2>Power Shortcut</label2>
+		<icon>$VAR[AddonIcon]</icon>
+		<thumb>$VAR[AddonIcon]</thumb>
+		<action>ActivateWindow(addonbrowser)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>script.limpiarkodi</defaultID>
+		<label>Limpia Tu Kodi</label>
+		<label2>Programa</label2>
+		<icon>$VAR[LimpiaTuKodiIcon]</icon>
+		<thumb>$VAR[LimpiaTuKodiIcon]</thumb>
+		<action>ActivateWindow(Programs,"plugin://script.limpiarkodi",return)</action>
+		<disabled>True</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>5</defaultID>
+		<label>5</label>
+		<label2>Power Shortcut</label2>
+		<icon>special://skin/extras/icons/settings.png</icon>
+		<thumb>special://skin/extras/icons/settings.png</thumb>
+		<action>ActivateWindow(interfacesettings)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>20183</defaultID>
+		<label>20183</label>
+		<label2>Por defecto</label2>
+		<icon>special://skin/extras/icons/update.png</icon>
+		<thumb>special://skin/extras/icons/update.png</thumb>
+		<action>ReloadSkin()</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>13009</defaultID>
+		<label>13009</label>
+		<label2>Power Shortcut</label2>
+		<icon>special://skin/extras/icons/power.png</icon>
+		<thumb>special://skin/extras/icons/power.png</thumb>
+		<action>Quit()</action>
+		</shortcut>
+	</shortcuts>

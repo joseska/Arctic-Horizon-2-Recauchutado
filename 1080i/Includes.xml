@@ -37,6 +37,7 @@
     <include file="Includes_Views_Wall.xml" />
     <include file="Includes_Views_Combined.xml" />
     <include file="Includes_Views_PVR.xml" />
+    <include file="Includes_DefaultWidgets.xml" />
 
     <include file="script-skinviewtypes-includes.xml" />
     <include file="script-skinvariables-includes.xml" />

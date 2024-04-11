@@ -1,0 +1,45 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>documentalespeliculasnuevas</defaultID>
+		<label>Novedades en Películas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[DocumentalesIcon]</icon>
+		<thumb>$VAR[DocumentalesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DocumentalesNovedadesPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>documentales-accesos</defaultID>
+		<label>Documentales - Accesos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[DocumentalesIcon]</icon>
+		<thumb>$VAR[DocumentalesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DocumentalesPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>documentalespeliculasultimas</defaultID>
+		<label>Últimas Películas añadidas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[DocumentalesIcon]</icon>
+		<thumb>$VAR[DocumentalesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[DocumentalesUltimasAnadidasPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>documentalesseriesnuevas</defaultID>
+		<label>Series Nuevas</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[DocumentalesIcon]</icon>
+		<thumb>$VAR[DocumentalesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SerieDocumentalNuevasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>documentalesseriesultimas</defaultID>
+		<label>Últimas Series Actualizadas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[DocumentalesIcon]</icon>
+		<thumb>$VAR[DocumentalesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SerieDocumentalUltimasActualizadasPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	</shortcuts>

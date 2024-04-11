@@ -7,6 +7,15 @@
 > [Enlace al Tutorial de instalación y configuración.](https://telegra.ph/AH2-Tutorial-02-02)
 
 
+### Actualización 0.3 - 21/03/2024
+- [x] Clearlogo en vista Temporadas, Capítulos (dependiente de TMDB Helper del Repositorio Joseska).
+- [x] Valoraciones en la vista de Temporadas, Capítulos (dependiente de TMDB Helper del Repositorio Joseska).
+- [x] Clearlogo en el OSD (Reproductor de videos) (dependiente de TMDB Helper del Repositorio Joseska).
+- [x] Clearlogo en vista Temporadas, Capítulos (dependiente de TMDB Helper del Repositorio Joseska).
+- [x] Marcadores y capítulos en el OSD (Reproductor de videos). Situados en el grupo de botones de la izquierda en el OSD, pulsar abajo.
+- [x] Elenco y mas información en el OSD (Reproductor de videos). Situados en el grupo de botones de la derecha en el OSD, pulsar abajo dos veces.
+- [x] Traducir los textos acompañantes de las fechas de emisión/estreno en la línea de información (infoline).
+- [x] Visualizar cambios en addons en la vista de addons (news).
 
 ### Actualización 0.2.8 (0.2.8.1) - 22/02/2024
 - [x] Arreglado BUG en vista Series.

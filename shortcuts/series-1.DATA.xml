@@ -1,0 +1,36 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>seriesenseguimiento</defaultID>
+		<label>Series en Seguimiento</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[SeriesIcon]</icon>
+		<thumb>$VAR[SeriesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	<shortcut>
+		<defaultID>series-accesos</defaultID>
+		<label>Series - Accesos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[SeriesIcon]</icon>
+		<thumb>$VAR[SeriesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SeriesPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>seriesnuevas</defaultID>
+		<label>Series Nuevas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[SeriesIcon]</icon>
+		<thumb>$VAR[SeriesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SeriesNuevasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID>seriesultimas</defaultID>
+		<label>Últimas Series actualizadas</label>
+		<label2>Elemento Personalizado</label2>
+		<icon>$VAR[SeriesIcon]</icon>
+		<thumb>$VAR[SeriesIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[SeriesUltimasActualizadasPath]",return)</action>
+		<disabled>true</disabled>
+		</shortcut>
+	</shortcuts>

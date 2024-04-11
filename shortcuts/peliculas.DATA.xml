@@ -1,0 +1,26 @@
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Películas no finalizadas</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[PeliculasIcon]</icon>
+		<thumb>$VAR[PeliculasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[PeliculasNoFinalizadasPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Ver más tarde Películas</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[TraktIcon]</icon>
+		<thumb>$VAR[TraktIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[TraktPath]",return)</action>
+		</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Listas Trakt.tv</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[TraktIcon]</icon>
+		<thumb>$VAR[TraktIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[TraktPath]",return)</action>
+		</shortcut>
+</shortcuts>

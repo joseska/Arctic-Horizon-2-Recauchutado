@@ -30,6 +30,7 @@
 		<icon>$VAR[AnimeIcon]</icon>
 		<thumb>$VAR[AnimeIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[AnimePath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	<shortcut>
 		<defaultID>dibujos</defaultID>
@@ -38,6 +39,7 @@
 		<icon>$VAR[DibujosIcon]</icon>
 		<thumb>$VAR[DibujosIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[DibujosPath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	<shortcut>
 		<defaultID>documentales</defaultID>
@@ -46,6 +48,7 @@
 		<icon>$VAR[DocumentalesIcon]</icon>
 		<thumb>$VAR[DocumentalesIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[DocumentalesPath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	<shortcut>
 		<defaultID>telenovelas</defaultID>

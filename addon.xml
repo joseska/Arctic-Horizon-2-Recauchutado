@@ -1,4 +1,4 @@
-<addon id="skin.arctic.horizon.2.recauchutado" name="Arctic Horizon 2 Recauchutado" provider-name="Team Recauchutado" version="0.3">
+<addon id="skin.arctic.horizon.2.recauchutado" name="Arctic Horizon 2 Recauchutado" provider-name="Team Recauchutado" version="0.3.1">
     <requires>
         <import addon="xbmc.gui" version="5.15.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
@@ -24,15 +24,10 @@
         <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
         <forum />
         <source />
-		<news>Versión 0.3 - 21/03/2024
-- [x] Clearlogo en vista Temporadas, Capítulos (dependiente de TMDB Helper del Repositorio Joseska).
-- [x] Valoraciones en la vista de Temporadas, Capítulos (dependiente de TMDB Helper del Repositorio Joseska).
-- [x] Clearlogo en el OSD (Reproductor de videos) (dependiente de TMDB Helper del Repositorio Joseska).
-- [x] Clearlogo en vista Temporadas, Capítulos (dependiente de TMDB Helper del Repositorio Joseska).
-- [x] Marcadores y capítulos en el OSD (Reproductor de videos). Situados en el grupo de botones de la izquierda en el OSD, pulsar abajo.
-- [x] Elenco y mas información en el OSD (Reproductor de videos). Situados en el grupo de botones de la derecha en el OSD, pulsar abajo dos veces.
-- [x] Traducir los textos acompañantes de las fechas de emisión/estreno en la línea de información (infoline).
-- [x] Visualizar cambios en addons en la vista de addons (news).
+		<news>Versión 0.3.1 - 11/04/2024
+- [x] Menús por defecto para Palantir en instalación nueva. Permitirá que en futuras actualizaciones de Palantir podamos actualizar los enlaces de los widgets y compartirlos con una nueva versión sin mayores dolores de cabeza para gente que no se quieran complicar, o como base para los que sí.
+- [x] Botón de reset de menús que permite restablecer los menús por defecto del punto anterior (se perderá la configuración hecha por el usuario). En ajustes de la skin - Detalles - Extras, la opción que dice "¡CUIDADO!" 😉
+- [x] Posibilidad de hacer una copia/restauración de la configuración de menús de todas las skin modificadas por el usuario (dependiente de SO, no se puede pasar de PC a Android y viceversa ya que puede contener rutas absolutas). Requiere de los plugins Skin Helper Service y Skin Helper Service Skin Backup (en repositorio de Marcelveldt, disponible en Luar).
 		</news>
         <assets>
             <icon>icon.png</icon>

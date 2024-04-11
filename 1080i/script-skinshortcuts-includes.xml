@@ -913,6 +913,22 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">14</property>
+			<label>Actualizar Palantir</label>
+			<label2>Programa</label2>
+			<icon>$VAR[PalantirIcon]</icon>
+			<thumb>$VAR[PalantirIcon]</thumb>
+			<property name="labelID">actualizarpalantir</property>
+			<property name="defaultID">plugin.video.palantir3</property>
+			<onclick>ActivateWindow(Programs,"$VAR[PalantirPath]",return)</onclick>
+			<property name="path">ActivateWindow(Programs,"$VAR[PalantirPath]",return)</property>
+			<property name="list">$VAR[PalantirPath]</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),powermenu)</visible>
+			<property name="group">powermenu</property>
+			<property name="isSubmenu">True</property>
+			</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<property name="mainmenuid">14</property>
 			<label>Limpia Tu Kodi</label>
 			<label2>Programa</label2>
 			<icon>$VAR[LimpiaTuKodiIcon]</icon>
@@ -923,8 +939,8 @@
 			<onclick>noop</onclick>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Power Shortcut</label2>
@@ -939,8 +955,8 @@
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[20183]</label>
 			<label2>Por defecto</label2>
@@ -955,8 +971,8 @@
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Power Shortcut</label2>
@@ -11012,6 +11028,22 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">14</property>
+			<label>Actualizar Palantir</label>
+			<label2>Programa</label2>
+			<icon>$VAR[PalantirIcon]</icon>
+			<thumb>$VAR[PalantirIcon]</thumb>
+			<property name="labelID">actualizarpalantir</property>
+			<property name="defaultID">plugin.video.palantir3</property>
+			<onclick>ActivateWindow(Programs,"$VAR[PalantirPath]",return)</onclick>
+			<property name="path">ActivateWindow(Programs,"$VAR[PalantirPath]",return)</property>
+			<property name="list">$VAR[PalantirPath]</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">powermenu</property>
+			<property name="isSubmenu">True</property>
+			</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<property name="mainmenuid">14</property>
 			<label>Limpia Tu Kodi</label>
 			<label2>Programa</label2>
 			<icon>$VAR[LimpiaTuKodiIcon]</icon>
@@ -11022,8 +11054,8 @@
 			<onclick>noop</onclick>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Power Shortcut</label2>
@@ -11038,8 +11070,8 @@
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[20183]</label>
 			<label2>Por defecto</label2>
@@ -11054,8 +11086,8 @@
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Power Shortcut</label2>
@@ -11173,6 +11205,22 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">14</property>
+			<label>Actualizar Palantir</label>
+			<label2>Programa</label2>
+			<icon>$VAR[PalantirIcon]</icon>
+			<thumb>$VAR[PalantirIcon]</thumb>
+			<property name="labelID">actualizarpalantir</property>
+			<property name="defaultID">plugin.video.palantir3</property>
+			<onclick>ActivateWindow(Programs,"$VAR[PalantirPath]",return)</onclick>
+			<property name="path">ActivateWindow(Programs,"$VAR[PalantirPath]",return)</property>
+			<property name="list">$VAR[PalantirPath]</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),powermenu)</visible>
+			<property name="group">powermenu</property>
+			<property name="isSubmenu">True</property>
+			</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<property name="mainmenuid">14</property>
 			<label>Limpia Tu Kodi</label>
 			<label2>Programa</label2>
 			<icon>$VAR[LimpiaTuKodiIcon]</icon>
@@ -11183,8 +11231,8 @@
 			<onclick>noop</onclick>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Power Shortcut</label2>
@@ -11199,8 +11247,8 @@
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[20183]</label>
 			<label2>Por defecto</label2>
@@ -11215,8 +11263,8 @@
 			<property name="group">powermenu</property>
 			<property name="isSubmenu">True</property>
 			</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">14</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Power Shortcut</label2>
@@ -11313,6 +11361,18 @@
 			<param name="id" value="9007" />
 			<param name="groupid" value="9107" />
 			<param name="control" value="button" />
+			<param name="icon" value="$VAR[PalantirIcon]" />
+			<param name="bordersize" value="10" />
+			<label>Actualizar Palantir</label>
+			<onclick condition="Window.IsActive(DialogButtonMenu.xml)">Close</onclick>
+			<onclick>ActivateWindow(Programs,"$VAR[PalantirPath]",return)</onclick>
+			<onclick />
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			</include>
+		<include content="Dialog_Menu_Button">
+			<param name="id" value="9008" />
+			<param name="groupid" value="9108" />
+			<param name="control" value="button" />
 			<param name="icon" value="$VAR[LimpiaTuKodiIcon]" />
 			<param name="bordersize" value="10" />
 			<label>Limpia Tu Kodi</label>
@@ -11322,8 +11382,8 @@
 			<visible>False</visible>
 			</include>
 		<include content="Dialog_Menu_Button">
-			<param name="id" value="9008" />
-			<param name="groupid" value="9108" />
+			<param name="id" value="9009" />
+			<param name="groupid" value="9109" />
 			<param name="control" value="button" />
 			<param name="icon" value="special://skin/extras/icons/settings.png" />
 			<param name="bordersize" value="10" />
@@ -11334,8 +11394,8 @@
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			</include>
 		<include content="Dialog_Menu_Button">
-			<param name="id" value="9009" />
-			<param name="groupid" value="9109" />
+			<param name="id" value="9010" />
+			<param name="groupid" value="9110" />
 			<param name="control" value="button" />
 			<param name="icon" value="special://skin/extras/icons/update.png" />
 			<param name="bordersize" value="10" />
@@ -11346,8 +11406,8 @@
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			</include>
 		<include content="Dialog_Menu_Button">
-			<param name="id" value="9010" />
-			<param name="groupid" value="9110" />
+			<param name="id" value="9011" />
+			<param name="groupid" value="9111" />
 			<param name="control" value="button" />
 			<param name="icon" value="special://skin/extras/icons/power.png" />
 			<param name="bordersize" value="10" />

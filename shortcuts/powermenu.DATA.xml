@@ -48,6 +48,14 @@
 		<action>ActivateWindow(addonbrowser)</action>
 		</shortcut>
 	<shortcut>
+		<defaultID>plugin.video.palantir3</defaultID>
+		<label>Actualizar Palantir</label>
+		<label2>Programa</label2>
+		<icon>$VAR[PalantirIcon]</icon>
+		<thumb>$VAR[PalantirIcon]</thumb>
+		<action>ActivateWindow(Programs,"$VAR[PalantirPath]",return)</action>
+		</shortcut>
+	<shortcut>
 		<defaultID>script.limpiarkodi</defaultID>
 		<label>Limpia Tu Kodi</label>
 		<label2>Programa</label2>

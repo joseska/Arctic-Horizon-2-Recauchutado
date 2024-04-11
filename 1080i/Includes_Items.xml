@@ -1936,14 +1936,15 @@
         <include content="Dialog_Settings_Button">
             <param name="id" value="8004" />
             <param name="control" value="radiobutton" />
+            <enable>false</enable>
             <selected>Skin.HasSetting(autoplay.trailer)</selected>
-            <!-- <onclick>Skin.ToggleSetting(autoplay.trailer)</onclick> -->
-            <!-- <label>AutoTrailers</label> -->
-            <label>Nueva característica misteriosa - próximamente</label>
+            <onclick>Skin.ToggleSetting(autoplay.trailer)</onclick>
+            <label>AutoTrailers - próximamente</label>
         </include>
         <include content="Dialog_Settings_Button">
             <param name="id" value="8005" />
             <param name="control" value="radiobutton" />
+            <enable>false</enable>
             <onclick>Skin.ToggleSetting(autoplay.trailer.corregir)</onclick>
             <selected>Skin.HasSetting(autoplay.trailer.corregir)</selected>
             <label>AutoTrailers Desactivar Corrección Franjas Negras</label>
@@ -1952,7 +1953,8 @@
         <include content="Dialog_Settings_Button">
             <param name="id" value="8006" />
             <param name="control" value="radiobutton" />
-            <enable>Skin.String(BackgroundStyle,Blur)</enable>
+            <!-- <enable>Skin.String(BackgroundStyle,Blur)</enable> -->
+            <enable>false</enable>
             <onclick>Skin.ToggleSetting(autoplay.trailer.vista.alt)</onclick>
             <selected>Skin.HasSetting(autoplay.trailer.vista.alt)</selected>
             <label>AutoTrailers Activar Vista Alternativa</label>

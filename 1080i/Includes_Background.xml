@@ -268,7 +268,7 @@
     </include>
 
     <!-- Joseska - videowindow alternativo para AutoTrailers -->
-    <include name="Background_Video_Trailer_alt">
+    <include name="Background_Video_Trailer">
         <control type="group">
             <!-- Joseska - Es visible si se está reproduciendo el AutoTrailer  -->
             <visible>$EXP[TrailerWindowIsActive]</visible>
@@ -286,7 +286,7 @@
                 <control type="image">
                     <right>0</right>
                     <width>1280</width>
-                    <texture colordiffuse="ff181818">diffuse/flixart_invert_3.png</texture>
+                    <texture colordiffuse="ff181818">diffuse/flixart_invert_4.png</texture>
                     <animation center="auto" effect="zoom" end="113" time="0" condition="!Skin.HasSetting(autoplay.trailer.corregir)">Conditional</animation>
                     <animation effect="slide" start="0,0" end="0,-60" time="0" condition="!Skin.HasSetting(autoplay.trailer.corregir)">Conditional</animation>
                 </control>
@@ -306,7 +306,7 @@
     </include>
 
     <!-- Joseska - videowindow para AutoTrailers -->
-    <include name="Background_Video_Trailer">
+    <include name="Background_Video_Trailer_alt">
         <param name="flixart_size_w">flixart_size_w</param> <!-- 1280-->
         <param name="flixart_size_h">flixart_size_h</param> <!-- 720-->
         <definition>
@@ -370,7 +370,7 @@
                     <control type="image">
                         <right>0</right>
                         <width>1280</width>
-                        <texture diffuse="diffuse/flixart_invert_3.png">$VAR[Image_Background_Blur]</texture>
+                        <texture diffuse="diffuse/flixart_invert_4.png">$VAR[Image_Background_Blur]</texture>
                         <animation center="auto" effect="zoom" end="113.5" time="0" condition="!Skin.HasSetting(autoplay.trailer.corregir)">Conditional</animation>
                         <animation effect="slide" start="0,0" end="0,-60" time="0" condition="!Skin.HasSetting(autoplay.trailer.corregir)">Conditional</animation>
                     </control>
@@ -433,15 +433,15 @@
                 <include condition="!Skin.String(BackgroundStyle,Fanart)">Background_ForegroundArtwork</include>
                 <include condition="System.HasAddon(resource.images.arctic.waves)">Background_BusyLoader</include>
                 <!-- Joseska -  Añadir Autotrailer al include  -->
-                <include condition="Skin.HasSetting(autoplay.trailer) + Skin.HasSetting(autoplay.trailer.vista.alt)">Background_Video_Trailer_alt</include>
-                <include condition="Skin.HasSetting(autoplay.trailer) + Skin.String(BackgroundStyle,Blur) + !Skin.HasSetting(autoplay.trailer.vista.alt)">Background_Video_Trailer</include>
+                <include condition="Skin.HasSetting(autoplay.trailer) + !Skin.HasSetting(autoplay.trailer.vista.alt)">Background_Video_Trailer</include>
+                <include condition="Skin.HasSetting(autoplay.trailer) + Skin.String(BackgroundStyle,Blur) + Skin.HasSetting(autoplay.trailer.vista.alt)">Background_Video_Trailer_alt</include>
                 <nested />
             </include>
 
             <include content="Object_Control">
                 <param name="control" value="group" />
                 <!-- Joseska - Si es Blur y tiene activo "vista alternativa de Autotrailer" o Si no es Blur  -->
-                <include content="Object_Control" condition="[Skin.String(BackgroundStyle,Blur) + Skin.HasSetting(autoplay.trailer.vista.alt)] | !Skin.String(BackgroundStyle,Blur)">
+                <include content="Object_Control" condition="[Skin.String(BackgroundStyle,Blur) + !Skin.HasSetting(autoplay.trailer.vista.alt)] | !Skin.String(BackgroundStyle,Blur)">
                     <param name="control" value="image" />
                     <!-- Joseska - No es visible si se está reproduciendo el AutoTrailer  -->
                     <visible>!$EXP[TrailerWindowIsActive]</visible>
@@ -449,7 +449,7 @@
                     <include>Animation_Background_FadeInOut</include>
                 </include>
                 <!-- Joseska - Si es Blur y NO tiene activo "vista alternativa de Autotrailer"  -->
-                <include content="Object_Control" condition="Skin.String(BackgroundStyle,Blur) + !Skin.HasSetting(autoplay.trailer.vista.alt)">
+                <include content="Object_Control" condition="Skin.String(BackgroundStyle,Blur) + Skin.HasSetting(autoplay.trailer.vista.alt)">
                     <param name="control" value="image" />
                     <texture colordiffuse="$VAR[Background_Main_ColorDiffuse]">$VAR[Image_Background_Floor]</texture>
                     <include>Animation_Background_FadeInOut</include>

@@ -22,7 +22,29 @@
     
     <timer>
         <name>timer_autotrailerexecute</name>
-        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailerexecute), 1)</stop>
+        <onstart>Notification(skintimer, timer2, 1000)</onstart>
+        <!-- <onstart condition="!String.IsEqual(Window(Home).Property(AutoTrailerCount),1) + !String.IsEmpty(Window(Home).Property(AutoTrailer))">PlayMedia($ESCINFO[Window(Home).Property(AutoTrailer)],1)</onstart>
+        <onstart condition="!String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailerCount,1,Home)</onstart> -->
+        <!-- <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailerexecute), 1)</stop> -->
+        <stop>true</stop>
+        <onstop condition="!String.IsEqual(Window(Home).Property(AutoTrailerCount),1) + !String.IsEmpty(Window(Home).Property(AutoTrailer))">PlayMedia($ESCINFO[Window(Home).Property(AutoTrailer)],1)</onstop>
+        <onstop condition="!String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailerCount,1,Home)</onstop>
+    </timer>
+
+
+
+    <timer>
+        <name>timer_autotrailer3idletimer_full</name>
+        <start reset="true">$EXP[Exp_IsVideoContent] + Skin.HasSetting(autoplay.trailer) + !Player.HasMedia + !String.IsEmpty(ListItem.Trailer)</start>
+        <onstart condition="!String.IsEmpty(ListItem.Trailer)">SetProperty(AutoTrailer,$ESCINFO[Container(301).ListItem.Trailer],Home)</onstart>
+        <stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(timer_autotrailer3idletimer_full), 3)</stop>
+        <onstop condition="String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailer,$ESCINFO[Container(99950).ListItem.Trailer],Home)</onstop>
+        <onstop>Skin.TimerStart(timer_autotrailerexecute_full)</onstop>
+    </timer>
+    
+    <timer>
+        <name>timer_autotrailerexecute_full</name>
+        <stop>true</stop>
         <onstop condition="!String.IsEqual(Window(Home).Property(AutoTrailerCount),1) + !String.IsEmpty(Window(Home).Property(AutoTrailer))">PlayMedia($ESCINFO[Window(Home).Property(AutoTrailer)],1)</onstop>
         <onstop condition="!String.IsEmpty(Window(Home).Property(AutoTrailer))">SetProperty(AutoTrailerCount,1,Home)</onstop>
     </timer>

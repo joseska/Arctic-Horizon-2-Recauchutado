@@ -34,8 +34,8 @@
                         <label2>        $LOCALIZE[31038]        </label2>
                         <onclick>Skin.Reset(TMDbHelper.EnableBlur)</onclick>
                         <onclick>Skin.SetString(BackgroundStyle,None)</onclick>
-                        <!-- Joseska - Activar Vista alternativa AutoTrailer  -->
-                        <onclick>Skin.SetBool(autoplay.trailer.vista.alt)</onclick>
+                        <!-- Joseska - Desactivar Vista alternativa AutoTrailer  -->
+                        <onclick>Skin.Reset(autoplay.trailer.vista.alt)</onclick>
                         <selected>Skin.String(BackgroundStyle,None)</selected>
                     </include>
                     <include content="Dialog_Settings_Button">
@@ -45,8 +45,8 @@
                         <label2>        $LOCALIZE[31038]        </label2>
                         <onclick>Skin.Reset(TMDbHelper.EnableBlur)</onclick>
                         <onclick>Skin.SetString(BackgroundStyle,Image)</onclick>
-                        <!-- Joseska - Activar Vista alternativa AutoTrailer  -->
-                        <onclick>Skin.SetBool(autoplay.trailer.vista.alt)</onclick>
+                        <!-- Joseska - Desactivar Vista alternativa AutoTrailer  -->
+                        <onclick>Skin.Reset(autoplay.trailer.vista.alt)</onclick>
                         <selected>Skin.String(BackgroundStyle,Image)</selected>
                     </include>
                     <include content="Dialog_Settings_Button">
@@ -56,8 +56,8 @@
                         <label2>        $LOCALIZE[31036]        </label2>
                         <onclick>Skin.Reset(TMDbHelper.EnableBlur)</onclick>
                         <onclick>Skin.SetString(BackgroundStyle,Fanart)</onclick>
-                        <!-- Joseska - Activar Vista alternativa AutoTrailer  -->
-                        <onclick>Skin.SetBool(autoplay.trailer.vista.alt)</onclick>
+                        <!-- Joseska - Desactivar Vista alternativa AutoTrailer  -->
+                        <onclick>Skin.Reset(autoplay.trailer.vista.alt)</onclick>
                         <selected>Skin.String(BackgroundStyle,Fanart)</selected>
 
                     </include>

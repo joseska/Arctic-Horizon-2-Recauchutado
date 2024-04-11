@@ -1,0 +1,10 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>telenovelas-accesos</defaultID>
+		<label>Telenovelas - Accesos</label>
+		<label2>Add-on de Vídeo</label2>
+		<icon>$VAR[TelenovelasIcon]</icon>
+		<thumb>$VAR[TelenovelasIcon]</thumb>
+		<action>ActivateWindow(Videos,"$VAR[TelenovelasPath]",return)</action>
+		</shortcut>
+	</shortcuts>

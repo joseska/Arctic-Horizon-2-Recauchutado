@@ -6,6 +6,7 @@
 		<icon>$VAR[SeriesIcon]</icon>
 		<thumb>$VAR[SeriesIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	<shortcut>
 		<defaultID>series-accesos</defaultID>
@@ -30,5 +31,6 @@
 		<icon>$VAR[SeriesIcon]</icon>
 		<thumb>$VAR[SeriesIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[SeriesUltimasActualizadasPath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	</shortcuts>

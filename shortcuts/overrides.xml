@@ -225,39 +225,43 @@
     <!-- Widget Grouping -->
     <widget-groupings>
         <node label="Menús por defecto">
+            <node label="FullScreen">
+                <shortcut widget="series" label="Series en Seguimiento" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]"",return)</shortcut>
+                <shortcut widget="peliculas" label="Películas Más vistas este mes" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]"",return)</shortcut>
+            </node>
             <node label="Series">
-                <shortcut widget="seriesenseguimiento" label="Series en Seguimiento" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]"",return)</shortcut>
-                <shortcut widget="series-accesos" label="Series - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SeriesPath]"",return)</shortcut>
-                <shortcut widget="seriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SeriesNuevasPath]",return)</shortcut>
-                <shortcut widget="seriesultimas" label="Últimas Series Actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SeriesUltimasActualizadasPath]",return)</shortcut>
+                <shortcut widget="seriesenseguimiento" label="Series en Seguimiento" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]"",return)</shortcut>
+                <shortcut widget="series-accesos" label="Series - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesPath]"",return)</shortcut>
+                <shortcut widget="seriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesNuevasPath]",return)</shortcut>
+                <shortcut widget="seriesultimas" label="Últimas Series Actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesUltimasActualizadasPath]",return)</shortcut>
             </node>
             <node label="Películas">
-                <shortcut widget="peliculasmasvistasmes" label="Más vistas este mes" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[PeliculasMasVistasEsteMesPath]"",return)</shortcut>
-                <shortcut widget="peliculas-accesos" label="Películas - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[PeliculasPath]"",return)</shortcut>
-                <shortcut widget="peliculasnofinalizadas" label="Películas No Finalizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[PeliculasNoFinalizadasPath]"",return)</shortcut>
-                <shortcut widget="peliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[PeliculasNovedadesPath]",return)</shortcut>
-                <shortcut widget="peliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SeriesUltimasActualizadasPath]",return)</shortcut>
+                <shortcut widget="peliculasmasvistasmes" label="Más vistas este mes" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[PeliculasMasVistasEsteMesPath]"",return)</shortcut>
+                <shortcut widget="peliculas-accesos" label="Películas - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[PeliculasPath]"",return)</shortcut>
+                <shortcut widget="peliculasnofinalizadas" label="Películas No Finalizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[PeliculasNoFinalizadasPath]"",return)</shortcut>
+                <shortcut widget="peliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[PeliculasNovedadesPath]",return)</shortcut>
+                <shortcut widget="peliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesUltimasActualizadasPath]",return)</shortcut>
             </node>
             <node label="Anime">
-                <shortcut widget="animeseriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SerieAnimeNuevasPath]"",return)</shortcut>
-                <shortcut widget="anime-accesos" label="Anime - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[AnimePath]"",return)</shortcut>
-                <shortcut widget="animeseriesultimas" label="Últimas Series actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[AnimeUltimasActualizadasPath]"",return)</shortcut>
-                <shortcut widget="animepeliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[AnimeNovedadesPath]",return)</shortcut>
-                <shortcut widget="animepeliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[AnimeUltimasAnadidasPath]",return)</shortcut>
+                <shortcut widget="animeseriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SerieAnimeNuevasPath]"",return)</shortcut>
+                <shortcut widget="anime-accesos" label="Anime - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[AnimePath]"",return)</shortcut>
+                <shortcut widget="animeseriesultimas" label="Últimas Series actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[AnimeUltimasActualizadasPath]"",return)</shortcut>
+                <shortcut widget="animepeliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[AnimeNovedadesPath]",return)</shortcut>
+                <shortcut widget="animepeliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[AnimeUltimasAnadidasPath]",return)</shortcut>
             </node>
             <node label="Dibujos">
-                <shortcut widget="dibujosseriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SerieDibujosNuevasPath]"",return)</shortcut>
-                <shortcut widget="dibujos-accesos" label="Dibujos - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[DibujosPath]"",return)</shortcut>
-                <shortcut widget="dibujosseriesultimas" label="Últimas Series actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[DibujosUltimasActualizadasPath]"",return)</shortcut>
-                <shortcut widget="dibujospeliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[DibujosNovedadesPath]",return)</shortcut>
-                <shortcut widget="dibujospeliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[DibujosUltimasAnadidasPath]",return)</shortcut>
+                <shortcut widget="dibujosseriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SerieDibujosNuevasPath]"",return)</shortcut>
+                <shortcut widget="dibujos-accesos" label="Dibujos - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DibujosPath]"",return)</shortcut>
+                <shortcut widget="dibujosseriesultimas" label="Últimas Series actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DibujosUltimasActualizadasPath]"",return)</shortcut>
+                <shortcut widget="dibujospeliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DibujosNovedadesPath]",return)</shortcut>
+                <shortcut widget="dibujospeliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DibujosUltimasAnadidasPath]",return)</shortcut>
             </node>
             <node label="Documentales">
-                <shortcut widget="documentalesseriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SerieDocumentalNuevasPath]"",return)</shortcut>
-                <shortcut widget="documentales-accesos" label="Documentales - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[DocumentalesPath]"",return)</shortcut>
-                <shortcut widget="documentalesseriesultimas" label="Últimas Series actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[SerieDocumentalUltimasActualizadasPath]"",return)</shortcut>
-                <shortcut widget="documentalespeliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[DocumentalesNovedadesPath]",return)</shortcut>
-                <shortcut widget="documentalespeliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="videos">ActivateWindow(Videos,"$VAR[DocumentalesUltimasAnadidasPath]",return)</shortcut>
+                <shortcut widget="documentalesseriesnuevas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SerieDocumentalNuevasPath]"",return)</shortcut>
+                <shortcut widget="documentales-accesos" label="Documentales - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DocumentalesPath]"",return)</shortcut>
+                <shortcut widget="documentalesseriesultimas" label="Últimas Series actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SerieDocumentalUltimasActualizadasPath]"",return)</shortcut>
+                <shortcut widget="documentalespeliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DocumentalesNovedadesPath]",return)</shortcut>
+                <shortcut widget="documentalespeliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DocumentalesUltimasAnadidasPath]",return)</shortcut>
             </node>
         </node>
         <node label="$LOCALIZE[31049]">
@@ -423,47 +427,116 @@
         <shortcut widget="Stacked" label="$LOCALIZE[31371]">Stacked</shortcut>
     </widgethub-groupings>
 
-    <!-- Widgets por defecto - Palantir -->
+    <!-- WIDGETS por defecto - Palantir -->
+        <!-- Pantalla Completa -->
+    <widget label="Series en Seguimiento" name="series" type="video" path="$VAR[SeriesSeguimientoPath]" target="videos">series</widget>
+    <widgetdefault labelID="series" group="mainmenu">series</widgetdefault>
+    <widget label="Películas Más vistas este mes" name="peliculas" type="video" path="$VAR[PeliculasMasVistasEsteMesPath]" target="videos">peliculas</widget>
+    <widgetdefault labelID="peliculas" group="mainmenu">peliculas</widgetdefault>
+    <widget label="Últimas Series actualizadas" name="anime" type="video" path="$VAR[AnimeUltimasActualizadasPath]" target="videos">anime</widget>
+    <widgetdefault labelID="anime" group="mainmenu">anime</widgetdefault>
+    <widget label="Últimas Series actualizadas" name="dibujos" type="video" path="$VAR[DibujosUltimasActualizadasPath]" target="videos">dibujos</widget>
+    <widgetdefault labelID="dibujos" group="mainmenu">dibujos</widgetdefault>
+    <widget label="Nuevas Películas" name="documentales" type="video" path="$VAR[DocumentalesNovedadesPath]" target="videos">documentales</widget>
+    <widgetdefault labelID="documentales" group="mainmenu">documentales</widgetdefault>
+    <widget label="Nuevas Series" name="telenovelas" type="video" path="$VAR[TelenovelasSeriesNuevasPath]" target="videos">telenovelas</widget>
+    <widgetdefault labelID="telenovelas" group="mainmenu">telenovelas</widgetdefault>
+        <!-- Series -->
     <widgetdefault labelID="seriesenseguimiento" group="series.1">seriesenseguimiento</widgetdefault>
     <widgetdefault labelID="series-accesos" group="series.1">series-accesos</widgetdefault>
     <widgetdefault labelID="seriesnuevas" group="series.1">seriesnuevas</widgetdefault>
     <widgetdefault labelID="seriesultimas" group="series.1">seriesultimas</widgetdefault>
-   
+        <!-- Películas -->
     <widgetdefault labelID="peliculasmasvistasmes" group="peliculas.1">peliculasmasvistasmes</widgetdefault>
     <widgetdefault labelID="peliculas-accesos" group="peliculas.1">peliculas-accesos</widgetdefault>
     <widgetdefault labelID="peliculasnofinalizadas" group="peliculas.1">peliculasnofinalizadas</widgetdefault>
     <widgetdefault labelID="peliculasnuevas" group="peliculas.1">peliculasnuevas</widgetdefault>
     <widgetdefault labelID="peliculasultimas" group="peliculas.1">peliculasultimas</widgetdefault>
- 
+        <!-- Anime -->
     <widgetdefault labelID="animeseriesnuevas" group="anime.1">animeseriesnuevas</widgetdefault>
     <widgetdefault labelID="anime-accesos" group="anime.1">anime-accesos</widgetdefault>
     <widgetdefault labelID="animeseriesultimas" group="anime.1">animeseriesultimas</widgetdefault>
     <widgetdefault labelID="animepeliculasnuevas" group="anime.1">animepeliculasnuevas</widgetdefault>
     <widgetdefault labelID="animepeliculasultimas" group="anime.1">animepeliculasultimas</widgetdefault>
-
+        <!-- Dibujos -->
     <widgetdefault labelID="dibujosseriesnuevas" group="dibujos.1">dibujosseriesnuevas</widgetdefault>
     <widgetdefault labelID="dibujos-accesos" group="dibujos.1">dibujos-accesos</widgetdefault>
     <widgetdefault labelID="dibujosseriesultimas" group="dibujos.1">dibujosseriesultimas</widgetdefault>
     <widgetdefault labelID="dibujospeliculasnuevas" group="dibujos.1">dibujospeliculasnuevas</widgetdefault>
     <widgetdefault labelID="dibujospeliculasultimas" group="dibujos.1">dibujospeliculasultimas</widgetdefault>
-
+        <!-- Documentales -->
     <widgetdefault labelID="documentalesseriesnuevas" group="documentales.1">documentalesseriesnuevas</widgetdefault>
     <widgetdefault labelID="documentales-accesos" group="documentales.1">documentales-accesos</widgetdefault>
     <widgetdefault labelID="documentalesseriesultimas" group="documentales.1">documentalesseriesultimas</widgetdefault>
     <widgetdefault labelID="documentalespeliculasnuevas" group="documentales.1">documentalespeliculasnuevas</widgetdefault>
     <widgetdefault labelID="documentalespeliculasultimas" group="documentales.1">documentalespeliculasultimas</widgetdefault>
+        <!-- Telenovelas -->
+    <widgetdefault labelID="telenovelas-accesos" group="telenovelas.1">telenovelas-accesos</widgetdefault>
 
-    <!-- Redefinición Properties para Widgets por defecto - Palantir -->
+    <!-- Redefinición PROPERTIES para Widgets por defecto - Palantir -->
+          <!-- FULLSCREEN - Palantir 3-->
+    <propertydefault labelID="series" group="mainmenu" property="widget">Addon</propertydefault>
+    <propertydefault labelID="series" group="mainmenu" property="widgetType">video</propertydefault>
+    <propertydefault labelID="series" group="mainmenu" property="widgetTarget">videos</propertydefault>
+    <propertydefault labelID="series" group="mainmenu" property="widgetAspect">Fullscreen</propertydefault>
+    <propertydefault labelID="series" group="mainmenu" property="widgetStyle">Fullscreen</propertydefault>
+    <propertydefault labelID="series" group="mainmenu" property="widgetName">series</propertydefault>
+    <propertydefault labelID="series" group="mainmenu" property="widgetInfo">Full</propertydefault>
+    <propertydefault labelID="series" group="mainmenu" property="widgetAutoScroll">True</propertydefault>
+    
+    <propertydefault labelID="peliculas" group="mainmenu" property="widget">Addon</propertydefault>
+    <propertydefault labelID="peliculas" group="mainmenu" property="widgetType">video</propertydefault>
+    <propertydefault labelID="peliculas" group="mainmenu" property="widgetTarget">videos</propertydefault>
+    <propertydefault labelID="peliculas" group="mainmenu" property="widgetAspect">Fullscreen</propertydefault>
+    <propertydefault labelID="peliculas" group="mainmenu" property="widgetStyle">Fullscreen</propertydefault>
+    <propertydefault labelID="peliculas" group="mainmenu" property="widgetName">peliculas</propertydefault>
+    <propertydefault labelID="peliculas" group="mainmenu" property="widgetInfo">Full</propertydefault>
+    <propertydefault labelID="peliculas" group="mainmenu" property="widgetAutoScroll">True</propertydefault>
 
-          <!-- Series - Palantir 3-->
+    <propertydefault labelID="anime" group="mainmenu" property="widget">Addon</propertydefault>
+    <propertydefault labelID="anime" group="mainmenu" property="widgetType">video</propertydefault>
+    <propertydefault labelID="anime" group="mainmenu" property="widgetTarget">videos</propertydefault>
+    <propertydefault labelID="anime" group="mainmenu" property="widgetAspect">Poster</propertydefault>
+    <propertydefault labelID="anime" group="mainmenu" property="widgetStyle">Poster</propertydefault>
+    <propertydefault labelID="anime" group="mainmenu" property="widgetName">anime</propertydefault>
+    <propertydefault labelID="anime" group="mainmenu" property="widgetInfo">Full</propertydefault>
+    <propertydefault labelID="anime" group="mainmenu" property="widgetAutoScroll">True</propertydefault>
+
+    <propertydefault labelID="dibujos" group="mainmenu" property="widget">Addon</propertydefault>
+    <propertydefault labelID="dibujos" group="mainmenu" property="widgetType">video</propertydefault>
+    <propertydefault labelID="dibujos" group="mainmenu" property="widgetTarget">videos</propertydefault>
+    <propertydefault labelID="dibujos" group="mainmenu" property="widgetAspect">Poster</propertydefault>
+    <propertydefault labelID="dibujos" group="mainmenu" property="widgetStyle">Poster</propertydefault>
+    <propertydefault labelID="dibujos" group="mainmenu" property="widgetName">dibujos</propertydefault>
+    <propertydefault labelID="dibujos" group="mainmenu" property="widgetInfo">Full</propertydefault>
+    <propertydefault labelID="dibujos" group="mainmenu" property="widgetAutoScroll">True</propertydefault>
+
+    <propertydefault labelID="documentales" group="mainmenu" property="widget">Addon</propertydefault>
+    <propertydefault labelID="documentales" group="mainmenu" property="widgetType">video</propertydefault>
+    <propertydefault labelID="documentales" group="mainmenu" property="widgetTarget">videos</propertydefault>
+    <propertydefault labelID="documentales" group="mainmenu" property="widgetAspect">Poster</propertydefault>
+    <propertydefault labelID="documentales" group="mainmenu" property="widgetStyle">Poster</propertydefault>
+    <propertydefault labelID="documentales" group="mainmenu" property="widgetName">documentales</propertydefault>
+    <propertydefault labelID="documentales" group="mainmenu" property="widgetInfo">Full</propertydefault>
+    <propertydefault labelID="documentales" group="mainmenu" property="widgetAutoScroll">True</propertydefault>
+
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widget">Addon</propertydefault>
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widgetType">video</propertydefault>
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widgetTarget">videos</propertydefault>
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widgetAspect">Poster</propertydefault>
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widgetStyle">Poster</propertydefault>
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widgetName">telenovelas</propertydefault>
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widgetInfo">Full</propertydefault>
+    <propertydefault labelID="telenovelas" group="mainmenu" property="widgetAutoScroll">True</propertydefault>
+    
+          <!-- SERIES - Palantir 3-->
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widget">Addon</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetType">video</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetTarget">videos</propertydefault>
-    <!-- <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetAspect">Fullscreen</propertydefault> -->
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetStyle">Fullscreen</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetName">seriesenseguimiento</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetInfo">Full</propertydefault>
-    <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetPath">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]",return)</propertydefault>
+    <propertydefault labelID="seriesenseguimiento" group="series.1" property="widgetPath">ActivateWindow(Videos,"$VAR[PeliculasMasVistasEsteMesPath]",return)</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="icon">$VAR[SeriesIcon]</propertydefault>
     <propertydefault labelID="seriesenseguimiento" group="series.1" property="thumb">$VAR[SeriesIcon]</propertydefault>
     
@@ -497,7 +570,7 @@
     <propertydefault labelID="seriesultimas" group="series.1" property="icon">$VAR[SeriesIcon]</propertydefault>
     <propertydefault labelID="seriesultimas" group="series.1" property="thumb">$VAR[SeriesIcon]</propertydefault>
 
-          <!-- Películas - Palantir 3-->
+          <!-- PELÍCULAS - Palantir 3-->
     <propertydefault labelID="peliculasmasvistasmes" group="peliculas.1" property="widget">Addon</propertydefault>
     <propertydefault labelID="peliculasmasvistasmes" group="peliculas.1" property="widgetType">video</propertydefault>
     <propertydefault labelID="peliculasmasvistasmes" group="peliculas.1" property="widgetTarget">videos</propertydefault>
@@ -558,7 +631,7 @@
     <propertydefault labelID="peliculasultimas" group="peliculas.1" property="icon">$VAR[PeliculasIcon]</propertydefault>
     <propertydefault labelID="peliculasultimas" group="peliculas.1" property="thumb">$VAR[PeliculasIcon]</propertydefault>
    
-          <!-- Anime - Palantir 3-->
+          <!-- ANIME - Palantir 3-->
     <propertydefault labelID="animeseriesnuevas" group="anime.1" property="widget">Addon</propertydefault>
     <propertydefault labelID="animeseriesnuevas" group="anime.1" property="widgetType">video</propertydefault>
     <propertydefault labelID="animeseriesnuevas" group="anime.1" property="widgetTarget">videos</propertydefault>
@@ -609,7 +682,7 @@
     <propertydefault labelID="animepeliculasultimas" group="anime.1" property="icon">$VAR[AnimeIcon]</propertydefault>
     <propertydefault labelID="animepeliculasultimas" group="anime.1" property="thumb">$VAR[AnimeIcon]</propertydefault>
 
-          <!-- Dibujos - Palantir 3-->
+          <!-- DIBUJOS - Palantir 3-->
     <propertydefault labelID="dibujosseriesnuevas" group="dibujos.1" property="widget">Addon</propertydefault>
     <propertydefault labelID="dibujosseriesnuevas" group="dibujos.1" property="widgetType">video</propertydefault>
     <propertydefault labelID="dibujosseriesnuevas" group="dibujos.1" property="widgetTarget">videos</propertydefault>
@@ -660,7 +733,7 @@
     <propertydefault labelID="dibujospeliculasultimas" group="dibujos.1" property="icon">$VAR[DibujosIcon]</propertydefault>
     <propertydefault labelID="dibujospeliculasultimas" group="dibujos.1" property="thumb">$VAR[DibujosIcon]</propertydefault>
 
-          <!-- Documentales - Palantir 3-->
+          <!-- DOCUMENTALES - Palantir 3-->
     <propertydefault labelID="documentalesseriesnuevas" group="documentales.1" property="widget">Addon</propertydefault>
     <propertydefault labelID="documentalesseriesnuevas" group="documentales.1" property="widgetType">video</propertydefault>
     <propertydefault labelID="documentalesseriesnuevas" group="documentales.1" property="widgetTarget">videos</propertydefault>
@@ -710,6 +783,20 @@
     <propertydefault labelID="documentalespeliculasultimas" group="documentales.1" property="widgetPath">ActivateWindow(Videos,"$VAR[DocumentalesUltimasAnadidasPath]",return)</propertydefault>
     <propertydefault labelID="documentalespeliculasultimas" group="documentales.1" property="icon">$VAR[DocumentalesIcon]</propertydefault>
     <propertydefault labelID="documentalespeliculasultimas" group="documentales.1" property="thumb">$VAR[DocumentalesIcon]</propertydefault>
+
+        <!-- TELENOVELAS - Palantir 3-->
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="widget">Addon</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="widgetType">video</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="widgetTarget">videos</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="widgetAspect">Button</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="widgetName">telenovelas-accesos</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="widgetInfo">Full</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="widgetPath">ActivateWindow(Videos,"$VAR[TelenovelasPath]",return)</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="icon">$VAR[TelenovelasIcon]</propertydefault>
+    <propertydefault labelID="telenovelas-accesos" group="telenovelas.1" property="thumb">$VAR[TelenovelasIcon]</propertydefault>
+
+
+
 
         <!-- customsearch Grouping -->
     <customsearch-groupings>

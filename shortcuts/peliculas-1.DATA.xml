@@ -6,6 +6,7 @@
 		<icon>$VAR[PeliculasIcon]</icon>
 		<thumb>$VAR[PeliculasIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[PeliculasMasVistasEsteMesPath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	<shortcut>
 		<defaultID>peliculas-accesos</defaultID>
@@ -30,6 +31,7 @@
 		<icon>$VAR[PeliculasIcon]</icon>
 		<thumb>$VAR[PeliculasIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[PeliculasNovedadesPath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	<shortcut>
 		<defaultID>peliculasultimas</defaultID>

@@ -1,11 +1,12 @@
 <shortcuts>
 	<shortcut>
-		<defaultID />
+		<defaultID>seriesenseguimientofull</defaultID>
 		<label>Series en Seguimiento</label>
 		<label2>Add-on de Vídeo</label2>
-		<icon>DefaultShortcut.png</icon>
+		<icon>$VAR[SeriesIcon]</icon>
 		<thumb>$VAR[SeriesIcon]</thumb>
 		<action>ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]",return)</action>
+		<disabled>true</disabled>
 		</shortcut>
 	<shortcut>
 		<defaultID />

@@ -64,8 +64,8 @@
 		<label>Addons</label>
 		<label2>Elemento Personalizado</label2>
 		<icon>DefaultShortcut.png</icon>
-		<thumb>special://skin/extras/icons/addon.png</thumb>
-		<action>noop</action>
+		<thumb>$VAR[AddonIcon]</thumb>
+		<action>ActivateWindow(addonbrowser)</action>
 		</shortcut>
 	<shortcut>
 		<defaultID>music</defaultID>

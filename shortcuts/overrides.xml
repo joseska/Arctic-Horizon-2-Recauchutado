@@ -227,7 +227,11 @@
         <node label="Menús por defecto">
             <node label="FullScreen">
                 <shortcut widget="series" label="Series en Seguimiento" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]"",return)</shortcut>
-                <shortcut widget="peliculas" label="Películas Más vistas este mes" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]"",return)</shortcut>
+                <shortcut widget="peliculas" label="Películas Más vistas este Mes" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[PeliculasMasVistasEsteMesPath]"",return)</shortcut>              
+                <shortcut widget="anime" label="Últimas Series Actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[AnimeUltimasActualizadasPath]"",return)</shortcut>              
+                <shortcut widget="dibujos" label="Últimas Series Actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DibujosUltimasActualizadasPath]"",return)</shortcut>              
+                <shortcut widget="documentales" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DocumentalesNovedadesPath]"",return)</shortcut>              
+                <shortcut widget="telenovelas" label="Nuevas Series" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[TelenovelasSeriesNuevasPath]"",return)</shortcut>              
             </node>
             <node label="Series">
                 <shortcut widget="seriesenseguimiento" label="Series en Seguimiento" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SeriesSeguimientoPath]"",return)</shortcut>
@@ -262,6 +266,9 @@
                 <shortcut widget="documentalesseriesultimas" label="Últimas Series actualizadas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[SerieDocumentalUltimasActualizadasPath]"",return)</shortcut>
                 <shortcut widget="documentalespeliculasnuevas" label="Nuevas Películas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DocumentalesNovedadesPath]",return)</shortcut>
                 <shortcut widget="documentalespeliculasultimas" label="Últimas Películas Añadidas" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[DocumentalesUltimasAnadidasPath]",return)</shortcut>
+            </node>
+            <node label="Telenovelas">
+                <shortcut widget="telenovelas-accesos" label="Telenovelas - Accesos" icon="DefaultRecentlyAddedMovies.png" widgetTarget="videos" type="video">ActivateWindow(Videos,"$VAR[TelenovelasPath]"",return)</shortcut>
             </node>
         </node>
         <node label="$LOCALIZE[31049]">
@@ -431,11 +438,11 @@
         <!-- Pantalla Completa -->
     <widget label="Series en Seguimiento" name="series" type="video" path="$VAR[SeriesSeguimientoPath]" target="videos">series</widget>
     <widgetdefault labelID="series" group="mainmenu">series</widgetdefault>
-    <widget label="Películas Más vistas este mes" name="peliculas" type="video" path="$VAR[PeliculasMasVistasEsteMesPath]" target="videos">peliculas</widget>
+    <widget label="Películas Más Vistas este Mes" name="peliculas" type="video" path="$VAR[PeliculasMasVistasEsteMesPath]" target="videos">peliculas</widget>
     <widgetdefault labelID="peliculas" group="mainmenu">peliculas</widgetdefault>
-    <widget label="Últimas Series actualizadas" name="anime" type="video" path="$VAR[AnimeUltimasActualizadasPath]" target="videos">anime</widget>
+    <widget label="Últimas Series Actualizadas" name="anime" type="video" path="$VAR[AnimeUltimasActualizadasPath]" target="videos">anime</widget>
     <widgetdefault labelID="anime" group="mainmenu">anime</widgetdefault>
-    <widget label="Últimas Series actualizadas" name="dibujos" type="video" path="$VAR[DibujosUltimasActualizadasPath]" target="videos">dibujos</widget>
+    <widget label="Últimas Series Actualizadas" name="dibujos" type="video" path="$VAR[DibujosUltimasActualizadasPath]" target="videos">dibujos</widget>
     <widgetdefault labelID="dibujos" group="mainmenu">dibujos</widgetdefault>
     <widget label="Nuevas Películas" name="documentales" type="video" path="$VAR[DocumentalesNovedadesPath]" target="videos">documentales</widget>
     <widgetdefault labelID="documentales" group="mainmenu">documentales</widgetdefault>

@@ -6,6 +6,9 @@
 > [!IMPORTANT]
 > [Enlace al Tutorial de instalación y configuración.](https://telegra.ph/AH2-Tutorial-02-02)
 
+### Actualización 0.3.1.3 - 29/04/2024
+- [x] Actualización de widgets por defecto para Palantir 3.1.3 .
+
 ### Actualización 0.3.1 - 11/04/2024
 - [x] Menús por defecto para Palantir en instalación nueva. Permitirá que en futuras actualizaciones de Palantir podamos actualizar los enlaces de los widgets y compartirlos con una nueva versión sin mayores dolores de cabeza para gente que no se quieran complicar, o como base para los que sí.
 - [x] Botón de reset de menús que permite restablecer los menús por defecto del punto anterior (se perderá la configuración hecha por el usuario). En ajustes de la skin - Detalles - Extras, la opción que dice "¡CUIDADO!" 😉

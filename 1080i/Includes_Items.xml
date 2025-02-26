@@ -386,7 +386,7 @@
             </include>
         </include>
         <!-- Boton AutoTrailer  -->
-        <include content="OSD_Button">
+        <!-- <include content="OSD_Button">
             <param name="vertical">true</param>
             <param name="id" value="5017" />
             <param name="groupid" value="5117" />
@@ -400,7 +400,7 @@
             <include content="OSD_Button_HintLabel">
                 <param name="label">AutoTrailer</param>
             </include>
-        </include>
+        </include> -->
     </include>
     <!-- FIN Joseska  -->
 

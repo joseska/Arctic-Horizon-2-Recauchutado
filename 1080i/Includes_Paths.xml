@@ -330,9 +330,10 @@
 
     <!-- Joseska - Variable Path completo a la busqueda en youtube addon con la variable anterior -->
     <variable name="Path_Youtube2">
-        <value>$VAR[Path_Youtube_Query2,plugin://plugin.video.youtube/search/?q=,&amp;search_type=notvalid]</value>
+        <value>$VAR[Path_Youtube_Query2,plugin://plugin.video.youtube/search/?hide_folders=true&amp;q=,&amp;search_type=notvalid]</value>
     </variable>
     <!-- FIN Joseska  -->
+
 
     <!-- Joseska - Variables AutoTrailer  -->
     <variable name="AutoTrailerUrl">
